@@ -4,8 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+Tirth Thakkar APCSP student at DNHS. This is the blog assignment for all future assignments.  **[Tirth-Thakkar](https://github.com/Tirth-Thakkar)** [^1].
 
 
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+[^1] Github 
