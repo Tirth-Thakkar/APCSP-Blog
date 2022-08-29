@@ -22,6 +22,17 @@
         
     
   
+    
+        ,"post2": {
+            "title": "Tool Check",
+            "content": "Jupyter . %%bash jupyter --version jupyter kernelspec list . Python . %%bash python2 --version python --version . Python 2.7.18 . Python 3.9.12 . Conda . %%bash conda list . %%bash echo Conda test=&quot;jupyter&quot; check=`conda list | grep $test` n=${#check} if [[ ${n} &gt; 0 ]]; then echo &quot;$check&quot; else echo &quot;$test not located&quot; fi .",
+            "url": "https://tirth-thakkar.github.io/APCSP-Blog/tools/2022/08/26/Bash_Check.html",
+            "relUrl": "/tools/2022/08/26/Bash_Check.html",
+            "date": " • Aug 26, 2022"
+        }
+        
+    
+  
 
   
   
