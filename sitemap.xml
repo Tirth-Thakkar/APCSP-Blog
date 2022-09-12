@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://tirth-thakkar.github.io/APCSP-Blog/week4/app-lab/quiz/python/2022/08/11/App_Lab_Quiz.html</loc>
-<lastmod>2022-08-11T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>https://tirth-thakkar.github.io/APCSP-Blog/markdown/2022/08/26/MarkdownPostV1.html</loc>
 <lastmod>2022-08-26T00:00:00-05:00</lastmod>
 </url>
@@ -35,6 +31,10 @@
 <url>
 <loc>https://tirth-thakkar.github.io/APCSP-Blog/themes/2022/09/05/Theme_Change.html</loc>
 <lastmod>2022-09-05T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://tirth-thakkar.github.io/APCSP-Blog/week4/app-lab/quiz/python/2022/09/11/App_Lab_Quiz.html</loc>
+<lastmod>2022-09-11T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://tirth-thakkar.github.io/APCSP-Blog/about/</loc>
