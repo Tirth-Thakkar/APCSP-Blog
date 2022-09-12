@@ -88,6 +88,17 @@
         
     
   
+    
+        ,"post8": {
+            "title": "App Lab Quiz",
+            "content": "Design . To create a quiz with a unified visual aesthetic with colors that look appealing when used in unison. | To create a quiz that can have a combination of both free response and multiple choice questions. | To create a quiz that can be replayed indefinitely and still have scoring function. | To create a quiz that can be added to have multiple modes. | . . Successes . Was able to make a quiz that could be looped through the use of functions to restart the quiz using functions to rerun the quiz to remove previous runs when replayed. | Was able to create an appealing visual design. | Was able to create multiple modes without losing functionality of any aspect. (Second Quiz is only present to show case the capability of running multiple quizzes in one project.) | Was able to have both free response questions and multiple choice, by using if else statements to check the answer of a free response question. | Was able to use functions to remove frequently used code (Data Abstraction). | . Discoveries/Challenges . Had issues with the first implementation of looping with the functions not working correctly on the first implementation. Allowed me to discover to make a function to allow for ending as the ending procedure wasn&#39;t present on all endings for the question both right and incorrect answer. | Had issues with creating a scoring system that was consistently functional, simplified the scoring mechanism by using a single variable as a way to measure the correctly answered questions. | Had issues with starting the quizzes the quiz looped around. Which allowed me to to discover a solution to run all quiz functions as soon as mouse movement was detected on starting page allowing all functionalities of all quizzes present to work. | . Link To Quiz . https://studio.code.org/projects/applab/aTaquZIk5sKMfBZVcUUP8UvuTu6kamc1SIQgFcscyRE .",
+            "url": "https://tirth-thakkar.github.io/APCSP-Blog/week4/app-lab/quiz/python/2022/08/11/App_Lab_Quiz.html",
+            "relUrl": "/week4/app-lab/quiz/python/2022/08/11/App_Lab_Quiz.html",
+            "date": " • Aug 11, 2022"
+        }
+        
+    
+  
 
   
   
