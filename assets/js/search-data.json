@@ -91,7 +91,7 @@
     
         ,"post8": {
             "title": "Printing Hello Jupyter Notebook Demo",
-            "content": "print(&quot;hello&quot;) . hello .",
+            "content": "print(&quot;hello&quot;) . hello world .",
             "url": "https://tirth-thakkar.github.io/APCSP-Blog/collegeboard/apcsp/2022/08/26/Notebook1.html",
             "relUrl": "/collegeboard/apcsp/2022/08/26/Notebook1.html",
             "date": " • Aug 26, 2022"
