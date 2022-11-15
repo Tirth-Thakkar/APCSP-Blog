@@ -2,21 +2,21 @@
   
     
         "post0": {
-            "title": "Test Corrections",
-            "content": "Score . . Questions + Corrections . . I had missed the until portion of the code as the function repeated till count was greater than the max not that the function printed the odd integers that were greater than the max. This was due to not reading the problem correctly. . . I had mistakenly used the value for after the function had executed getting 6, I had not taken into acount the sum of the value of all the integers between 0-5 which would set the value. The major reason for this issue was misunderstanding the question and not finding the value for result which was what the question had asked for. The best way to solve this issue would be to re-read the problem and to pay attention to all aspects not just what would be the first answer that would come to mind when looking at the problem. . . When solving the problem I had not taken into account that the &gt; while excluding 0 in the first portion of the conditional statement, however the else condition would be applicable to 0 making the value for count2 to not be 2 but 3 indicated in the correct answer. Pay more attention and be more careful when solving as there may be portions of problems that may require greater focus. . Reflection . Through taking the final assessment was that I wasn&#39;t the most dillgent when solving the problems resulting in missing portions or misreading them or all together misunderstanding mostly likely a result of trying to finish the test with haste. However, I also faced difficulty with problems such as those involving bis, and other data, along with binary questions requiring the most time and attention this was due to not properly studying these materials and thus resulting in unneeded confustion and time wastage, a solution would be to better prepare and to focus and take notes on collegeboard provided resources and content. .",
-            "url": "https://tirth-thakkar.github.io/APCSP-Blog/Final",
-            "relUrl": "/Final",
-            "date": " • Nov 9, 2022"
+            "title": "Agile Methodology",
+            "content": ".",
+            "url": "https://tirth-thakkar.github.io/APCSP-Blog/collegeboard/apcsp/2022/11/14/Agile.html",
+            "relUrl": "/collegeboard/apcsp/2022/11/14/Agile.html",
+            "date": " • Nov 14, 2022"
         }
         
     
   
     
         ,"post1": {
-            "title": "Agile Methodology",
-            "content": ".",
-            "url": "https://tirth-thakkar.github.io/APCSP-Blog/collegeboard/apcsp/2022/11/09/Agile.html",
-            "relUrl": "/collegeboard/apcsp/2022/11/09/Agile.html",
+            "title": "Test Corrections",
+            "content": "Score . . Questions + Corrections . . I had missed the until portion of the code as the function repeated till count was greater than the max not that the function printed the odd integers that were greater than the max. This was due to not reading the problem correctly. . . I had mistakenly used the value for after the function had executed getting 6, I had not taken into acount the sum of the value of all the integers between 0-5 which would set the value. The major reason for this issue was misunderstanding the question and not finding the value for result which was what the question had asked for. The best way to solve this issue would be to re-read the problem and to pay attention to all aspects not just what would be the first answer that would come to mind when looking at the problem. . . When solving the problem I had not taken into account that the &gt; while excluding 0 in the first portion of the conditional statement, however the else condition would be applicable to 0 making the value for count2 to not be 2 but 3 indicated in the correct answer. Pay more attention and be more careful when solving as there may be portions of problems that may require greater focus. . Reflection . Through taking the final assessment was that I wasn&#39;t the most dillgent when solving the problems resulting in missing portions or misreading them or all together misunderstanding mostly likely a result of trying to finish the test with haste. However, I also faced difficulty with problems such as those involving bis, and other data, along with binary questions requiring the most time and attention this was due to not properly studying these materials and thus resulting in unneeded confustion and time wastage, a solution would be to better prepare and to focus and take notes on collegeboard provided resources and content. .",
+            "url": "https://tirth-thakkar.github.io/APCSP-Blog/Final",
+            "relUrl": "/Final",
             "date": " • Nov 9, 2022"
         }
         
@@ -47,7 +47,7 @@
     
         ,"post4": {
             "title": "College Board Quizzes",
-            "content": ". Difficulties . Issues with understanding the College Board Pseudocode and interpreting into a valid answer | Also had difficulty with understanding the word problems and being able to understand what they required | Had the main issues with understand the program purpose assignment and the problems with understand the question mostly stemming from the misunderstanding or misreading of the problem mostly when the entire question wasn&#39;t read multiple times due to aforementioned issues with understanding the college board Pseudocode | I also struggled with interpreting the questions in Program Design and Developments due to the strange wording present within the problems. | .",
+            "content": ". . . Difficulties . Issues with understanding the College Board Pseudocode and interpreting into a valid answer | Also had difficulty with understanding the word problems and being able to understand what they required | Had the main issues with understand the program purpose assignment and the problems with understand the question mostly stemming from the misunderstanding or misreading of the problem mostly when the entire question wasn&#39;t read multiple times due to aforementioned issues with understanding the college board Pseudocode | I also struggled with interpreting the questions in Program Design and Developments due to the strange wording present within the problems. | . Difficulties V2 . I misunderstood the interaction between the world wide web and the interenet choosing &quot;The World Wide Web is a protocol that is accessed using a data stream called the Internet.&quot; when in reality the correct answer was &quot;The World Wide Web is a system of linked pages, programs, and files that is accessed via a network called the Internet.&quot; | .",
             "url": "https://tirth-thakkar.github.io/APCSP-Blog/week%206/collegeboard/2022/10/03/College-Board-Quiz.html",
             "relUrl": "/week%206/collegeboard/2022/10/03/College-Board-Quiz.html",
             "date": " • Oct 3, 2022"
@@ -221,12 +221,15 @@
   
 
   
+  
+
+  
 
   
   
 
   
-      ,"page12": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://tirth-thakkar.github.io/APCSP-Blog/robots.txt",
