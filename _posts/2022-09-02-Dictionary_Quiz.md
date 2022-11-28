@@ -60,13 +60,13 @@ layout: notebook
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dynamic code is code that has inputs and outputs that can change?
-Your answer true is the correct correct
+Your answer  doesn&#39;t equal the correct answer/s which is [&#39;true&#39;]
 What is the keyword for defining a function in Python?
-Your answer def() is the correct correct
+Your answer  doesn&#39;t equal the correct answer/s which is [&#39;def()&#39;]
 In Jupyter Notebooks the Input is in line with the Output
-Your answer false is the correct correct
+Your answer  doesn&#39;t equal the correct answer/s which is [&#39;false&#39;]
 What is grouping often used commands called?
-Your answer ??? doesn&#39;t equal the correct answer/s which is [&#39;procedural abstraction&#39;]
+Your answer  doesn&#39;t equal the correct answer/s which is [&#39;procedural abstraction&#39;]
 </pre>
 </div>
 </div>
