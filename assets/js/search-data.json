@@ -2,17 +2,6 @@
   
     
         "post0": {
-            "title": "Agile Methodology",
-            "content": ".",
-            "url": "https://tirth-thakkar.github.io/APCSP-Blog/collegeboard/apcsp/2022/11/28/Agile.html",
-            "relUrl": "/collegeboard/apcsp/2022/11/28/Agile.html",
-            "date": " • Nov 28, 2022"
-        }
-        
-    
-  
-    
-        ,"post1": {
             "title": "Strings - 3.4",
             "content": "Strings . What is a string? . A string is a collection of charecters. What is a charector as charector can be anything from numbers, letters, spaces, special symbols, etc. | Certain procedures may be used with strings and they vary from progaramming language to language Python examples | len() to find the length of a string | lower() to converte to lowercase | etc. Psuedocode examples | len() returns the lengh of a string | concat() returns a string made up of the concatenated strings ex. concat(&quot;string1&quot;, &quot;string2&quot;) would return string1string2 | substring() returns the charectors from the string beginning at the at the first position to the last so an example of this would be substring(&quot;abcdefghijk&quot;, 2, 5) would print bcde (puesdocode starts at 1) | . String Concatenation . What is string concatenation? . String concatenation is combining 2 or more strings to make a new strings in order to create a new string | concat() in pusedocode and varys from language to language can be used to combine to strings such as concat(&quot;cookie&quot;,&quot;monster&quot;) returns cookiemonster | . Substings . What is a substring? . A substring is a part of and already existing string. | In psuedocode substring() method is used for instance for concat(&quot;Mr.Mortenson is very handsome&quot; 1, 2) the system would return Mr (remember that pusedocode starts at 1) | . Hacks . Complete the following examples by either filling in the blanks or giving the result | . Example 1 . Noun = &quot;Mr.Mortenson&quot; Adjective = &quot;handsome&quot; Adjective2 = &quot;Very&quot; Verb = &quot;is&quot; abrev = subtring(Noun, 1, 7) yoda = concat(Adjective2, &quot; &quot;, Adjective, &quot; &quot;, abrev, &quot; &quot;,Verb, &quot;.&quot;) DISPLAY {yoda} . Example 2 . cookie = &quot;choclate&quot; cookie2 = &quot;rasin&quot; len1 = &quot;cookie/2&quot; len2 = &quot;cookie2*45&quot; vote1 = (&quot;cookie&quot;, &quot;vote&quot;, &quot;len2&quot;) vote2 = (&quot;cookie2&quot;, &quot;vote&quot;, &quot;len1&quot;) votes = (concat(vote1, &quot; &quot;, vote2)) display {votes} . Disclaimer . Work in progress more hack problems for practice will be available on presentation day .",
             "url": "https://tirth-thakkar.github.io/APCSP-Blog/strings/3.4/2022/11/18/Strings.html",
@@ -23,7 +12,7 @@
     
   
     
-        ,"post2": {
+        ,"post1": {
             "title": "Binary Logic and Abstraction",
             "content": "Notes . Abstraction hiding aspects of a program to make it more user friendly | Octal, Hexadecimal, decimal, binary, etc., talking about the number of symbols per digit | Have to approach things in a scientific manner - do research | Toggling binary digits of bits to represent different numbers | Does so through transistors that can get turned on and off in patterns can allow for a computer to count in patterns | Binary patterns came to be 20, 21, etc. similar to binary which is base 10 | To count higher the number of bits increases, the highest number that can be stored in three bits is 7 and it can increase to store more, usually 8 bits | Letters can also be stored as different values allowing other functions to be possible with a computer | .",
             "url": "https://tirth-thakkar.github.io/APCSP-Blog/binary/2022/11/18/Binary.html",
@@ -34,7 +23,7 @@
     
   
     
-        ,"post3": {
+        ,"post2": {
             "title": "Binary Math",
             "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Minus . +1 | 00000000 | 0 | 0 | 0 | -1 | . Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | . | | | | | | | | .",
             "url": "https://tirth-thakkar.github.io/APCSP-Blog/frontend/binary",
@@ -45,7 +34,7 @@
     
   
     
-        ,"post4": {
+        ,"post3": {
             "title": "Test Corrections",
             "content": "Score . . Questions + Corrections . . I had missed the until portion of the code as the function repeated till count was greater than the max not that the function printed the odd integers that were greater than the max. This was due to not reading the problem correctly. . . I had mistakenly used the value for after the function had executed getting 6, I had not taken into acount the sum of the value of all the integers between 0-5 which would set the value. The major reason for this issue was misunderstanding the question and not finding the value for result which was what the question had asked for. The best way to solve this issue would be to re-read the problem and to pay attention to all aspects not just what would be the first answer that would come to mind when looking at the problem. . . When solving the problem I had not taken into account that the &gt; while excluding 0 in the first portion of the conditional statement, however the else condition would be applicable to 0 making the value for count2 to not be 2 but 3 indicated in the correct answer. Pay more attention and be more careful when solving as there may be portions of problems that may require greater focus. . Reflection . Through taking the final assessment was that I wasn&#39;t the most dillgent when solving the problems resulting in missing portions or misreading them or all together misunderstanding mostly likely a result of trying to finish the test with haste. However, I also faced difficulty with problems such as those involving bis, and other data, along with binary questions requiring the most time and attention this was due to not properly studying these materials and thus resulting in unneeded confustion and time wastage, a solution would be to better prepare and to focus and take notes on collegeboard provided resources and content. .",
             "url": "https://tirth-thakkar.github.io/APCSP-Blog/Final",
@@ -56,12 +45,23 @@
     
   
     
-        ,"post5": {
+        ,"post4": {
             "title": "Night @ the Museum",
             "content": "API Final Projects . Throughout this Trimester many groups of students have worked hard to display the full course of their understading via there Night at the Museum Project, however, we as group throughout the development process may have focused on our project, we gained the ability to reflect based on the outstanding work that many groups have down also showcasing their learning. These are my personal notes on the that they presented at Night at the Museum. . Api Notes . Alan, Steven, Ederick, Noor, Liav - calendar that shows date and weather, can put in an event on any day and it saves, can search for any city weather . Luke - Has a variety of quizzes to choose from to use them to generate random questions, geography, math, and sat questions. About pages linkes to eveyone fastpages. . Paaras, Samarth, AJ, Haoxuan - An api that grabs some of the best of best motivational qoutes from the internet, and allows users to vote on the quality of the votes through hosting a number counter. Also are able to pulled to get a random qoutes. . Peacock Justin, James, Shruti, Joslyn - recreation of the classic game tetris, and through the use of astronomy api to create table based on the city name and gives location details longitude latitude and moon traits. . Advay, Krishiv, Shivansh, Dhruva, Prasith - Motivational qputes api to curate qoutes accross the internet, and heleaps pepple calculate goals and calories, BMI calculator, and fitness goals. . Jonathan, Martin, Abdulla, Leonard - Basketball stats of each NBA team, used an api to get the stats fpr each team and through thier website made it accesable to the user with ease. . Lyntax Aniket, Soham, Ryan, Lucas - One api with a dictionary hosted on a flask server that has words and definitions so users can imput it against a word. Which serves to play a hangman game. Which also eliminates letters and dynamically renders the charector. . Ananya, Sreeja, Aliya, Clair - Wordle game that uses thier custom api that imports and uses it randomly uses it to generate a game. Also checks if words are valid are not and informs the user if they are incorrect or not. . Raunak, Tanay, Yuri, Sachit, Harsha - Clock alarm and stopwatch, using a custom api to request data from a variety of time of timezones to display times. . Lily, Ekam, Ishi, Shreyas - Uses a custom dictionary api of different words and thier definitions to allow users to find them and a word of the day that changes. Along with a feedback to adapt the user experience. . Aiden ahad dash sabine - Innovative api that has games such as tetris, blackjack, cookie clicker, and a pokemon game with custom to log losses wins, correct answers wrong and other game data. . The fream team we make code with varalu azeem chubmag and colin, we made and acedemic organizer, with a custom api that fetches information predominantly wikipedia and stores the data to make an acedmic organizer . Devon, trent, drew, jager - Made custom api to conpare likes to dislikes to pull it as an alarm for a stopwatch is able to manage your workflow through several options, such as notifications, that can keep you on track, and set break intervals, and tasks . Keira, Zeen, Ellie, Giannina - Made custom custmoer survey along with a quiz that has three different quizzes for calculus, physics, and satstics, with soultion with randomized questions from a database. Along with a quiz summary and a customer service api that prompts users woth questions saving them to a data base. Along with an explanation to show how the problems you missed could be solved. . Reflections . In my opinion this showcases the vast strides many students inclusing myself have made this trimester, with coming from barely understanding any CS concepts prior to this class have been able to grow and develop to make a large variety of projects based apon their understanding of APIs, CSS, HTML, Fastpages, and Python. From creating projcts like ours via games, from Pokemon, Tetris, to other educational tools like quizzes on wide variety of topics or other tools like health trackers, and calanders everyone showcased an amount of growth one may not think possible in just one trimester. .",
             "url": "https://tirth-thakkar.github.io/APCSP-Blog/Night@TheMuseum",
             "relUrl": "/Night@TheMuseum",
             "date": " • Nov 3, 2022"
+        }
+        
+    
+  
+    
+        ,"post5": {
+            "title": "Agile Methodology",
+            "content": ".",
+            "url": "https://tirth-thakkar.github.io/APCSP-Blog/collegeboard/apcsp/2022/10/14/Agile.html",
+            "relUrl": "/collegeboard/apcsp/2022/10/14/Agile.html",
+            "date": " • Oct 14, 2022"
         }
         
     
