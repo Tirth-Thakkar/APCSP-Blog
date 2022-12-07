@@ -1335,14 +1335,14 @@ apples bananas grapes
             <span class="nb">print</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span>
             
             <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">keyboard</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">row</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
                     <span class="n">row</span><span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">letter</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">" "</span>
     <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">solve_rsp2</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">letter</span> <span class="ow">in</span> <span class="n">sub</span> <span class="k">for</span> <span class="n">sub</span> <span class="ow">in</span> <span class="n">keyboard</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">letter</span> <span class="ow">in</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">keyboard</span><span class="p">):</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span>
             
             <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">keyboard</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">row</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
                     <span class="n">row</span><span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">letter</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">" "</span>
 
 <span class="n">printer</span><span class="p">(</span><span class="n">keyboard</span><span class="p">)</span>
@@ -1361,8 +1361,10 @@ apples bananas grapes
 <pre>D
 E
 C
+E
 M
 B
+E
 R
 1
 6
