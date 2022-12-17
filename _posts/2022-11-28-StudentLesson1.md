@@ -1,10 +1,10 @@
 ---
 keywords: fastai
 description: Lesson on variables from Collegeboard  
-title: Variables Notes
+title: Variables Notes Section 1-2
 toc: true
 comments: true
-categories: [variables]
+tags: [week14, chapter3]
 nb_path: _notebooks/2022-11-28-StudentLesson1.ipynb
 layout: notebook
 ---

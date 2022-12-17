@@ -6,7 +6,7 @@ toc: true
 comments: true
 permalink: /code-corrections
 image: images/Corrections.jpg
-categories: [Week 7, collegeboard]
+tags: [week7]
 nb_path: _notebooks/2022-10-03-Code_Corrections.ipynb
 layout: notebook
 ---

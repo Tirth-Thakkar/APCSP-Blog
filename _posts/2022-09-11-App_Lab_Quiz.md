@@ -5,7 +5,7 @@ title: App Lab Quiz
 toc: true
 comments: true
 image: images/Code.png
-categories: [Week4, App-Lab, Quiz, Python]
+tags: [week3]
 nb_path: _notebooks/2022-09-11-App_Lab_Quiz.ipynb
 layout: notebook
 ---

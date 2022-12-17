@@ -1,11 +1,11 @@
 ---
 keywords: fastai
 description: Lists and Iteration Lesson
-title: Lists and Iteration
+title: Lists and Iteration  Unit 3 Sections 8 and 10
 toc: true
 badges: false
 permalink: /lesson4
-categories: [lessons]
+tags: [week15, chapter3]
 nb_path: _notebooks/2022-12-05-final_Iteration_lesson.ipynb
 layout: notebook
 ---

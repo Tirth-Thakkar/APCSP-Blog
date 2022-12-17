@@ -5,7 +5,7 @@ title: Ideas for Final Project
 toc: true
 comments: true
 image: images/Ideas.png
-categories: [Week3, App-Lab, Quiz, Python]
+tags: [week3]
 nb_path: _notebooks/2022-09-11-Ideas_Final.ipynb
 layout: notebook
 ---

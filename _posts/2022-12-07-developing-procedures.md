@@ -4,7 +4,7 @@ description: Developing and Writing Procedures Lesson
 title: Unit 3 Sections 12-13
 toc: true
 badges: false
-categories: [lessons]
+tags: [chapter3, week15]
 nb_path: _notebooks/2022-12-07-developing-procedures.ipynb
 layout: notebook
 ---

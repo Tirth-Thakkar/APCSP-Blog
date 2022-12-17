@@ -6,7 +6,7 @@ toc: true
 comments: true
 permalink: /Final
 image: images/Scammer.png
-categories: [Final, Corrections]
+tags: [week12]
 nb_path: _notebooks/2022-11-09-TestCorrections.ipynb
 layout: notebook
 ---

@@ -1,9 +1,9 @@
 ---
 keywords: fastai
-description: Unit 3 Sections 12-13
+description: Unit 3 Sections 9-11
 title: Algorithm Lesson
 toc: true
-categories: [lessons]
+tags: [chapter3, week15]
 nb_path: _notebooks/2022-12-06-lessonComplete.ipynb
 layout: notebook
 ---

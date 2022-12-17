@@ -5,7 +5,7 @@ title: Theme Change
 toc: true
 comments: true
 image: images/Colors.jpg
-categories: [themes]
+tags: [week2]
 nb_path: _notebooks/2022-09-05-Theme_Change.ipynb
 layout: notebook
 ---

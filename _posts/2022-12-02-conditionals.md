@@ -1,11 +1,10 @@
 ---
 keywords: fastai
 description: Welcome to the World of Booleans and Conditionals!
-title: Teaching Plan - Booleans and Conditionals
+title: Booleans and Conditionals Unit 3 Sections 5-7
 toc: true
 comments: true
-categories: [homework]
-tags: [Unit3]
+tags: [week14, chapter3]
 nb_path: _notebooks/2022-12-02-conditionals.ipynb
 layout: notebook
 ---
@@ -565,7 +564,7 @@ Lives would print 4 as the result of the and &amp; or is false it would print 4 
 <span class="p">]</span>
 
 <span class="k">for</span> <span class="n">worker</span> <span class="ow">in</span> <span class="n">workers</span><span class="p">:</span>  
-    <span class="k">if</span> <span class="n">worker</span><span class="o">.</span><span class="n">hours</span> <span class="o">&lt;=</span> <span class="mi">8</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">worker</span><span class="o">.</span><span class="n">hours</span> <span class="o">&gt;=</span> <span class="mi">8</span><span class="p">:</span>
         <span class="n">worker</span><span class="o">.</span><span class="n">experienced</span> <span class="o">=</span> <span class="kc">True</span> 
     <span class="k">else</span><span class="p">:</span> 
         <span class="n">worker</span><span class="o">.</span><span class="n">experienced</span> <span class="o">=</span> <span class="kc">False</span> 
@@ -586,10 +585,10 @@ Lives would print 4 as the result of the and &amp; or is false it would print 4 
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Jhonny - Experience = True Hours: 2 Wage: $90000
-Steve - Experience = False Hours: 700 Wage: $50000
+<pre>Jhonny - Experience = False Hours: 2 Wage: $50000
+Steve - Experience = True Hours: 700 Wage: $90000
 Billy Bob - Experience = True Hours: 8 Wage: $90000
-Jhonny - Experience = False Hours: 22 Wage: $50000
+Jhonny - Experience = True Hours: 22 Wage: $90000
 </pre>
 </div>
 </div>
@@ -636,7 +635,8 @@ Jhonny - Experience = False Hours: 22 Wage: $50000
     <span class="n">food</span><span class="p">(</span><span class="n">foods</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
     <span class="n">food</span><span class="p">(</span><span class="n">foods</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="kc">False</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span>
     <span class="n">food</span><span class="p">(</span><span class="n">foods</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="kc">False</span><span class="p">,</span> <span class="mi">72</span><span class="p">),</span>
-    <span class="n">food</span><span class="p">(</span><span class="n">foods</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="kc">False</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+    <span class="n">food</span><span class="p">(</span><span class="n">foods</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="kc">False</span><span class="p">,</span> <span class="mi">32</span><span class="p">),</span>
+    <span class="n">food</span><span class="p">(</span><span class="n">foods</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span>
 <span class="p">]</span>
 
 <span class="k">for</span> <span class="n">food</span> <span class="ow">in</span> <span class="n">boxes</span><span class="p">:</span>
@@ -648,7 +648,7 @@ Jhonny - Experience = False Hours: 22 Wage: $50000
         <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">food</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;: this product is too expensive</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">food</span><span class="o">.</span><span class="n">cost</span> <span class="o">&gt;=</span> <span class="mi">25</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">food</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;: this is a regular product</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="c1"># It wasn&#39;t clear that cheap foods applied to the rule so I added an extra critria to the list</span>
+    <span class="c1"># It wasn&#39;t clear that cheap foods applied to the rule so I added an extra critria to the list it may not be needed</span>
     <span class="k">elif</span> <span class="n">food</span><span class="o">.</span><span class="n">cost</span> <span class="o">&lt;</span> <span class="mi">25</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">food</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;: this is a cheap product</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     
@@ -676,6 +676,8 @@ banana: this product is too expensive
 
 apple: this is a regular product
 
+cake: this product is no good
+
 </pre>
 </div>
 </div>
@@ -700,6 +702,14 @@ apple: this is a regular product
 </li>
 <li>Points will be awarded for creativity, intricacy, and how well Boolean/Binary concepts have been intertwined</li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h1><blockquote><p>The quiz below is the main quiz if it is not to your liking as in you do not like the options and the way it works there is a simpler version below</p>
+</blockquote>
 
 </div>
 </div>
@@ -753,7 +763,7 @@ apple: this is a regular product
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your answers &quot;</span> <span class="o">+</span> <span class="n">rsp1</span> <span class="o">+</span> <span class="s2">&quot; and &quot;</span> <span class="o">+</span> <span class="n">rsp2</span> <span class="o">+</span> <span class="s2">&quot; matches the correct answers which were &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">problems</span><span class="o">.</span><span class="n">answer1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; and &quot;</span> <span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">problems</span><span class="o">.</span><span class="n">answer2</span><span class="p">))</span>
                 <span class="n">score</span> <span class="o">+=</span> <span class="mi">2</span>
             <span class="k">elif</span> <span class="n">rsp1</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="n">problems</span><span class="o">.</span><span class="n">answer1</span> <span class="ow">or</span> <span class="n">rsp2</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="n">problems</span><span class="o">.</span><span class="n">answer2</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your answers &quot;</span> <span class="o">+</span> <span class="n">rsp1</span> <span class="o">+</span> <span class="s2">&quot; and &quot;</span> <span class="o">+</span> <span class="n">rsp2</span> <span class="o">+</span> <span class="s2">&quot; matches only one of the two correct answers which were &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">problems</span><span class="o">.</span><span class="n">answer1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; and &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">problems</span><span class="o">.</span><span class="n">answer2</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your answers &quot;</span> <span class="o">+</span> <span class="n">rsp1</span> <span class="o">+</span> <span class="s2">&quot; is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp1</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="n">problems</span><span class="o">.</span><span class="n">answer1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; and &quot;</span> <span class="o">+</span> <span class="n">rsp2</span> <span class="o">+</span> <span class="s2">&quot; is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp2</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="n">problems</span><span class="o">.</span><span class="n">answer2</span><span class="p">)</span> <span class="o">+</span><span class="s2">&quot; which matches only one of the two correct answers which were &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">problems</span><span class="o">.</span><span class="n">answer1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; and &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">problems</span><span class="o">.</span><span class="n">answer2</span><span class="p">))</span>
                 <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your answers &quot;</span> <span class="o">+</span> <span class="n">rsp1</span> <span class="o">+</span> <span class="s2">&quot; and &quot;</span> <span class="o">+</span> <span class="n">rsp2</span> <span class="o">+</span> <span class="s2">&quot; doesn&#39;t match any of the correct answers which were &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">problems</span><span class="o">.</span><span class="n">answer1</span><span class="p">)</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">problems</span><span class="o">.</span><span class="n">answer2</span><span class="p">))</span>
@@ -788,14 +798,14 @@ apple: this is a regular product
  (b) 9
  (c) 22
 
-Your answers a and c matches only one of the two correct answers which were a and b
+Your answers a is True and c is False matches only one of the two correct answers which were a and b
 
 What is a Boolean
  (a) A value that stores true or false
  (b) gold/silver
  (c) a fancy french pastry
 
-Your answer a matches the correct answer which was a
+Your answer c doesn&#39;t match the correct answer which was a
 
 Is the moon made of cheese?
  (t) True
@@ -810,7 +820,7 @@ Is Mr.Mortenson extremly handsome and attractive?
 
 Your answers a and b matches the correct answers which were a and b
 
-You got 4 out of 6 points. You passed this quiz by scoring a score of 2/6 or higher.
+You got 3 out of 6 points. You passed this quiz by scoring a score of 2/6 or higher.
 </pre>
 </div>
 </div>
@@ -821,6 +831,14 @@ You got 4 out of 6 points. You passed this quiz by scoring a score of 2/6 or hig
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Back-Up">Back Up<a class="anchor-link" href="#Back-Up"> </a></h1><blockquote><p>Same quiz but simpler and without multiquestions</p>
+</blockquote>
+
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -838,7 +856,7 @@ You got 4 out of 6 points. You passed this quiz by scoring a score of 2/6 or hig
     <span class="s2">&quot;Is 3*3 = 9?</span><span class="se">\n</span><span class="s2"> (t) True</span><span class="se">\n</span><span class="s2"> (f) False</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
     <span class="s2">&quot;What are Booleans?</span><span class="se">\n</span><span class="s2"> (a) A value that stores true or false</span><span class="se">\n</span><span class="s2"> (b) gold/silver</span><span class="se">\n</span><span class="s2"> (c) a fancy french pastry</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Is the moon made of cheese?</span><span class="se">\n</span><span class="s2"> (t) True</span><span class="se">\n</span><span class="s2"> (f) False</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Is Mr.Mortenson extremly handsome and attractive?</span><span class="se">\n</span><span class="s2"> (a) Yes he is extremly handsome and attractive</span><span class="se">\n</span><span class="s2"> (a) </span><span class="se">\n</span><span class="s2"> (b) No he&#39;s not and I hate points. (c) No</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Is Mr.Mortenson extremly handsome and attractive?</span><span class="se">\n</span><span class="s2"> (a) Yes he is extremly handsome and attractive</span><span class="se">\n</span><span class="s2"> (b) No he&#39;s not and I hate points.</span><span class="se">\n</span><span class="s2"> (c) No</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
 
 <span class="p">]</span>
 
@@ -861,9 +879,9 @@ You got 4 out of 6 points. You passed this quiz by scoring a score of 2/6 or hig
         <span class="k">else</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Your answer &quot;</span> <span class="o">+</span> <span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; doesn&#39;t match the correct answer which was &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">problem</span><span class="o">.</span><span class="n">answer</span><span class="p">))</span>
     <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">You got &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; out of &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Q_Bank</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; points so you have passed this test.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You got &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; out of &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Q_Bank</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; points so you have passed this test.&quot;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span> 
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">You got &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; out of &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Q_Bank</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; points so you have failed this test.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You got &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; out of &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Q_Bank</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; points so you have failed this test.&quot;</span><span class="p">)</span>
 
 
 <span class="n">quiz</span><span class="p">(</span><span class="n">Q_Bank</span><span class="p">)</span>
@@ -884,29 +902,28 @@ You got 4 out of 6 points. You passed this quiz by scoring a score of 2/6 or hig
  (f) False
 
 
-Your answer t matches the correct answer which was t
+Your answer f doesn&#39;t match the correct answer which was t
 What are Booleans?
  (a) A value that stores true or false
  (b) gold/silver
  (c) a fancy french pastry
 
 
-Your answer c doesn&#39;t match the correct answer which was a
+Your answer a matches the correct answer which was a
 Is the moon made of cheese?
  (t) True
  (f) False
 
 
-Your answer t doesn&#39;t match the correct answer which was f
+Your answer f matches the correct answer which was f
 Is Mr.Mortenson extremly handsome and attractive?
  (a) Yes he is extremly handsome and attractive
- (a) 
- (b) No he&#39;s not and I hate points. (c) No
+ (b) No he&#39;s not and I hate points.
+ (c) No
 
 
 Your answer a doesn&#39;t match the correct answer which was b
-
-You got 1 out of 4 points so you have passed this test.
+You got 2 out of 4 points so you have passed this test.
 </pre>
 </div>
 </div>

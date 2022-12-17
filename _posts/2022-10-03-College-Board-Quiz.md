@@ -5,7 +5,7 @@ title: College Board Quizzes
 toc: true
 comments: true
 image: images/Scammer.png
-categories: [Week 6, collegeboard]
+tags: [week6]
 nb_path: _notebooks/2022-10-03-College-Board-Quiz.ipynb
 layout: notebook
 ---
@@ -28,11 +28,34 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://github.com/Tirth-Thakkar/APCSP-Blog/blob/master/images/Error_Correction_Quiz.png?raw=true" alt="Completion"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://github.com/Tirth-Thakkar/APCSP-Blog/blob/master/images/Internet_Quiz.png?raw=true" alt="Completion"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Difficulties">Difficulties<a class="anchor-link" href="#Difficulties"> </a></h1><ul>
 <li>Issues with understanding the College Board Pseudocode and interpreting into a valid answer</li>
 <li>Also had difficulty with understanding the word problems and being able to understand what they required </li>
 <li>Had the main issues with understand the program purpose assignment and the problems with understand the question mostly stemming from the misunderstanding or misreading of the problem mostly when the entire question wasn't read multiple times due to aforementioned issues with understanding the college board Pseudocode </li>
 <li>I also struggled with interpreting the questions in Program Design and Developments due to the strange wording present within the problems.   </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Difficulties-V2">Difficulties V2<a class="anchor-link" href="#Difficulties-V2"> </a></h1><ul>
+<li>I misunderstood the interaction between the world wide web and the interenet choosing "The World Wide Web is a protocol that is accessed using a data stream called the Internet." when in reality the correct answer was "The World Wide Web is a system of linked pages, programs, and files that is accessed via a network called the Internet."     </li>
 </ul>
 
 </div>
