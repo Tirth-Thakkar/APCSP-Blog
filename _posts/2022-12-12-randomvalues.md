@@ -7,6 +7,7 @@ branch: master
 badges: true
 comments: true
 tags: [chapter3, week16]
+categories: [chapter3, week16]
 nb_path: _notebooks/2022-12-12-randomvalues.ipynb
 layout: notebook
 ---

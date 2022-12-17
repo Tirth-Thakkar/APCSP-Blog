@@ -5,6 +5,7 @@ title: Unit 3 Sections 12-13
 toc: true
 badges: false
 tags: [chapter3, week15]
+categories: [chapter3, week15]
 nb_path: _notebooks/2022-12-07-developing-procedures.ipynb
 layout: notebook
 ---

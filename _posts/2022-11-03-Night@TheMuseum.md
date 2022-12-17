@@ -7,6 +7,7 @@ comments: true
 permalink: /Night@TheMuseum
 image: images/Night@Museum.jpg
 tags: [week12]
+categories: [week12]
 nb_path: _notebooks/2022-11-03-Night@TheMuseum.ipynb
 layout: notebook
 ---

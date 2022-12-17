@@ -6,6 +6,7 @@ toc: true
 badges: false
 permalink: /lesson4
 tags: [week15, chapter3]
+categories: [week15, chapter3]
 nb_path: _notebooks/2022-12-05-final_Iteration_lesson.ipynb
 layout: notebook
 ---

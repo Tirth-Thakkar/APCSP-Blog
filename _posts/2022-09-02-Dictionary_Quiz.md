@@ -6,6 +6,7 @@ toc: true
 comments: true
 image: images/Snek2.png
 tags: [week2]
+categories: [week2]
 nb_path: _notebooks/2022-09-02-Dictionary_Quiz.ipynb
 layout: notebook
 ---

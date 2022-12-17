@@ -6,6 +6,7 @@ toc: true
 comments: true
 image: images/Ideas.png
 tags: [week3]
+categories: [week3]
 nb_path: _notebooks/2022-09-11-Ideas_Final.ipynb
 layout: notebook
 ---

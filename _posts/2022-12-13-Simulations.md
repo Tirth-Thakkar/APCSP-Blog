@@ -7,6 +7,7 @@ toc: true
 badges: false
 comments: true
 tags: [chapter3, week16]
+categories: [chapter3, week16]
 nb_path: _notebooks/2022-12-13-Simulations.ipynb
 layout: notebook
 ---

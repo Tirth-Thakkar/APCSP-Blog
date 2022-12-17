@@ -5,6 +5,7 @@ branch: master
 layout: post
 decription: Markdown Demo - Tirth Thakkar
 categories: [markdown]
+tags: [week0]
 author: Tirth Thakkar
 show_tags: true
 comments: true

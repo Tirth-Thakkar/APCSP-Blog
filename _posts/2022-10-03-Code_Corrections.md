@@ -7,6 +7,7 @@ comments: true
 permalink: /code-corrections
 image: images/Corrections.jpg
 tags: [week7]
+categories: [week7]
 nb_path: _notebooks/2022-10-03-Code_Corrections.ipynb
 layout: notebook
 ---
