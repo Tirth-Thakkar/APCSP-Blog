@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      12 min read
+      15 min read
     
 </span></p>
 
@@ -122,6 +122,9 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Unicode">Unicode </a></li>
 <li class="toc-entry toc-h2"><a href="#RGB">RGB </a></li>
 <li class="toc-entry toc-h2"><a href="#RGB-Code-Example">RGB Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Lossless">Lossless </a></li>
+<li class="toc-entry toc-h2"><a href="#Lossy">Lossy </a></li>
+<li class="toc-entry toc-h2"><a href="#Lossless-and-Lossy-Compression-Code-Example">Lossless and Lossy Compression Code Example </a></li>
 </ul>
 </li>
 </ul><!--
@@ -158,6 +161,11 @@ window.onload = wrap_img;
 <li>ASCII</li>
 <li>Unicode</li>
 <li>RGB</li>
+</ul>
+<p><code>Data Compression:</code></p>
+<ul>
+<li>Lossless</li>
+<li>Lossy</li>
 </ul>
 
 </div>
@@ -903,6 +911,102 @@ False is a boolean
 <pre>Red: 255
 Green: 139
 Blue: 184
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Lossless">
+<a class="anchor" href="#Lossless" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lossless<a class="anchor-link" href="#Lossless"> </a>
+</h2>
+<ul>
+<li>Category: Data Compression</li>
+<li>Definition: A lossless data compression algorithm is an algorithm that compresses data without losing any information as it can be reconstructed exactly from its compressed form. This type of compression is used for things like text files, certain image formats, and audo codecs such as FLAC (Free Lossless Audio Codec) ALAC (Apple Lossless Audio Codec) <code>seen in the refrence to compression in audiofile communties where a small subset of people can audibly dicern the differences in compression as indicated in them preferring to listen to FLACs and other simlar types of files</code>, along with data bases, and many more uses.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Lossy">
+<a class="anchor" href="#Lossy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lossy<a class="anchor-link" href="#Lossy"> </a>
+</h2>
+<ul>
+<li>Category: Data Compression</li>
+<li>Definition: A lossy data compression algorithm is an algorithm that compresses data by removing some information. It is not reversible and the original data cannot be reconstructed exactly from its compressed form. This is done to be able to compress the data more efficiently. This type of compression is used in things such as audio and video compression where some quaility is loss is able to be tolerated. <code>Some may be able to dicern the differnece in compression see above for more info.</code>
+</li>
+</ul>
+<h2 id="Lossless-and-Lossy-Compression-Code-Example">
+<a class="anchor" href="#Lossless-and-Lossy-Compression-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lossless and Lossy Compression Code Example<a class="anchor-link" href="#Lossless-and-Lossy-Compression-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span> 
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="c1"># Opens the image file same one as before</span>
+<span class="k">with</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"/home/tirth/vscode/APCSP-Blog/images/Profile.jpg"</span><span class="p">)</span> <span class="k">as</span> <span class="n">image</span><span class="p">:</span>
+    <span class="c1"># Save the image using lossy JPEG compression</span>
+    <span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">"image_compressed_lossy.jpg"</span><span class="p">,</span> <span class="s2">"JPEG"</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">75</span><span class="p">)</span>
+    
+    <span class="c1"># Save the image using lossless PNG compression</span>
+    <span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">"image_compressed_lossless.png"</span><span class="p">,</span> <span class="s2">"PNG"</span><span class="p">)</span>
+
+<span class="c1"># Get the file sizes of the compressed images</span>
+<span class="n">lossy_size</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getsize</span><span class="p">(</span><span class="s2">"image_compressed_lossy.jpg"</span><span class="p">)</span>
+<span class="n">lossless_size</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getsize</span><span class="p">(</span><span class="s2">"image_compressed_lossless.png"</span><span class="p">)</span>
+
+<span class="c1"># Prints the file sizes</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Lossy image size: </span><span class="si">{</span><span class="n">lossy_size</span><span class="si">}</span><span class="s2"> bytes"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Lossless image size: </span><span class="si">{</span><span class="n">lossless_size</span><span class="si">}</span><span class="s2"> bytes"</span><span class="p">)</span>
+
+<span class="c1"># As seen the Lossy image is orders of magnitude </span>
+<span class="c1"># smaller than the lossless image around 7.55</span>
+<span class="c1"># times smaller in fact this is due to the fact</span>
+<span class="c1"># that lossy compression is able to remove some </span>
+<span class="c1"># of the data from the image to get much more </span>
+<span class="c1"># effecient compression unlike the lossless</span>
+<span class="c1"># compression which is able to compress the image</span>
+<span class="c1"># without removing any data from the image. This </span>
+<span class="c1"># is why through the use of lossy compression </span>
+<span class="c1"># when possilbe costs are able to be saved in </span>
+<span class="c1"># commercial applications. </span>
+<span class="c1"># As seen in the implementation of lossy</span>
+<span class="c1"># compression in software such as Apple Music </span>
+<span class="c1"># and Spotify where Lossy compression is used for </span>
+<span class="c1"># most songs and non premium users.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Lossy image size: 106523 bytes
+Lossless image size: 803895 bytes
 </pre>
 </div>
 </div>
