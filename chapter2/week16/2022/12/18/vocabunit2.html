@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      11 min read
+      12 min read
     
 </span></p>
 
@@ -120,6 +120,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Boolean-Code-Example">Boolean Code Example </a></li>
 <li class="toc-entry toc-h2"><a href="#ASCII">ASCII </a></li>
 <li class="toc-entry toc-h2"><a href="#Unicode">Unicode </a></li>
+<li class="toc-entry toc-h2"><a href="#RGB">RGB </a></li>
+<li class="toc-entry toc-h2"><a href="#RGB-Code-Example">RGB Code Example </a></li>
 </ul>
 </li>
 </ul><!--
@@ -681,7 +683,10 @@ The temperature outside is -5.9944444 degrees celsius
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">things</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="s2">"snowflake"</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="s2">"butterfly"</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">,</span> <span class="s2">"pumpernickle toast"</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">11.0</span><span class="p">,</span> <span class="s2">"rainbow"</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
 <span class="k">def</span> <span class="nf">thingchecker</span><span class="p">(</span><span class="n">things</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">thing</span> <span class="ow">in</span> <span class="n">things</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+        <span class="c1"># Had to add this portion as it seems that booleans and </span>
+        <span class="c1"># integers are both considered integers in python for some reason</span>
+        <span class="c1"># as it turns out that is because booleans are a subclass of integers</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="nb">bool</span><span class="p">):</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">thing</span><span class="si">}</span><span class="s2"> is an integer"</span><span class="p">)</span>
         <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="nb">float</span><span class="p">):</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">thing</span><span class="si">}</span><span class="s2"> is a float"</span><span class="p">)</span>
@@ -692,12 +697,6 @@ The temperature outside is -5.9944444 degrees celsius
         <span class="k">else</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">"The input is something else"</span><span class="p">)</span>
 <span class="n">thingchecker</span><span class="p">(</span><span class="n">things</span><span class="p">)</span>
-
-<span class="c1"># Using the isinstance function the program is able to check </span>
-<span class="c1"># the type of data that is being stored in the list as it returns</span>
-<span class="c1"># a boolean value of true or false depending on if the data type</span>
-<span class="c1"># and through the use of these boolean values the program is able to</span>
-<span class="c1"># determine what type of data is being stored in the list</span>
 </pre></div>
 
     </div>
@@ -713,19 +712,19 @@ The temperature outside is -5.9944444 degrees celsius
 <pre>1 is an integer
 2.0 is a float
 snowflake is a string
-True is an integer
+True is a boolean
 4 is an integer
 5.0 is a float
 butterfly is a string
-False is an integer
+False is a boolean
 7 is an integer
 8.0 is a float
 pumpernickle toast is a string
-True is an integer
+True is a boolean
 10 is an integer
 11.0 is a float
 rainbow is a string
-False is an integer
+False is a boolean
 </pre>
 </div>
 </div>
@@ -766,7 +765,8 @@ False is an integer
 
 <span class="c1"># The ord function is used to convert </span>
 <span class="c1"># a character into its ASCII code which </span>
-<span class="c1"># is then printed out to the user    </span>
+<span class="c1"># is then printed out to the user this </span>
+<span class="c1"># would also do genereal Unicode as well     </span>
 </pre></div>
 
     </div>
@@ -804,6 +804,112 @@ False is an integer
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Coded</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a string to be coded: "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Your string was </span><span class="si">{</span><span class="n">Coded</span><span class="si">}</span><span class="s1"> which in ASCII codes is:'</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">Uni_Coder</span><span class="p">(</span><span class="n">Coded</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">Coded</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">letter</span><span class="p">),</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
+<span class="n">Uni_Coder</span><span class="p">(</span><span class="n">Coded</span><span class="p">)</span>
+<span class="c1"># According to google trasnlate that should be Hello World in Chinese Simplified</span>
+<span class="c1"># The program is able to convert the string into its Unicode code pointers </span>
+<span class="c1"># Which is the same code as the ASCII code as the ASCII code is a subset of the Unicode code</span>
+<span class="c1"># and the ord() function is able to convert the string into its Unicode code pointers</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Your string was 你好世界 which in ASCII codes is:
+20320 22909 19990 30028 </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="RGB">
+<a class="anchor" href="#RGB" aria-hidden="true"><span class="octicon octicon-link"></span></a>RGB<a class="anchor-link" href="#RGB"> </a>
+</h2>
+<ul>
+<li>Category: Binary Data Abstractions</li>
+<li>Definition: RGB stands for Red, Green, Blue. It is a color model that uses 3 bytes to represent 16,777,216 different colors. It is used to represent colors in computers and other devices. It is used to represent colors in images, videos, and other media. It is used to represent colors in HTML and CSS documents.</li>
+</ul>
+<h2 id="RGB-Code-Example">
+<a class="anchor" href="#RGB-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>RGB Code Example<a class="anchor-link" href="#RGB-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="c1"># Opens the image file</span>
+<span class="n">doughnut</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"/home/tirth/vscode/APCSP-Blog/images/Profile.jpg"</span><span class="p">)</span>
+
+<span class="c1"># Get the width and height of the image</span>
+<span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="n">doughnut</span><span class="o">.</span><span class="n">size</span>
+
+<span class="n">center_x</span> <span class="o">=</span> <span class="n">width</span> <span class="o">//</span> <span class="mi">2</span>
+<span class="n">quarter_y</span> <span class="o">=</span> <span class="n">height</span> <span class="o">//</span> <span class="mi">4</span>
+
+<span class="c1"># Get the color of the pixel at the center of the image </span>
+<span class="c1"># and a quarter of the way down from the top of the image</span>
+<span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">doughnut</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="n">center_x</span><span class="p">,</span> <span class="n">quarter_y</span><span class="p">))</span>
+
+<span class="c1"># gets the color of the top-left pixel</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Red: </span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Green: </span><span class="si">{</span><span class="n">g</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Blue: </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Red: 255
+Green: 139
+Blue: 184
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
