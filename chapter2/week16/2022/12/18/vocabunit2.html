@@ -949,6 +949,14 @@ Blue: 184
 <h2 id="Lossless-and-Lossy-Compression-Code-Example">
 <a class="anchor" href="#Lossless-and-Lossy-Compression-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lossless and Lossy Compression Code Example<a class="anchor-link" href="#Lossless-and-Lossy-Compression-Code-Example"> </a>
 </h2>
+<p>As seen, the lossy image is orders of magnitude smaller than the lossless image, around 7.55 times smaller in fact <code>(see the code below)</code>. This is due to the fact that lossy compression is able to remove some of the data from the image to achieve more efficient compression, unlike lossless compression, which is able to compress the image without removing any data. This is why the use of lossy compression, when possible, can save costs in commercial applications. As seen in the implementation of lossy compression in software such as Apple Music and Spotify, where lossy compression is used for most songs and non-premium users. Can you tell the difference between the lossy and lossless image?</p>
+<p><code>Orginal Image:</code>
+<img src="https://github.com/Tirth-Thakkar/APCSP-Blog/blob/master/images/Profile.jpg?raw=true" alt="Orginal Image"></p>
+<p><code>Lossy Compressed Image:</code>
+<img src="https://github.com/Tirth-Thakkar/APCSP-Blog/blob/master/images/image_compressed_lossy.jpg?raw=true" alt="Lossy Compressed Image"></p>
+<p><code>Lossless Compressed Image:</code>
+<img src="https://github.com/Tirth-Thakkar/APCSP-Blog/blob/master/images/image_compressed_lossless.png?raw=true" alt="Lossless Compressed Image"></p>
+
 </div>
 </div>
 </div>
@@ -977,22 +985,6 @@ Blue: 184
 <span class="c1"># Prints the file sizes</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Lossy image size: </span><span class="si">{</span><span class="n">lossy_size</span><span class="si">}</span><span class="s2"> bytes"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Lossless image size: </span><span class="si">{</span><span class="n">lossless_size</span><span class="si">}</span><span class="s2"> bytes"</span><span class="p">)</span>
-
-<span class="c1"># As seen the Lossy image is orders of magnitude </span>
-<span class="c1"># smaller than the lossless image around 7.55</span>
-<span class="c1"># times smaller in fact this is due to the fact</span>
-<span class="c1"># that lossy compression is able to remove some </span>
-<span class="c1"># of the data from the image to get much more </span>
-<span class="c1"># effecient compression unlike the lossless</span>
-<span class="c1"># compression which is able to compress the image</span>
-<span class="c1"># without removing any data from the image. This </span>
-<span class="c1"># is why through the use of lossy compression </span>
-<span class="c1"># when possilbe costs are able to be saved in </span>
-<span class="c1"># commercial applications. </span>
-<span class="c1"># As seen in the implementation of lossy</span>
-<span class="c1"># compression in software such as Apple Music </span>
-<span class="c1"># and Spotify where Lossy compression is used for </span>
-<span class="c1"># most songs and non premium users.</span>
 </pre></div>
 
     </div>
