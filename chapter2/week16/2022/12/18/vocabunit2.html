@@ -387,11 +387,18 @@ Binary equivalent: 0b10100101
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">byte</span> <span class="o">=</span> <span class="mh">0xA5</span>
 
-<span class="c1"># Extract the high nibble (the four most significant bits) uses the bitwise right shift operator so that is shifts the most 4 most important bits(high nibble) to the right discard the 4 less significant bits (low nibble)</span>
+<span class="c1"># Extract the high nibble (the four most significant bits)</span>
+<span class="c1"># uses the bitwise right shift operator so that is shifts </span>
+<span class="c1"># the most 4 most important bits(high nibble) to the right </span>
+<span class="c1"># discard the 4 less significant bits (low nibble)</span>
 
 <span class="n">high_nibble</span> <span class="o">=</span> <span class="n">byte</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span>
 
-<span class="c1"># Extract the low nibble (the four least significant bits) through the use of the bitwise and operator as the 0x0F represents the last for bits thus through the program it does the inverse of what the first portion does and extracts the 4 least significant bits which would be the low nibble</span>
+<span class="c1"># Extract the low nibble (the four least significant bits) </span>
+<span class="c1"># through the use of the bitwise and operator as the 0x0F </span>
+<span class="c1"># represents the last for bits thus through the program it </span>
+<span class="c1"># does the inverse of what the first portion does and extracts</span>
+<span class="c1"># the 4 least significant bits which would be the low nibble</span>
 
 <span class="n">low_nibble</span> <span class="o">=</span> <span class="n">byte</span> <span class="o">&amp;</span> <span class="mh">0x0F</span>
 
