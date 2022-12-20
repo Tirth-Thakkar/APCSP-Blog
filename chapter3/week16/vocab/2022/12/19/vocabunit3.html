@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      14 min read
     
 </span></p>
 
@@ -508,7 +508,7 @@ You have been bumbled!
 </h2>
 <ul>
 <li>Category: Managing Complexity with Variables</li>
-<li>Definition: 2D Lists also reffered to as matrixes are lists of lists. They are used to store data in a tabular form. For example, a list of lists can be used to store rows and columns of data. The following code creates a 2D list with 3 rows and 2 columns.</li>
+<li>Definition: 2D Lists also reffered to as matrixes are lists of lists. They are used to store data in a tabular form. For example, a list of lists can be used to store rows and columns of data. Complexity can be manged through the use of 2D lists by storing and being able to manipulate data in a more manageable way for instance it can be stored in a tabular form so for instance you could make it so that a coulum represents a field and a row represents a record. Using these types of lists data can also be categorized in a better manner as it allows you to store related data together. Or for algorithms that require you to stored in a grid like structure such as a maze or a game board, or image processing.</li>
 </ul>
 <h2 id="2D-Lists-Code-Example">
 <a class="anchor" href="#2D-Lists-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>2D Lists Code Example<a class="anchor-link" href="#2D-Lists-Code-Example"> </a>
@@ -516,6 +516,147 @@ You have been bumbled!
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">keyboard</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">"`"</span><span class="p">,</span> <span class="s2">"1"</span><span class="p">,</span> <span class="s2">"2"</span><span class="p">,</span> <span class="s2">"3"</span><span class="p">,</span> <span class="s2">"4"</span><span class="p">,</span> <span class="s2">"5"</span><span class="p">,</span> <span class="s2">"6"</span><span class="p">,</span> <span class="s2">"7"</span><span class="p">,</span> <span class="s2">"8"</span><span class="p">,</span> <span class="s2">"9"</span><span class="p">,</span> <span class="s2">"0"</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">"Q"</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">,</span> <span class="s2">"R"</span><span class="p">,</span> <span class="s2">"T"</span><span class="p">,</span> <span class="s2">"Y"</span><span class="p">,</span> <span class="s2">"U"</span><span class="p">,</span> <span class="s2">"I"</span><span class="p">,</span> <span class="s2">"O"</span><span class="p">,</span> <span class="s2">"P"</span><span class="p">,</span> <span class="s2">"["</span><span class="p">,</span> <span class="s2">"]"</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"S"</span><span class="p">,</span> <span class="s2">"D"</span><span class="p">,</span> <span class="s2">"F"</span><span class="p">,</span> <span class="s2">"G"</span><span class="p">,</span> <span class="s2">"H"</span><span class="p">,</span> <span class="s2">"J"</span><span class="p">,</span> <span class="s2">"K"</span><span class="p">,</span> <span class="s2">"L"</span><span class="p">,</span> <span class="s2">";"</span><span class="p">,</span> <span class="s2">"'"</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">"Z"</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"V"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"N"</span><span class="p">,</span> <span class="s2">"M"</span><span class="p">,</span> <span class="s2">","</span><span class="p">,</span> <span class="s2">"."</span><span class="p">,</span> <span class="s2">"/"</span><span class="p">]]</span>
+
+<span class="k">def</span> <span class="nf">printer</span><span class="p">(</span><span class="n">keyboard</span><span class="p">):</span>
+    <span class="n">rsp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Month: "</span><span class="p">)</span>
+    <span class="n">rsp2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Age: "</span><span class="p">)</span>
+    <span class="n">solve_rsp</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+    <span class="n">solve_rsp2</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp2</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Month Born:"</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">solve_rsp</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">letter</span> <span class="ow">in</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">keyboard</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">letter</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"You have entered an invalid character"</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Age:"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">" "</span><span class="p">)</span>        
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">solve_rsp2</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">letter</span> <span class="ow">in</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">keyboard</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">letter</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"You have entered an invalid character"</span><span class="p">)</span>
+
+<span class="n">printer</span><span class="p">(</span><span class="n">keyboard</span><span class="p">)</span>
+
+<span class="c1"># Here is an example of a program that uses a 2d list to store the charectors of the keyboard</span>
+<span class="c1"># The program then asks the user to enter a month and age and then prints the charectors of the</span>
+<span class="c1"># month and age if they are in the keyboard list so for instance if the charectors are not in </span>
+<span class="c1"># the keyboard list it will print not a valid charector. </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Month Born: DECEMBER
+Age: 16</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">keyboard</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">"`"</span><span class="p">,</span> <span class="s2">"1"</span><span class="p">,</span> <span class="s2">"2"</span><span class="p">,</span> <span class="s2">"3"</span><span class="p">,</span> <span class="s2">"4"</span><span class="p">,</span> <span class="s2">"5"</span><span class="p">,</span> <span class="s2">"6"</span><span class="p">,</span> <span class="s2">"7"</span><span class="p">,</span> <span class="s2">"8"</span><span class="p">,</span> <span class="s2">"9"</span><span class="p">,</span> <span class="s2">"0"</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">"Q"</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">,</span> <span class="s2">"R"</span><span class="p">,</span> <span class="s2">"T"</span><span class="p">,</span> <span class="s2">"Y"</span><span class="p">,</span> <span class="s2">"U"</span><span class="p">,</span> <span class="s2">"I"</span><span class="p">,</span> <span class="s2">"O"</span><span class="p">,</span> <span class="s2">"P"</span><span class="p">,</span> <span class="s2">"["</span><span class="p">,</span> <span class="s2">"]"</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"S"</span><span class="p">,</span> <span class="s2">"D"</span><span class="p">,</span> <span class="s2">"F"</span><span class="p">,</span> <span class="s2">"G"</span><span class="p">,</span> <span class="s2">"H"</span><span class="p">,</span> <span class="s2">"J"</span><span class="p">,</span> <span class="s2">"K"</span><span class="p">,</span> <span class="s2">"L"</span><span class="p">,</span> <span class="s2">";"</span><span class="p">,</span> <span class="s2">"'"</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">"Z"</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"V"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"N"</span><span class="p">,</span> <span class="s2">"M"</span><span class="p">,</span> <span class="s2">","</span><span class="p">,</span> <span class="s2">"."</span><span class="p">,</span> <span class="s2">"/"</span><span class="p">]]</span>
+
+<span class="k">def</span> <span class="nf">printer</span><span class="p">(</span><span class="n">keyboard</span><span class="p">):</span>
+    <span class="n">rsp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Month: "</span><span class="p">)</span> <span class="c1"># Input סֶפּטֶמבֶּר</span>
+    <span class="n">rsp2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Age: "</span><span class="p">)</span> <span class="c1"># Input חמישים וחמש</span>
+    <span class="n">solve_rsp</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+    <span class="n">solve_rsp2</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp2</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Month Born:"</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">solve_rsp</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">letter</span> <span class="ow">in</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">keyboard</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">letter</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"You have entered an invalid character"</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Age:"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">" "</span><span class="p">)</span>        
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">solve_rsp2</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">letter</span> <span class="ow">in</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">keyboard</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">letter</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"You have entered an invalid character"</span><span class="p">)</span>
+
+<span class="n">printer</span><span class="p">(</span><span class="n">keyboard</span><span class="p">)</span>
+
+<span class="c1"># According to google translate the month is September and the age is fifty and five in hebrew</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Month Born: You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+
+Age: You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+You have entered an invalid character
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -524,7 +665,7 @@ You have been bumbled!
 </h2>
 <ul>
 <li>Category: Managing Complexity with Variables</li>
-<li>Defintion: A dictionary stores (key, value) pairs, similar to a Map in Java or an object in Javascript. Dictionaries are optimized to retrieve values when the key is known. In Python, a dictionary is created by placing a sequence of elements within curly {} braces, separated by ‘comma’. Dictionary holds a pair of values, one being the Key and the other corresponding pair element being its Key:value. Values in a dictionary can be of any datatype and can be duplicated, whereas keys can’t be repeated and must be immutable. Dictionaries are optimized to retrieve values when the key is known. Python’s dictionaries are kind of hash table type. It consists of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.</li>
+<li>Defintion: A dictionary stores (key, value) pairs, similar to a Map in Java or an object in Javascript. Dictionaries are optimized to retrieve values when the key is known. In Python, a dictionary is created by placing a sequence of elements within curly {} braces, separated by ‘comma’. Dictionary holds a pair of values, one being the Key and the other corresponding pair element being its Key:value. Values in a dictionary can be of any datatype and can be duplicated, whereas keys can’t be repeated and must be immutable. Dictionaries are optimized to retrieve values when the key is known. Python’s dictionaries are kind of hash table type. It consists of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object. This can be used to mangage complexity as through storing key and value pairs it can prevent the need for things like having a secondary list to store the values of a key. This can also be used to store data in a more organized manner as it can be used to store data in a way that is more easily accessible. For instance if you were to store a list of students and their grades you could use a dictionary to store the students name as the key and the grade as the value. This would allow you to easily access the grade of a student by simply using the students name as the key.</li>
 </ul>
 <h2 id="Dictionaries-Code-Example">
 <a class="anchor" href="#Dictionaries-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dictionaries Code Example<a class="anchor-link" href="#Dictionaries-Code-Example"> </a>
@@ -532,6 +673,71 @@ You have been bumbled!
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Q_Bank</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"Dynamic code is code that has inputs and outputs that can change?"</span><span class="p">:</span><span class="s2">"true"</span><span class="p">,</span>
+    <span class="s2">"What is the keyword for defining a function in Python?"</span><span class="p">:</span> <span class="s2">"def"</span><span class="p">,</span>
+    <span class="s2">"In Jupyter Notebooks the Input is in line with the Output"</span><span class="p">:</span> <span class="s2">"false"</span><span class="p">,</span>
+    <span class="s2">"What is grouping often used commands called?"</span><span class="p">:</span> <span class="s2">"procedural abstraction"</span><span class="p">,</span>
+    <span class="s2">"Is Mr.Mortenson them most handsome man on the planet?"</span><span class="p">:</span> <span class="s2">"true"</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">Q</span><span class="p">,</span> <span class="n">ans</span> <span class="ow">in</span> <span class="n">Q_Bank</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
+    <span class="n">rsp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="n">ans</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your answer </span><span class="si">{</span><span class="n">rsp</span><span class="si">}</span><span class="s2"> is the correct answer"</span><span class="p">)</span>
+        <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your answer </span><span class="si">{</span><span class="n">rsp</span><span class="si">}</span><span class="s2"> doesn't equal the correct answer/s which is </span><span class="si">{</span><span class="n">ans</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your score is </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2"> out of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">Q_Bank</span><span class="p">)</span><span class="si">}</span><span class="s2"> points."</span><span class="p">)</span>
+
+<span class="c1"># Uses a dictionary to store the questions and answers and a value pair associated with each question</span>
+<span class="c1"># to store the answer to the question. Then a for loop is used to iterate through the dictionary and</span>
+<span class="c1"># then print the question and ask the user to enter the answer. If the answer matches the value in the dictionary</span>
+<span class="c1"># it informs the user that they were correct and then adds one to the score. If the answer is incorrect it informs</span>
+<span class="c1"># the user that they were incorrect and then prints the correct answer. Once the for loop has finished it prints</span>
+<span class="c1"># the users score out of the total number of questions.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dynamic code is code that has inputs and outputs that can change?
+Your answer true is the correct answer
+What is the keyword for defining a function in Python?
+Your answer def is the correct answer
+In Jupyter Notebooks the Input is in line with the Output
+Your answer false is the correct answer
+What is grouping often used commands called?
+Your answer bundles doesn't equal the correct answer/s which is procedural abstraction
+Is Mr.Mortenson them most handsome man on the planet?
+Your answer true is the correct answer
+Your score is 4 out of 5 points.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
