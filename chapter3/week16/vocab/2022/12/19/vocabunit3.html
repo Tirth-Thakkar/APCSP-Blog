@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      16 min read
+      18 min read
     
 </span></p>
 
@@ -118,6 +118,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Dictionaries">Dictionaries </a></li>
 <li class="toc-entry toc-h2"><a href="#Dictionaries-Code-Example">Dictionaries Code Example </a></li>
 <li class="toc-entry toc-h2"><a href="#Class-Expressions">Class Expressions </a></li>
+<li class="toc-entry toc-h2"><a href="#Sequences">Sequences </a></li>
+<li class="toc-entry toc-h2"><a href="#Sequences-Code-Example">Sequences Code Example </a></li>
 </ul>
 </li>
 </ul><!--
@@ -217,20 +219,20 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">def</span> <span class="nx">rectangle_area</span><span class="p">()</span><span class="o">:</span>
-    <span class="nx">width</span> <span class="o">=</span> <span class="kr">int</span><span class="p">(</span><span class="nx">input</span><span class="p">(</span><span class="s2">"Enter the width of the rectangle: "</span><span class="p">))</span>
-    <span class="nx">height</span> <span class="o">=</span> <span class="kr">int</span><span class="p">(</span><span class="nx">input</span><span class="p">(</span><span class="s2">"Enter the height of the rectangle: "</span><span class="p">))</span>
-    <span class="nx">unit</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="s2">"Enter the unit of measurement: "</span><span class="p">)</span>
-    <span class="nx">area</span> <span class="o">=</span> <span class="nx">width</span> <span class="o">*</span> <span class="nx">height</span>
-    <span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="s2">"The area of the rectangle is: {area} square {unit}"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">rectangle_area</span><span class="p">():</span>
+    <span class="n">width</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the width of the rectangle: "</span><span class="p">))</span>
+    <span class="n">height</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the height of the rectangle: "</span><span class="p">))</span>
+    <span class="n">unit</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the unit of measurement: "</span><span class="p">)</span>
+    <span class="n">area</span> <span class="o">=</span> <span class="n">width</span> <span class="o">*</span> <span class="n">height</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The area of the rectangle is: </span><span class="si">{</span><span class="n">area</span><span class="si">}</span><span class="s2"> square </span><span class="si">{</span><span class="n">unit</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
-<span class="nx">rectangle_area</span><span class="p">()</span>
+<span class="n">rectangle_area</span><span class="p">()</span>
 
-<span class="err">#</span> <span class="nx">Through</span> <span class="nx">assigning</span> <span class="nx">variables</span> <span class="nx">the</span> <span class="nx">program</span> <span class="nx">is</span> <span class="nx">able</span> <span class="nx">to</span> <span class="nx">store</span> <span class="nx">the</span> 
-<span class="err">#</span> <span class="nx">imputted</span> <span class="nx">values</span> <span class="nx">and</span> <span class="nx">use</span> <span class="nx">them</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">calculation</span> <span class="k">of</span> <span class="nx">the</span> <span class="nx">area</span><span class="p">.</span>
-<span class="err">#</span> <span class="nx">The</span> <span class="nx">program</span> <span class="nx">is</span> <span class="nx">also</span> <span class="nx">able</span> <span class="nx">to</span> <span class="nx">print</span> <span class="nx">the</span> <span class="nx">result</span> <span class="k">of</span> <span class="nx">the</span> <span class="nx">calculation</span><span class="p">.</span>
-<span class="err">#</span> <span class="nx">Without</span> <span class="nx">variables</span> <span class="nx">the</span> <span class="nx">program</span> <span class="nx">would</span> <span class="nx">not</span> <span class="nx">be</span> <span class="nx">able</span> <span class="nx">to</span> <span class="nx">store</span> <span class="nx">the</span> <span class="nx">values</span>
-<span class="err">#</span> <span class="nx">and</span> <span class="nx">would</span> <span class="nx">not</span> <span class="nx">be</span> <span class="nx">able</span> <span class="nx">to</span> <span class="nx">print</span> <span class="nx">the</span> <span class="nx">result</span> <span class="k">of</span> <span class="nx">the</span> <span class="nx">calculation</span><span class="p">.</span>
+<span class="c1"># Through assigning variables the program is able to store the </span>
+<span class="c1"># imputted values and use them in the calculation of the area.</span>
+<span class="c1"># The program is also able to print the result of the calculation.</span>
+<span class="c1"># Without variables the program would not be able to store the values</span>
+<span class="c1"># and would not be able to print the result of the calculation.</span>
 </pre></div>
 
     </div>
@@ -288,14 +290,14 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">Data</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="s2">"Hello"</span><span class="p">,</span> <span class="nx">True</span><span class="p">,</span> <span class="p">[</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">],</span> <span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">),</span> <span class="p">{</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">},</span> <span class="p">{</span><span class="s2">"a"</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span> <span class="s2">"b"</span><span class="o">:</span> <span class="mf">2</span><span class="p">,</span> <span class="s2">"c"</span><span class="o">:</span> <span class="mf">3</span><span class="p">}]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="s2">"Hello"</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span> <span class="p">{</span><span class="s2">"a"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">:</span> <span class="mi">3</span><span class="p">}]</span>
 
-<span class="k">for</span> <span class="nx">datatype</span> <span class="k">in</span> <span class="nx">Data</span><span class="o">:</span>
-    <span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="s2">"\n{datatype} is of {type(datatype)}"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">datatype</span> <span class="ow">in</span> <span class="n">Data</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="si">{</span><span class="n">datatype</span><span class="si">}</span><span class="s2"> is of </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">datatype</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
-<span class="err">#</span> <span class="nx">This</span> <span class="nx">program</span> <span class="nx">showcases</span> <span class="nx">the</span> <span class="nx">different</span> <span class="nx">data</span> <span class="nx">types</span> <span class="k">in</span> <span class="nx">Python</span><span class="p">.</span> <span class="nx">The</span> <span class="nx">program</span> <span class="nx">doesn</span><span class="err">'</span><span class="nx">t</span>
-<span class="err">#</span> <span class="nx">contain</span> <span class="nx">all</span> <span class="nx">the</span> <span class="nx">data</span> <span class="nx">types</span> <span class="k">in</span> <span class="nx">python</span> <span class="nx">but</span> <span class="nx">illustrates</span> <span class="nx">a</span> <span class="nx">few</span> <span class="k">of</span> <span class="nx">the</span> <span class="nx">main</span> <span class="nx">ones</span><span class="p">.</span> 
-<span class="err">#</span> <span class="nx">BTW</span> <span class="nx">at</span> <span class="nx">index</span> <span class="mf">6</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">list</span> <span class="nx">is</span> <span class="nx">the</span> <span class="nx">object</span> <span class="nx">is</span> <span class="nx">a</span> <span class="nx">set</span><span class="p">,</span> <span class="nx">not</span> <span class="nx">a</span> <span class="nx">dictionary</span><span class="p">.</span>
+<span class="c1"># This program showcases the different data types in Python. The program doesn't</span>
+<span class="c1"># contain all the data types in python but illustrates a few of the main ones. </span>
+<span class="c1"># BTW at index 6 in the list is the object is a set, not a dictionary.</span>
 </pre></div>
 
     </div>
@@ -357,54 +359,54 @@ True is of &lt;class 'bool'&gt;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kr">import</span> <span class="nx">random</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
 
-<span class="nx">def</span> <span class="nx">bubmler</span><span class="p">()</span><span class="o">:</span>
-    <span class="err">#</span> <span class="nx">Variable</span> <span class="nx">Declaration</span>
-    <span class="nx">runs</span> <span class="o">=</span> <span class="mf">0</span>
-    <span class="nx">temp_itmes</span> <span class="o">=</span> <span class="mf">0</span>
-    <span class="nx">bundle</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="err">#</span> <span class="nx">Comedic</span> <span class="nx">Prints</span> <span class="nx">used</span> <span class="nx">to</span> <span class="nx">make</span> <span class="nx">the</span> <span class="nx">program</span> <span class="nx">more</span> <span class="nx">fun</span>
-    <span class="nx">print</span><span class="p">(</span><span class="s2">"Oh no the Bubmbler has gotten hold of you your shopping is going to be bumbled!"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">bubmler</span><span class="p">():</span>
+    <span class="c1"># Variable Declaration</span>
+    <span class="n">runs</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">temp_itmes</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">bundle</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># Comedic Prints used to make the program more fun</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Oh no the Bubmbler has gotten hold of you your shopping is going to be bumbled!"</span><span class="p">)</span>
     
-    <span class="err">#</span> <span class="nx">User</span> <span class="nx">input</span> <span class="k">for</span> <span class="nx">the</span> <span class="nx">number</span> <span class="k">of</span> <span class="nx">items</span> <span class="nx">the</span> <span class="nx">bumbler</span> <span class="nx">has</span> <span class="nx">gotten</span> <span class="nx">hold</span> <span class="k">of</span> <span class="nx">to</span> <span class="nx">iterate</span> <span class="nx">through</span>
-    <span class="nx">items</span> <span class="o">=</span> <span class="kr">int</span><span class="p">(</span><span class="nx">input</span><span class="p">(</span><span class="s2">"How many objects did the bumbler get hold of?"</span><span class="p">))</span>
+    <span class="c1"># User input for the number of items the bumbler has gotten hold of to iterate through</span>
+    <span class="n">items</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"How many objects did the bumbler get hold of?"</span><span class="p">))</span>
     
-    <span class="err">#</span> <span class="nx">Prints</span> <span class="nx">the</span> <span class="nx">number</span> <span class="k">of</span> <span class="nx">items</span> <span class="nx">the</span> <span class="nx">bumbler</span> <span class="nx">has</span> <span class="nx">gotten</span> <span class="nx">hold</span> <span class="k">of</span>
-    <span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="s2">"The Bumbler has gotten hold of {items} items beware they will be bumbled!"</span><span class="p">)</span>
+    <span class="c1"># Prints the number of items the bumbler has gotten hold of</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The Bumbler has gotten hold of </span><span class="si">{</span><span class="n">items</span><span class="si">}</span><span class="s2"> items beware they will be bumbled!"</span><span class="p">)</span>
     
-    <span class="err">#</span> <span class="nx">The</span> <span class="nx">use</span> <span class="k">of</span> <span class="nx">the</span> <span class="o">=</span> <span class="nx">assignment</span> <span class="nx">operator</span> <span class="nx">is</span> <span class="nx">used</span> <span class="nx">to</span> <span class="nx">assign</span> <span class="nx">the</span> <span class="nx">value</span> <span class="k">of</span> <span class="nx">items</span> <span class="nx">to</span> <span class="nx">temp_items</span>
-    <span class="nx">temp_itmes</span> <span class="o">=</span> <span class="nx">items</span>
+    <span class="c1"># The use of the = assignment operator is used to assign the value of items to temp_items</span>
+    <span class="n">temp_itmes</span> <span class="o">=</span> <span class="n">items</span>
     
-    <span class="err">#</span> <span class="nx">Uses</span> <span class="nx">the</span> <span class="o">-=</span> <span class="nx">operator</span> <span class="nx">to</span> <span class="nx">decrement</span> <span class="nx">the</span> <span class="nx">value</span> <span class="k">of</span> <span class="nx">temp_items</span> <span class="nx">by</span> <span class="mf">1</span>
-    <span class="err">#</span> <span class="nx">The</span> <span class="k">while</span> <span class="nx">loop</span> <span class="nx">is</span> <span class="nx">used</span> <span class="nx">to</span> <span class="nx">iterate</span> <span class="nx">through</span> <span class="nx">the</span> <span class="nx">number</span> <span class="k">of</span> <span class="nx">items</span> <span class="nx">the</span> <span class="nx">bumbler</span> <span class="nx">has</span> <span class="nx">gotten</span> <span class="nx">hold</span> <span class="k">of</span>
-    <span class="err">#</span> <span class="nx">The</span> <span class="nx">input</span> <span class="kd">function</span> <span class="nx">is</span> <span class="nx">used</span> <span class="nx">to</span> <span class="nx">get</span> <span class="nx">the</span> <span class="nx">name</span> <span class="k">of</span> <span class="nx">the</span> <span class="nx">object</span> <span class="nx">the</span> <span class="nx">bumbler</span> <span class="nx">has</span> <span class="nx">gotten</span> <span class="nx">hold</span> <span class="k">of</span>
-    <span class="k">while</span> <span class="nx">temp_itmes</span> <span class="o">&gt;</span> <span class="mf">0</span><span class="o">:</span>
-        <span class="nx">ToBeBumbled</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="s2">"What object did the bumbler get hold of?"</span><span class="p">)</span>
-        <span class="nx">bundle</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">ToBeBumbled</span><span class="p">)</span>
-        <span class="nx">temp_itmes</span> <span class="o">-=</span> <span class="mf">1</span>
+    <span class="c1"># Uses the -= operator to decrement the value of temp_items by 1</span>
+    <span class="c1"># The while loop is used to iterate through the number of items the bumbler has gotten hold of</span>
+    <span class="c1"># The input function is used to get the name of the object the bumbler has gotten hold of</span>
+    <span class="k">while</span> <span class="n">temp_itmes</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">ToBeBumbled</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What object did the bumbler get hold of?"</span><span class="p">)</span>
+        <span class="n">bundle</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ToBeBumbled</span><span class="p">)</span>
+        <span class="n">temp_itmes</span> <span class="o">-=</span> <span class="mi">1</span>
     
-    <span class="err">#</span> <span class="nx">Tells</span> <span class="nx">the</span> <span class="nx">user</span> <span class="nx">what</span> <span class="nx">items</span> <span class="nx">the</span> <span class="nx">bumbler</span> <span class="nx">has</span> <span class="nx">gotten</span> <span class="nx">hold</span> <span class="k">of</span>
-    <span class="nx">print</span><span class="p">(</span><span class="s2">"The Bumbler has gotten hold of these items: "</span><span class="p">)</span>
-    <span class="nx">print</span><span class="p">(</span><span class="o">*</span><span class="nx">bundle</span><span class="p">,</span> <span class="nx">sep</span><span class="o">=</span><span class="s2">", "</span><span class="p">)</span>
+    <span class="c1"># Tells the user what items the bumbler has gotten hold of</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"The Bumbler has gotten hold of these items: "</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">bundle</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">", "</span><span class="p">)</span>
 
-    <span class="err">#</span> <span class="nx">Uses</span> <span class="nx">random</span><span class="p">.</span><span class="nx">shuffle</span> <span class="nx">to</span> <span class="nx">shuffle</span> <span class="nx">the</span> <span class="nx">items</span> <span class="nx">the</span> <span class="nx">bumbler</span> <span class="nx">has</span> <span class="nx">gotten</span> <span class="nx">hold</span> <span class="k">of</span>
-    <span class="err">#</span> <span class="nx">Uses</span> <span class="nx">random</span><span class="p">.</span><span class="nx">randint</span> <span class="nx">to</span> <span class="nx">generate</span> <span class="nx">a</span> <span class="nx">random</span> <span class="nx">number</span> <span class="nx">between</span> <span class="mf">0</span> <span class="nx">and</span> <span class="nx">the</span> <span class="nx">number</span> 
-    <span class="err">#</span> <span class="k">of</span> <span class="nx">items</span> <span class="nx">the</span> <span class="nx">bumbler</span> <span class="nx">has</span> <span class="nx">gotten</span> <span class="nx">hold</span> <span class="k">of</span> <span class="nx">and</span> <span class="k">if</span> <span class="nx">the</span> <span class="nx">number</span> <span class="nx">is</span> <span class="mf">3</span> <span class="nx">then</span> <span class="nx">the</span>
-    <span class="err">#</span> <span class="nx">bumbler</span> <span class="nx">will</span> <span class="nx">take</span> <span class="nx">the</span> <span class="nx">item</span> <span class="k">if</span> <span class="nx">the</span> <span class="nx">bumbler</span> <span class="nx">has</span> <span class="nx">taken</span> <span class="nx">an</span> <span class="nx">item</span> <span class="nx">then</span> <span class="nx">it</span> 
-    <span class="err">#</span> <span class="nx">will</span> <span class="nx">be</span> <span class="nx">replaced</span> <span class="kd">with</span> <span class="s2">"The bumblers price"</span> <span class="nx">and</span> <span class="nx">tell</span> <span class="nx">the</span> <span class="nx">user</span> <span class="nx">they</span> <span class="nx">have</span> <span class="nx">been</span> <span class="nx">bumbled</span>
+    <span class="c1"># Uses random.shuffle to shuffle the items the bumbler has gotten hold of</span>
+    <span class="c1"># Uses random.randint to generate a random number between 0 and the number </span>
+    <span class="c1"># of items the bumbler has gotten hold of and if the number is 3 then the</span>
+    <span class="c1"># bumbler will take the item if the bumbler has taken an item then it </span>
+    <span class="c1"># will be replaced with "The bumblers price" and tell the user they have been bumbled</span>
     
-    <span class="nx">random</span><span class="p">.</span><span class="nx">shuffle</span><span class="p">(</span><span class="nx">bundle</span><span class="p">)</span>
-    <span class="k">for</span> <span class="nx">bumble</span> <span class="k">in</span> <span class="nx">bundle</span><span class="o">:</span>
-        <span class="k">if</span> <span class="nx">random</span><span class="p">.</span><span class="nx">randint</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="nx">len</span><span class="p">(</span><span class="nx">bundle</span><span class="p">))</span> <span class="o">==</span> <span class="mf">3</span><span class="o">:</span>
-            <span class="nx">location</span> <span class="o">=</span> <span class="nx">bundle</span><span class="p">.</span><span class="nx">index</span><span class="p">(</span><span class="nx">bumble</span><span class="p">)</span>
-            <span class="nx">bundle</span><span class="p">[</span><span class="nx">location</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"The bumblers price"</span>
-    <span class="nx">print</span><span class="p">(</span><span class="s2">"Your bubmbled items are: "</span><span class="p">)</span>
-    <span class="nx">print</span><span class="p">(</span><span class="o">*</span><span class="nx">bundle</span><span class="p">,</span> <span class="nx">sep</span><span class="o">=</span><span class="s2">", "</span><span class="p">)</span>
-    <span class="k">if</span> <span class="s2">"The bumblers price"</span> <span class="k">in</span> <span class="nx">bundle</span><span class="o">:</span>
-        <span class="nx">print</span><span class="p">(</span><span class="s2">"You have been bumbled!"</span><span class="p">)</span>
+    <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">bundle</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">bumble</span> <span class="ow">in</span> <span class="n">bundle</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">bundle</span><span class="p">))</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="n">location</span> <span class="o">=</span> <span class="n">bundle</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">bumble</span><span class="p">)</span>
+            <span class="n">bundle</span><span class="p">[</span><span class="n">location</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"The bumblers price"</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Your bubmbled items are: "</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">bundle</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">", "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="s2">"The bumblers price"</span> <span class="ow">in</span> <span class="n">bundle</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"You have been bumbled!"</span><span class="p">)</span>
 
-<span class="nx">bubmler</span><span class="p">()</span>
+<span class="n">bubmler</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -457,25 +459,25 @@ You have been bumbled!
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">def</span> <span class="nx">flowers</span><span class="p">()</span><span class="o">:</span>
-    <span class="err">#</span> <span class="nx">Variable</span> <span class="nx">Declaration</span>
-    <span class="nx">flower</span> <span class="o">=</span> <span class="s2">""</span>
-    <span class="nx">flower_list</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="err">#</span> <span class="nx">The</span> <span class="k">while</span> <span class="nx">loop</span> <span class="nx">is</span> <span class="nx">used</span> <span class="nx">to</span> <span class="nx">iterate</span> <span class="nx">through</span> <span class="nx">the</span> <span class="nx">number</span> <span class="k">of</span> <span class="nx">flowers</span> <span class="nx">the</span> <span class="nx">user</span> <span class="nx">has</span>
-    <span class="k">while</span> <span class="nx">flower</span> <span class="o">!=</span> <span class="s2">"done"</span><span class="o">:</span>
-        <span class="nx">flower</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="s2">"Enter a flower (type done to finish): "</span><span class="p">)</span>
-        <span class="k">if</span> <span class="nx">flower</span> <span class="o">!=</span> <span class="s2">"done"</span><span class="o">:</span>
-            <span class="nx">flower_list</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">flower</span><span class="p">)</span>
-    <span class="err">#</span> <span class="nx">The</span> <span class="k">for</span> <span class="nx">loop</span> <span class="nx">is</span> <span class="nx">used</span> <span class="nx">to</span> <span class="nx">iterate</span> <span class="nx">through</span> <span class="nx">the</span> <span class="nx">list</span> <span class="k">of</span> <span class="nx">flowers</span> <span class="nx">and</span> <span class="nx">print</span> <span class="nx">them</span>
-    <span class="k">for</span> <span class="nx">flower</span> <span class="k">in</span> <span class="nx">flower_list</span><span class="o">:</span>
-        <span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="s2">" {flower} are blooming this year."</span><span class="p">)</span>
-<span class="nx">flowers</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">flowers</span><span class="p">():</span>
+    <span class="c1"># Variable Declaration</span>
+    <span class="n">flower</span> <span class="o">=</span> <span class="s2">""</span>
+    <span class="n">flower_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># The while loop is used to iterate through the number of flowers the user has</span>
+    <span class="k">while</span> <span class="n">flower</span> <span class="o">!=</span> <span class="s2">"done"</span><span class="p">:</span>
+        <span class="n">flower</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a flower (type done to finish): "</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">flower</span> <span class="o">!=</span> <span class="s2">"done"</span><span class="p">:</span>
+            <span class="n">flower_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">flower</span><span class="p">)</span>
+    <span class="c1"># The for loop is used to iterate through the list of flowers and print them</span>
+    <span class="k">for</span> <span class="n">flower</span> <span class="ow">in</span> <span class="n">flower_list</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">" </span><span class="si">{</span><span class="n">flower</span><span class="si">}</span><span class="s2"> are blooming this year."</span><span class="p">)</span>
+<span class="n">flowers</span><span class="p">()</span>
 
-<span class="err">#</span> <span class="nx">Creates</span> <span class="nx">a</span> <span class="nx">list</span> <span class="nx">called</span> <span class="nx">flower_list</span> <span class="nx">then</span> <span class="nx">then</span> <span class="nx">the</span> <span class="nx">user</span> <span class="nx">is</span> <span class="nx">asked</span> <span class="nx">to</span> <span class="nx">enter</span> <span class="nx">a</span> <span class="nx">flower</span>
-<span class="err">#</span> <span class="nx">until</span> <span class="nx">they</span> <span class="nx">type</span> <span class="nx">done</span><span class="p">.</span> <span class="nx">Then</span> <span class="nx">a</span> <span class="k">for</span> <span class="nx">loop</span> <span class="nx">is</span> <span class="nx">used</span> <span class="nx">to</span> <span class="nx">iterate</span> <span class="nx">through</span> <span class="nx">the</span> <span class="nx">list</span> <span class="k">of</span> <span class="nx">flowers</span>
-<span class="err">#</span> <span class="nx">and</span> <span class="nx">print</span> <span class="nx">then</span> <span class="nx">print</span> <span class="nx">that</span> <span class="nx">they</span> <span class="nx">are</span> <span class="nx">blooming</span> <span class="k">this</span> <span class="nx">year</span><span class="p">.</span> <span class="nx">This</span> <span class="nx">code</span> <span class="nx">could</span> <span class="nx">be</span> <span class="nx">adapted</span> <span class="nx">by</span> 
-<span class="err">#</span> <span class="nx">adding</span> <span class="nx">a</span> <span class="nx">more</span> <span class="nx">usefull</span> <span class="nx">opeation</span> <span class="nx">that</span> <span class="nx">could</span> <span class="nx">be</span> <span class="nx">done</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">list</span><span class="p">.</span> 
-<span class="err">#</span> <span class="nx">To</span> <span class="nx">see</span> <span class="nx">an</span> <span class="nx">example</span> <span class="nx">that</span> <span class="nx">incorperates</span> <span class="k">this</span> <span class="nx">see</span> <span class="nx">the</span> <span class="nx">bumbler</span> <span class="nx">program</span> <span class="nx">above</span><span class="p">.</span>
+<span class="c1"># Creates a list called flower_list then then the user is asked to enter a flower</span>
+<span class="c1"># until they type done. Then a for loop is used to iterate through the list of flowers</span>
+<span class="c1"># and print then print that they are blooming this year. This code could be adapted by </span>
+<span class="c1"># adding a more usefull opeation that could be done to the list. </span>
+<span class="c1"># To see an example that incorperates this see the bumbler program above. </span>
 </pre></div>
 
     </div>
@@ -524,37 +526,37 @@ You have been bumbled!
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">keyboard</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">"`"</span><span class="p">,</span> <span class="s2">"1"</span><span class="p">,</span> <span class="s2">"2"</span><span class="p">,</span> <span class="s2">"3"</span><span class="p">,</span> <span class="s2">"4"</span><span class="p">,</span> <span class="s2">"5"</span><span class="p">,</span> <span class="s2">"6"</span><span class="p">,</span> <span class="s2">"7"</span><span class="p">,</span> <span class="s2">"8"</span><span class="p">,</span> <span class="s2">"9"</span><span class="p">,</span> <span class="s2">"0"</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">],</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">keyboard</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">"`"</span><span class="p">,</span> <span class="s2">"1"</span><span class="p">,</span> <span class="s2">"2"</span><span class="p">,</span> <span class="s2">"3"</span><span class="p">,</span> <span class="s2">"4"</span><span class="p">,</span> <span class="s2">"5"</span><span class="p">,</span> <span class="s2">"6"</span><span class="p">,</span> <span class="s2">"7"</span><span class="p">,</span> <span class="s2">"8"</span><span class="p">,</span> <span class="s2">"9"</span><span class="p">,</span> <span class="s2">"0"</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">],</span>
             <span class="p">[</span><span class="s2">"Q"</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">,</span> <span class="s2">"R"</span><span class="p">,</span> <span class="s2">"T"</span><span class="p">,</span> <span class="s2">"Y"</span><span class="p">,</span> <span class="s2">"U"</span><span class="p">,</span> <span class="s2">"I"</span><span class="p">,</span> <span class="s2">"O"</span><span class="p">,</span> <span class="s2">"P"</span><span class="p">,</span> <span class="s2">"["</span><span class="p">,</span> <span class="s2">"]"</span><span class="p">],</span>
             <span class="p">[</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"S"</span><span class="p">,</span> <span class="s2">"D"</span><span class="p">,</span> <span class="s2">"F"</span><span class="p">,</span> <span class="s2">"G"</span><span class="p">,</span> <span class="s2">"H"</span><span class="p">,</span> <span class="s2">"J"</span><span class="p">,</span> <span class="s2">"K"</span><span class="p">,</span> <span class="s2">"L"</span><span class="p">,</span> <span class="s2">";"</span><span class="p">,</span> <span class="s2">"'"</span><span class="p">],</span>
             <span class="p">[</span><span class="s2">"Z"</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"V"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"N"</span><span class="p">,</span> <span class="s2">"M"</span><span class="p">,</span> <span class="s2">","</span><span class="p">,</span> <span class="s2">"."</span><span class="p">,</span> <span class="s2">"/"</span><span class="p">]]</span>
 
-<span class="nx">def</span> <span class="nx">printer</span><span class="p">(</span><span class="nx">keyboard</span><span class="p">)</span><span class="o">:</span>
-    <span class="nx">rsp</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="s2">"Month: "</span><span class="p">)</span>
-    <span class="nx">rsp2</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="s2">"Age: "</span><span class="p">)</span>
-    <span class="nx">solve_rsp</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">+</span> <span class="nx">str</span><span class="p">(</span><span class="nx">rsp</span><span class="p">.</span><span class="nx">upper</span><span class="p">().</span><span class="nx">strip</span><span class="p">())</span>
-    <span class="nx">solve_rsp2</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">+</span> <span class="nx">str</span><span class="p">(</span><span class="nx">rsp2</span><span class="p">).</span><span class="nx">strip</span><span class="p">().</span><span class="nx">upper</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">printer</span><span class="p">(</span><span class="n">keyboard</span><span class="p">):</span>
+    <span class="n">rsp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Month: "</span><span class="p">)</span>
+    <span class="n">rsp2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Age: "</span><span class="p">)</span>
+    <span class="n">solve_rsp</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+    <span class="n">solve_rsp2</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp2</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
 
-    <span class="nx">print</span><span class="p">(</span><span class="s2">"Month Born:"</span><span class="p">,</span> <span class="nx">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
-    <span class="k">for</span> <span class="nx">letter</span> <span class="k">in</span> <span class="nx">solve_rsp</span><span class="o">:</span>
-        <span class="k">if</span> <span class="nx">any</span><span class="p">(</span><span class="nx">letter</span> <span class="k">in</span> <span class="nx">row</span> <span class="k">for</span> <span class="nx">row</span> <span class="k">in</span> <span class="nx">keyboard</span><span class="p">)</span><span class="o">:</span>
-            <span class="nx">print</span><span class="p">(</span><span class="nx">letter</span><span class="p">,</span> <span class="nx">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
-        <span class="k">else</span><span class="o">:</span> 
-            <span class="nx">print</span><span class="p">(</span><span class="s2">"You have entered an invalid character"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Month Born:"</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">solve_rsp</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">letter</span> <span class="ow">in</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">keyboard</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">letter</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"You have entered an invalid character"</span><span class="p">)</span>
 
-    <span class="nx">print</span><span class="p">(</span><span class="s2">"\nAge:"</span><span class="p">,</span> <span class="nx">end</span><span class="o">=</span><span class="s2">" "</span><span class="p">)</span>        
-    <span class="k">for</span> <span class="nx">letter</span> <span class="k">in</span> <span class="nx">solve_rsp2</span><span class="o">:</span>
-        <span class="k">if</span> <span class="nx">any</span><span class="p">(</span><span class="nx">letter</span> <span class="k">in</span> <span class="nx">row</span> <span class="k">for</span> <span class="nx">row</span> <span class="k">in</span> <span class="nx">keyboard</span><span class="p">)</span><span class="o">:</span>
-            <span class="nx">print</span><span class="p">(</span><span class="nx">letter</span><span class="p">,</span> <span class="nx">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
-        <span class="k">else</span><span class="o">:</span>
-            <span class="nx">print</span><span class="p">(</span><span class="s2">"You have entered an invalid character"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Age:"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">" "</span><span class="p">)</span>        
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">solve_rsp2</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">letter</span> <span class="ow">in</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">keyboard</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">letter</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"You have entered an invalid character"</span><span class="p">)</span>
 
-<span class="nx">printer</span><span class="p">(</span><span class="nx">keyboard</span><span class="p">)</span>
+<span class="n">printer</span><span class="p">(</span><span class="n">keyboard</span><span class="p">)</span>
 
-<span class="err">#</span> <span class="nx">Here</span> <span class="nx">is</span> <span class="nx">an</span> <span class="nx">example</span> <span class="k">of</span> <span class="nx">a</span> <span class="nx">program</span> <span class="nx">that</span> <span class="nx">uses</span> <span class="nx">a</span> <span class="mf">2</span><span class="nx">d</span> <span class="nx">list</span> <span class="nx">to</span> <span class="nx">store</span> <span class="nx">the</span> <span class="nx">charectors</span> <span class="k">of</span> <span class="nx">the</span> <span class="nx">keyboard</span>
-<span class="err">#</span> <span class="nx">The</span> <span class="nx">program</span> <span class="nx">then</span> <span class="nx">asks</span> <span class="nx">the</span> <span class="nx">user</span> <span class="nx">to</span> <span class="nx">enter</span> <span class="nx">a</span> <span class="nx">month</span> <span class="nx">and</span> <span class="nx">age</span> <span class="nx">and</span> <span class="nx">then</span> <span class="nx">prints</span> <span class="nx">the</span> <span class="nx">charectors</span> <span class="k">of</span> <span class="nx">the</span>
-<span class="err">#</span> <span class="nx">month</span> <span class="nx">and</span> <span class="nx">age</span> <span class="k">if</span> <span class="nx">they</span> <span class="nx">are</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">keyboard</span> <span class="nx">list</span> <span class="nx">so</span> <span class="k">for</span> <span class="nx">instance</span> <span class="k">if</span> <span class="nx">the</span> <span class="nx">charectors</span> <span class="nx">are</span> <span class="nx">not</span> <span class="k">in</span> 
-<span class="err">#</span> <span class="nx">the</span> <span class="nx">keyboard</span> <span class="nx">list</span> <span class="nx">it</span> <span class="nx">will</span> <span class="nx">print</span> <span class="nx">not</span> <span class="nx">a</span> <span class="nx">valid</span> <span class="nx">charector</span><span class="p">.</span>
+<span class="c1"># Here is an example of a program that uses a 2d list to store the charectors of the keyboard</span>
+<span class="c1"># The program then asks the user to enter a month and age and then prints the charectors of the</span>
+<span class="c1"># month and age if they are in the keyboard list so for instance if the charectors are not in </span>
+<span class="c1"># the keyboard list it will print not a valid charector. </span>
 </pre></div>
 
     </div>
@@ -585,34 +587,34 @@ Age: 16</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">keyboard</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">"`"</span><span class="p">,</span> <span class="s2">"1"</span><span class="p">,</span> <span class="s2">"2"</span><span class="p">,</span> <span class="s2">"3"</span><span class="p">,</span> <span class="s2">"4"</span><span class="p">,</span> <span class="s2">"5"</span><span class="p">,</span> <span class="s2">"6"</span><span class="p">,</span> <span class="s2">"7"</span><span class="p">,</span> <span class="s2">"8"</span><span class="p">,</span> <span class="s2">"9"</span><span class="p">,</span> <span class="s2">"0"</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">],</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">keyboard</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">"`"</span><span class="p">,</span> <span class="s2">"1"</span><span class="p">,</span> <span class="s2">"2"</span><span class="p">,</span> <span class="s2">"3"</span><span class="p">,</span> <span class="s2">"4"</span><span class="p">,</span> <span class="s2">"5"</span><span class="p">,</span> <span class="s2">"6"</span><span class="p">,</span> <span class="s2">"7"</span><span class="p">,</span> <span class="s2">"8"</span><span class="p">,</span> <span class="s2">"9"</span><span class="p">,</span> <span class="s2">"0"</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">],</span>
             <span class="p">[</span><span class="s2">"Q"</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">,</span> <span class="s2">"R"</span><span class="p">,</span> <span class="s2">"T"</span><span class="p">,</span> <span class="s2">"Y"</span><span class="p">,</span> <span class="s2">"U"</span><span class="p">,</span> <span class="s2">"I"</span><span class="p">,</span> <span class="s2">"O"</span><span class="p">,</span> <span class="s2">"P"</span><span class="p">,</span> <span class="s2">"["</span><span class="p">,</span> <span class="s2">"]"</span><span class="p">],</span>
             <span class="p">[</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"S"</span><span class="p">,</span> <span class="s2">"D"</span><span class="p">,</span> <span class="s2">"F"</span><span class="p">,</span> <span class="s2">"G"</span><span class="p">,</span> <span class="s2">"H"</span><span class="p">,</span> <span class="s2">"J"</span><span class="p">,</span> <span class="s2">"K"</span><span class="p">,</span> <span class="s2">"L"</span><span class="p">,</span> <span class="s2">";"</span><span class="p">,</span> <span class="s2">"'"</span><span class="p">],</span>
             <span class="p">[</span><span class="s2">"Z"</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"V"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"N"</span><span class="p">,</span> <span class="s2">"M"</span><span class="p">,</span> <span class="s2">","</span><span class="p">,</span> <span class="s2">"."</span><span class="p">,</span> <span class="s2">"/"</span><span class="p">]]</span>
 
-<span class="nx">def</span> <span class="nx">printer</span><span class="p">(</span><span class="nx">keyboard</span><span class="p">)</span><span class="o">:</span>
-    <span class="nx">rsp</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="s2">"Month: "</span><span class="p">)</span> <span class="err">#</span> <span class="nx">Input</span> <span class="nx">סֶפּטֶמבֶּר</span>
-    <span class="nx">rsp2</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="s2">"Age: "</span><span class="p">)</span> <span class="err">#</span> <span class="nx">Input</span> <span class="nx">חמישים</span> <span class="nx">וחמש</span>
-    <span class="nx">solve_rsp</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">+</span> <span class="nx">str</span><span class="p">(</span><span class="nx">rsp</span><span class="p">.</span><span class="nx">upper</span><span class="p">().</span><span class="nx">strip</span><span class="p">())</span>
-    <span class="nx">solve_rsp2</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">+</span> <span class="nx">str</span><span class="p">(</span><span class="nx">rsp2</span><span class="p">).</span><span class="nx">strip</span><span class="p">().</span><span class="nx">upper</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">printer</span><span class="p">(</span><span class="n">keyboard</span><span class="p">):</span>
+    <span class="n">rsp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Month: "</span><span class="p">)</span> <span class="c1"># Input סֶפּטֶמבֶּר</span>
+    <span class="n">rsp2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Age: "</span><span class="p">)</span> <span class="c1"># Input חמישים וחמש</span>
+    <span class="n">solve_rsp</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+    <span class="n">solve_rsp2</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp2</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
 
-    <span class="nx">print</span><span class="p">(</span><span class="s2">"Month Born:"</span><span class="p">,</span> <span class="nx">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
-    <span class="k">for</span> <span class="nx">letter</span> <span class="k">in</span> <span class="nx">solve_rsp</span><span class="o">:</span>
-        <span class="k">if</span> <span class="nx">any</span><span class="p">(</span><span class="nx">letter</span> <span class="k">in</span> <span class="nx">row</span> <span class="k">for</span> <span class="nx">row</span> <span class="k">in</span> <span class="nx">keyboard</span><span class="p">)</span><span class="o">:</span>
-            <span class="nx">print</span><span class="p">(</span><span class="nx">letter</span><span class="p">,</span> <span class="nx">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
-        <span class="k">else</span><span class="o">:</span> 
-            <span class="nx">print</span><span class="p">(</span><span class="s2">"You have entered an invalid character"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Month Born:"</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">solve_rsp</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">letter</span> <span class="ow">in</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">keyboard</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">letter</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"You have entered an invalid character"</span><span class="p">)</span>
 
-    <span class="nx">print</span><span class="p">(</span><span class="s2">"\nAge:"</span><span class="p">,</span> <span class="nx">end</span><span class="o">=</span><span class="s2">" "</span><span class="p">)</span>        
-    <span class="k">for</span> <span class="nx">letter</span> <span class="k">in</span> <span class="nx">solve_rsp2</span><span class="o">:</span>
-        <span class="k">if</span> <span class="nx">any</span><span class="p">(</span><span class="nx">letter</span> <span class="k">in</span> <span class="nx">row</span> <span class="k">for</span> <span class="nx">row</span> <span class="k">in</span> <span class="nx">keyboard</span><span class="p">)</span><span class="o">:</span>
-            <span class="nx">print</span><span class="p">(</span><span class="nx">letter</span><span class="p">,</span> <span class="nx">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
-        <span class="k">else</span><span class="o">:</span>
-            <span class="nx">print</span><span class="p">(</span><span class="s2">"You have entered an invalid character"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Age:"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">" "</span><span class="p">)</span>        
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">solve_rsp2</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">letter</span> <span class="ow">in</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">keyboard</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">letter</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"You have entered an invalid character"</span><span class="p">)</span>
 
-<span class="nx">printer</span><span class="p">(</span><span class="nx">keyboard</span><span class="p">)</span>
+<span class="n">printer</span><span class="p">(</span><span class="n">keyboard</span><span class="p">)</span>
 
-<span class="err">#</span> <span class="nx">According</span> <span class="nx">to</span> <span class="nx">google</span> <span class="nx">translate</span> <span class="nx">the</span> <span class="nx">month</span> <span class="nx">is</span> <span class="nx">September</span> <span class="nx">and</span> <span class="nx">the</span> <span class="nx">age</span> <span class="nx">is</span> <span class="nx">fifty</span> <span class="nx">and</span> <span class="nx">five</span> <span class="k">in</span> <span class="nx">hebrew</span>
+<span class="c1"># According to google translate the month is September and the age is fifty and five in hebrew</span>
 </pre></div>
 
     </div>
@@ -681,31 +683,31 @@ You have entered an invalid character
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">Q_Bank</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">"Dynamic code is code that has inputs and outputs that can change?"</span><span class="o">:</span><span class="s2">"true"</span><span class="p">,</span>
-    <span class="s2">"What is the keyword for defining a function in Python?"</span><span class="o">:</span> <span class="s2">"def"</span><span class="p">,</span>
-    <span class="s2">"In Jupyter Notebooks the Input is in line with the Output"</span><span class="o">:</span> <span class="s2">"false"</span><span class="p">,</span>
-    <span class="s2">"What is grouping often used commands called?"</span><span class="o">:</span> <span class="s2">"procedural abstraction"</span><span class="p">,</span>
-    <span class="s2">"Is Mr.Mortenson them most handsome man on the planet?"</span><span class="o">:</span> <span class="s2">"true"</span><span class="p">,</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Q_Bank</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"Dynamic code is code that has inputs and outputs that can change?"</span><span class="p">:</span><span class="s2">"true"</span><span class="p">,</span>
+    <span class="s2">"What is the keyword for defining a function in Python?"</span><span class="p">:</span> <span class="s2">"def"</span><span class="p">,</span>
+    <span class="s2">"In Jupyter Notebooks the Input is in line with the Output"</span><span class="p">:</span> <span class="s2">"false"</span><span class="p">,</span>
+    <span class="s2">"What is grouping often used commands called?"</span><span class="p">:</span> <span class="s2">"procedural abstraction"</span><span class="p">,</span>
+    <span class="s2">"Is Mr.Mortenson them most handsome man on the planet?"</span><span class="p">:</span> <span class="s2">"true"</span><span class="p">,</span>
 <span class="p">}</span>
 
-<span class="nx">score</span> <span class="o">=</span> <span class="mf">0</span>
-<span class="k">for</span> <span class="nx">Q</span><span class="p">,</span> <span class="nx">ans</span> <span class="k">in</span> <span class="nx">Q_Bank</span><span class="p">.</span><span class="nx">items</span><span class="p">()</span><span class="o">:</span>
-    <span class="nx">print</span><span class="p">(</span><span class="nx">Q</span><span class="p">)</span>
-    <span class="nx">rsp</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="nx">Q</span><span class="p">)</span>
-    <span class="k">if</span> <span class="nx">rsp</span><span class="p">.</span><span class="nx">lower</span><span class="p">().</span><span class="nx">strip</span><span class="p">()</span> <span class="o">==</span> <span class="nx">ans</span><span class="p">.</span><span class="nx">lower</span><span class="p">().</span><span class="nx">strip</span><span class="p">()</span><span class="o">:</span>
-        <span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="s2">"Your answer {rsp} is the correct answer"</span><span class="p">)</span>
-        <span class="nx">score</span> <span class="o">+=</span> <span class="mf">1</span>
-    <span class="k">else</span><span class="o">:</span>
-        <span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="s2">"Your answer {rsp} doesn't equal the correct answer/s which is {ans}"</span><span class="p">)</span>
-<span class="nx">print</span><span class="p">(</span><span class="nx">f</span><span class="s2">"Your score is {score} out of {len(Q_Bank)} points."</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">Q</span><span class="p">,</span> <span class="n">ans</span> <span class="ow">in</span> <span class="n">Q_Bank</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
+    <span class="n">rsp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="n">ans</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your answer </span><span class="si">{</span><span class="n">rsp</span><span class="si">}</span><span class="s2"> is the correct answer"</span><span class="p">)</span>
+        <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your answer </span><span class="si">{</span><span class="n">rsp</span><span class="si">}</span><span class="s2"> doesn't equal the correct answer/s which is </span><span class="si">{</span><span class="n">ans</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your score is </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2"> out of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">Q_Bank</span><span class="p">)</span><span class="si">}</span><span class="s2"> points."</span><span class="p">)</span>
 
-<span class="err">#</span> <span class="nx">Uses</span> <span class="nx">a</span> <span class="nx">dictionary</span> <span class="nx">to</span> <span class="nx">store</span> <span class="nx">the</span> <span class="nx">questions</span> <span class="nx">and</span> <span class="nx">answers</span> <span class="nx">and</span> <span class="nx">a</span> <span class="nx">value</span> <span class="nx">pair</span> <span class="nx">associated</span> <span class="kd">with</span> <span class="nx">each</span> <span class="nx">question</span>
-<span class="err">#</span> <span class="nx">to</span> <span class="nx">store</span> <span class="nx">the</span> <span class="nx">answer</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">question</span><span class="p">.</span> <span class="nx">Then</span> <span class="nx">a</span> <span class="k">for</span> <span class="nx">loop</span> <span class="nx">is</span> <span class="nx">used</span> <span class="nx">to</span> <span class="nx">iterate</span> <span class="nx">through</span> <span class="nx">the</span> <span class="nx">dictionary</span> <span class="nx">and</span>
-<span class="err">#</span> <span class="nx">then</span> <span class="nx">print</span> <span class="nx">the</span> <span class="nx">question</span> <span class="nx">and</span> <span class="nx">ask</span> <span class="nx">the</span> <span class="nx">user</span> <span class="nx">to</span> <span class="nx">enter</span> <span class="nx">the</span> <span class="nx">answer</span><span class="p">.</span> <span class="nx">If</span> <span class="nx">the</span> <span class="nx">answer</span> <span class="nx">matches</span> <span class="nx">the</span> <span class="nx">value</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">dictionary</span>
-<span class="err">#</span> <span class="nx">it</span> <span class="nx">informs</span> <span class="nx">the</span> <span class="nx">user</span> <span class="nx">that</span> <span class="nx">they</span> <span class="nx">were</span> <span class="nx">correct</span> <span class="nx">and</span> <span class="nx">then</span> <span class="nx">adds</span> <span class="nx">one</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">score</span><span class="p">.</span> <span class="nx">If</span> <span class="nx">the</span> <span class="nx">answer</span> <span class="nx">is</span> <span class="nx">incorrect</span> <span class="nx">it</span> <span class="nx">informs</span>
-<span class="err">#</span> <span class="nx">the</span> <span class="nx">user</span> <span class="nx">that</span> <span class="nx">they</span> <span class="nx">were</span> <span class="nx">incorrect</span> <span class="nx">and</span> <span class="nx">then</span> <span class="nx">prints</span> <span class="nx">the</span> <span class="nx">correct</span> <span class="nx">answer</span><span class="p">.</span> <span class="nx">Once</span> <span class="nx">the</span> <span class="k">for</span> <span class="nx">loop</span> <span class="nx">has</span> <span class="nx">finished</span> <span class="nx">it</span> <span class="nx">prints</span>
-<span class="err">#</span> <span class="nx">the</span> <span class="nx">users</span> <span class="nx">score</span> <span class="nx">out</span> <span class="k">of</span> <span class="nx">the</span> <span class="nx">total</span> <span class="nx">number</span> <span class="k">of</span> <span class="nx">questions</span><span class="p">.</span>
+<span class="c1"># Uses a dictionary to store the questions and answers and a value pair associated with each question</span>
+<span class="c1"># to store the answer to the question. Then a for loop is used to iterate through the dictionary and</span>
+<span class="c1"># then print the question and ask the user to enter the answer. If the answer matches the value in the dictionary</span>
+<span class="c1"># it informs the user that they were correct and then adds one to the score. If the answer is incorrect it informs</span>
+<span class="c1"># the user that they were incorrect and then prints the correct answer. Once the for loop has finished it prints</span>
+<span class="c1"># the users score out of the total number of questions.</span>
 </pre></div>
 
     </div>
@@ -760,41 +762,41 @@ Your score is 4 out of 5 points.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kr">class</span> <span class="nx">Person</span> <span class="p">{</span>
-    <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Person</span> <span class="p">{</span>
+    <span class="n">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">this</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+        <span class="n">this</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="nx">greeting</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="sb">`Hello my name is </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb"> and I am </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="si">}</span><span class="sb"> years old`</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kr">class</span> <span class="nx">Wagie</span> <span class="kr">extends</span> <span class="nx">Person</span> <span class="p">{</span>
-    <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">job</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kr">super</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">);</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">job</span> <span class="o">=</span> <span class="nx">job</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="nx">greeting</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="sb">`Hello I work at </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">job</span><span class="si">}</span><span class="sb"> and my name is </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb"> and I am </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="si">}</span><span class="sb"> years old. My profression conusmes my life and I have no time for friends or family. I am a slave to foul beast known as capitalism.`</span><span class="p">;</span>
+    <span class="n">greeting</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="err">`</span><span class="n">Hello</span> <span class="n">my</span> <span class="n">name</span> <span class="ow">is</span> <span class="err">$</span><span class="p">{</span><span class="n">this</span><span class="o">.</span><span class="n">name</span><span class="p">}</span> <span class="ow">and</span> <span class="n">I</span> <span class="n">am</span> <span class="err">$</span><span class="p">{</span><span class="n">this</span><span class="o">.</span><span class="n">age</span><span class="p">}</span> <span class="n">years</span> <span class="n">old</span><span class="err">`</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kr">class</span> <span class="nx">Student</span> <span class="kr">extends</span> <span class="nx">Person</span> <span class="p">{</span>
-    <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">grade</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kr">super</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">);</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">grade</span> <span class="o">=</span> <span class="nx">grade</span><span class="p">;</span>
+<span class="k">class</span> <span class="nc">Wagie</span> <span class="n">extends</span> <span class="n">Person</span> <span class="p">{</span>
+    <span class="n">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">job</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">);</span>
+        <span class="n">this</span><span class="o">.</span><span class="n">job</span> <span class="o">=</span> <span class="n">job</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="nx">greeting</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="sb">`Hey my name is </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb"> and I am </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="si">}</span><span class="sb"> years old and I am in grade </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">grade</span><span class="si">}</span><span class="sb">!!`</span><span class="p">;</span>
+    <span class="n">greeting</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="err">`</span><span class="n">Hello</span> <span class="n">I</span> <span class="n">work</span> <span class="n">at</span> <span class="err">$</span><span class="p">{</span><span class="n">this</span><span class="o">.</span><span class="n">job</span><span class="p">}</span> <span class="ow">and</span> <span class="n">my</span> <span class="n">name</span> <span class="ow">is</span> <span class="err">$</span><span class="p">{</span><span class="n">this</span><span class="o">.</span><span class="n">name</span><span class="p">}</span> <span class="ow">and</span> <span class="n">I</span> <span class="n">am</span> <span class="err">$</span><span class="p">{</span><span class="n">this</span><span class="o">.</span><span class="n">age</span><span class="p">}</span> <span class="n">years</span> <span class="n">old</span><span class="o">.</span> <span class="n">My</span> <span class="n">profression</span> <span class="n">conusmes</span> <span class="n">my</span> <span class="n">life</span> <span class="ow">and</span> <span class="n">I</span> <span class="n">have</span> <span class="n">no</span> <span class="n">time</span> <span class="k">for</span> <span class="n">friends</span> <span class="ow">or</span> <span class="n">family</span><span class="o">.</span> <span class="n">I</span> <span class="n">am</span> <span class="n">a</span> <span class="n">slave</span> <span class="n">to</span> <span class="n">foul</span> <span class="n">beast</span> <span class="n">known</span> <span class="k">as</span> <span class="n">capitalism</span><span class="o">.</span><span class="err">`</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kr">const</span> <span class="nx">Jhon</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Wagie</span><span class="p">(</span><span class="s2">"John"</span><span class="p">,</span> <span class="mf">25</span><span class="p">,</span> <span class="s2">"Walmart"</span><span class="p">);</span>
-<span class="kr">const</span> <span class="nx">Bob</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Student</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mf">15</span><span class="p">,</span> <span class="mf">10</span><span class="p">);</span>
-<span class="kr">const</span> <span class="nx">Joe</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Joe"</span><span class="p">,</span> <span class="mf">36</span><span class="p">);</span>
+<span class="k">class</span> <span class="nc">Student</span> <span class="n">extends</span> <span class="n">Person</span> <span class="p">{</span>
+    <span class="n">constructor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">grade</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">);</span>
+        <span class="n">this</span><span class="o">.</span><span class="n">grade</span> <span class="o">=</span> <span class="n">grade</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">greeting</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="err">`</span><span class="n">Hey</span> <span class="n">my</span> <span class="n">name</span> <span class="ow">is</span> <span class="err">$</span><span class="p">{</span><span class="n">this</span><span class="o">.</span><span class="n">name</span><span class="p">}</span> <span class="ow">and</span> <span class="n">I</span> <span class="n">am</span> <span class="err">$</span><span class="p">{</span><span class="n">this</span><span class="o">.</span><span class="n">age</span><span class="p">}</span> <span class="n">years</span> <span class="n">old</span> <span class="ow">and</span> <span class="n">I</span> <span class="n">am</span> <span class="ow">in</span> <span class="n">grade</span> <span class="err">$</span><span class="p">{</span><span class="n">this</span><span class="o">.</span><span class="n">grade</span><span class="p">}</span><span class="o">!</span>!<span class="sb">`</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`At </span><span class="si">${</span><span class="nx">Jhon</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb">'s job at </span><span class="si">${</span><span class="nx">Jhon</span><span class="p">.</span><span class="nx">job</span><span class="si">}</span><span class="sb">, they Jhon in a heated debate about the state of society Jhon said </span><span class="si">${</span><span class="nx">Jhon</span><span class="p">.</span><span class="nx">greeting</span><span class="p">()</span><span class="si">}</span><span class="sb">in sheer confusion Joe and his son Bob also began to say their greetings "</span><span class="si">${</span><span class="nx">Joe</span><span class="p">.</span><span class="nx">greeting</span><span class="p">()</span><span class="si">}</span><span class="sb">" and "</span><span class="si">${</span><span class="nx">Bob</span><span class="p">.</span><span class="nx">greeting</span><span class="p">()</span><span class="si">}</span><span class="sb">"`</span><span class="p">);</span>
+<span class="n">const</span> <span class="n">Jhon</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Wagie</span><span class="p">(</span><span class="s2">"John"</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">"Walmart"</span><span class="p">);</span>
+<span class="n">const</span> <span class="n">Bob</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Student</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+<span class="n">const</span> <span class="n">Joe</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">"Joe"</span><span class="p">,</span> <span class="mi">36</span><span class="p">);</span>
+
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="err">`</span><span class="n">At</span> <span class="err">$</span><span class="p">{</span><span class="n">Jhon</span><span class="o">.</span><span class="n">name</span><span class="p">}</span><span class="s1">'s job at $</span><span class="si">{Jhon.job}</span><span class="s1">, they Jhon in a heated debate about the state of society Jhon said ${Jhon.greeting()}in sheer confusion Joe and his son Bob also began to say their greetings "${Joe.greeting()}" and "${Bob.greeting()}"`);</span>
 </pre></div>
 
     </div>
@@ -808,6 +810,83 @@ Your score is 4 out of 5 points.
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>At John's job at Walmart, they Jhon in a heated debate about the state of society Jhon said Hello I work at Walmart and my name is John and I am 25 years old. My profression conusmes my life and I have no time for friends or family. I am a slave to foul beast known as capitalism.in sheer confusion Joe and his son Bob also began to say their greetings "Hello my name is Joe and I am 36 years old" and "Hey my name is Bob and I am 15 years old and I am in grade 10!!"
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Sequences">
+<a class="anchor" href="#Sequences" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sequences<a class="anchor-link" href="#Sequences"> </a>
+</h2>
+<ul>
+<li>Category: Managing Complexity with Variables</li>
+<li>Definition: A sequence is an ordered collection of items where each item holds a relative position with respect to the others. Sequences are one of the most basic Python data types. There are four sequence types in Python: strings, lists, tuples, and range objects. Strings are immutable sequences of Unicode code points. Lists are mutable sequences, typically used to store collections of homogeneous items (where the precise degree of similarity will vary by application). Tuples are immutable sequences, typically used to store collections of heterogeneous data (such as the 2-tuples produced by the enumerate() built-in). Ranges are immutable sequences of numbers and are commonly used for looping a specific number of times in for loops.</li>
+</ul>
+<h2 id="Sequences-Code-Example">
+<a class="anchor" href="#Sequences-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sequences Code Example<a class="anchor-link" href="#Sequences-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1"># List used as an example in this case</span>
+<span class="n">Butters</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"salted"</span><span class="p">,</span><span class="s2">"unsalted"</span><span class="p">,</span><span class="s2">"organic"</span><span class="p">,</span><span class="s2">"peanut"</span><span class="p">,</span><span class="s2">"almond"</span><span class="p">,</span><span class="s2">"cashew"</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">Butter_Selecter</span><span class="p">(</span><span class="n">Butters</span><span class="p">):</span>
+    <span class="n">cost</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">orders</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"We have these butters for sale:"</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">butter</span> <span class="ow">in</span> <span class="n">Butters</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">butter</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">rsp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What butter would you like to add to your order? (enter done when your are finished)"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="ow">in</span> <span class="n">Butters</span><span class="p">:</span>
+            <span class="n">orders</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">rsp</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"done"</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid choice. Please choose a butter from the list."</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Your order is"</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">order</span> <span class="ow">in</span> <span class="n">orders</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">order</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" butter "</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
+        <span class="n">cost</span> <span class="o">+=</span> <span class="mf">26.33</span> <span class="c1"># This is a gourmet butter price</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Your total cost is $</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">cost</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">Butter_Selecter</span><span class="p">(</span><span class="n">Butters</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>We have these butters for sale: salted unsalted organic peanut almond cashew 
+Invalid choice. Please choose a butter from the list.
+Invalid choice. Please choose a butter from the list.
+Your order is peanut butter almond butter salted butter unsalted butter 
+Your total cost is $105.32
 </pre>
 </div>
 </div>
