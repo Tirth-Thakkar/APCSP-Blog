@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      18 min read
+      21 min read
     
 </span></p>
 
@@ -120,6 +120,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Class-Expressions">Class Expressions </a></li>
 <li class="toc-entry toc-h2"><a href="#Sequences">Sequences </a></li>
 <li class="toc-entry toc-h2"><a href="#Sequences-Code-Example">Sequences Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Selection">Selection </a></li>
+<li class="toc-entry toc-h2"><a href="#Selection-Code-Example">Selection Code Example </a></li>
 </ul>
 </li>
 </ul><!--
@@ -883,6 +885,151 @@ Your score is 4 out of 5 points.
 Invalid choice. Please choose a butter from the list.
 Your order is peanut butter almond butter salted butter unsalted butter organic butter 
 Your total cost is $131.65
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Selection">
+<a class="anchor" href="#Selection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selection<a class="anchor-link" href="#Selection"> </a>
+</h2>
+<ul>
+<li>Category: Making Decisions</li>
+<li>Definition: Selection is the ability to run certain blocks of code only after certain conditions are met this can be done through the use of conditional statements such as else, if, and elif in python or else if in other languges. Selection can be used to make decisions in a program. For instance if you were to make a program that would ask the user for their age and then print out a message based on their age. You could use selection to make it so that if the user is under 18 it would print out a message saying that they are not old enough to vote, if they are 18 or older it would print out a message saying that they are old enough to vote, and if they are 21 or older it would print out a message saying that they are old enough to drink. This can be used to make a program more interactive and allow it to be more dynamic.</li>
+</ul>
+<h2 id="Selection-Code-Example">
+<a class="anchor" href="#Selection-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selection Code Example<a class="anchor-link" href="#Selection-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">LAN</span><span class="p">():</span>
+    <span class="n">party_goers</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">gamer_test</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How many gamers are at your LAN party? Enter none if none are present"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">gamer_test</span> <span class="o">==</span> <span class="s2">"none"</span><span class="p">:</span>
+        <span class="n">gamers</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">gamers</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">gamer_test</span><span class="p">)</span>
+    
+    <span class="n">non_gamers_test</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How many non gamers are at your LAN party?"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">non_gamers_test</span> <span class="o">==</span> <span class="s2">"none"</span><span class="p">:</span>
+        <span class="n">non_gamers</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">non_gamers</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">non_gamers_test</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">gamers</span><span class="p">):</span>
+        <span class="n">gamer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What are the names of your gamer friends?"</span><span class="p">)</span>
+        <span class="n">party_goers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">gamer</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">non_gamers</span><span class="p">):</span>
+        <span class="n">non_gamer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What are the names of your non gamer friends?"</span><span class="p">)</span>
+        <span class="n">party_goers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">non_gamer</span><span class="p">)</span>
+
+    <span class="n">mountain_dew</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">gamers</span>
+    <span class="n">chips</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">gamers</span> <span class="o">+</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">non_gamers</span>
+    <span class="n">GT730</span> <span class="o">=</span> <span class="n">non_gamers</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You will need </span><span class="si">{</span><span class="n">mountain_dew</span><span class="si">}</span><span class="s2"> liters of Mountain Dew and </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">chips</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s2"> kg of chips for your party along with </span><span class="si">{</span><span class="n">GT730</span><span class="si">}</span><span class="s2"> GT730 Gaming PCs"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Your party goers are:"</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">party_goers</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">", "</span><span class="p">)</span>
+
+<span class="n">LAN</span><span class="p">()</span>   
+
+<span class="c1"># Through the use of selction through the use of if and else statments the porgram is able to determine not prompt the user for their non-gamer/gamer</span>
+<span class="c1"># friends are present then display the amount of refreshments and special punishments (GT730s) need to be arranged for the party.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You will need 6.0 liters of Mountain Dew and 12.5 kg of chips for your party along with 2 GT730 Gaming PCs
+Your party goers are: Jhonno, Steve, Barry, Nansi Pelosi, Gary, Steve
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">LAN</span><span class="p">():</span>
+    <span class="n">party_goers</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">gamer_test</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How many gamers are at your LAN party? Enter none if none are present"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">gamer_test</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"none"</span><span class="p">:</span>
+        <span class="n">gamers</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">gamers</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">gamer_test</span><span class="p">)</span>
+    
+    <span class="n">non_gamers_test</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How many non gamers are at your LAN party? Enter none if none are present"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">non_gamers_test</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"none"</span><span class="p">:</span>
+        <span class="n">non_gamers</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">non_gamers</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">non_gamers_test</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">gamers</span><span class="p">):</span>
+        <span class="n">gamer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What are the names of your gamer friends?"</span><span class="p">)</span>
+        <span class="n">party_goers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">gamer</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">non_gamers</span><span class="p">):</span>
+        <span class="n">non_gamer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What are the names of your non gamer friends?"</span><span class="p">)</span>
+        <span class="n">party_goers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">non_gamer</span><span class="p">)</span>
+
+    <span class="n">mountain_dew</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">gamers</span>
+    <span class="n">chips</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">gamers</span> <span class="o">+</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">non_gamers</span>
+    <span class="n">GT730</span> <span class="o">=</span> <span class="n">non_gamers</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You will need </span><span class="si">{</span><span class="n">mountain_dew</span><span class="si">}</span><span class="s2"> liters of Mountain Dew and </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">chips</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s2"> kg of chips for your party along with </span><span class="si">{</span><span class="n">GT730</span><span class="si">}</span><span class="s2"> GT730 Gaming PCs"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Your party goers are:"</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">party_goers</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">", "</span><span class="p">)</span>
+
+<span class="n">LAN</span><span class="p">()</span>   
+
+<span class="c1"># If there are no gamer friends at the LAN party</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You will need 0.0 liters of Mountain Dew and 0.5 kg of chips for your party along with 2 GT730 Gaming PCs
+Your party goers are: berry, jerry
 </pre>
 </div>
 </div>
