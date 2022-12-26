@@ -155,19 +155,22 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Q_Bank</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">"Dynamic code is code that has inputs and outputs that can change?"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"true"</span><span class="p">],</span>
-    <span class="s2">"What is the keyword for defining a function in Python?"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"def()"</span><span class="p">],</span>
-    <span class="s2">"In Jupyter Notebooks the Input is in line with the Output"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"false"</span><span class="p">],</span>
-    <span class="s2">"What is grouping often used commands called?"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"procedural abstraction"</span><span class="p">],</span>
+    <span class="s2">"Dynamic code is code that has inputs and outputs that can change?"</span><span class="p">:</span><span class="s2">"true"</span><span class="p">,</span>
+    <span class="s2">"What is the keyword for defining a function in Python?"</span><span class="p">:</span> <span class="s2">"def"</span><span class="p">,</span>
+    <span class="s2">"In Jupyter Notebooks the Input is in line with the Output"</span><span class="p">:</span> <span class="s2">"false"</span><span class="p">,</span>
+    <span class="s2">"What is grouping often used commands called?"</span><span class="p">:</span> <span class="s2">"procedural abstraction"</span><span class="p">,</span>
 <span class="p">}</span>
 
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">Q</span><span class="p">,</span> <span class="n">ans</span> <span class="ow">in</span> <span class="n">Q_Bank</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
     <span class="n">rsp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">ans</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Your answer "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp</span><span class="p">)</span><span class="o">+</span><span class="s2">" is the correct correct"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="n">ans</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your answer </span><span class="si">{</span><span class="n">rsp</span><span class="si">}</span><span class="s2"> is the correct correct"</span><span class="p">)</span>
+        <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Your answer "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" doesn't equal the correct answer/s which is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ans</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your answer </span><span class="si">{</span><span class="n">rsp</span><span class="si">}</span><span class="s2"> doesn't equal the correct answer/s which is </span><span class="si">{</span><span class="n">ans</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your score is </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2"> out of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">Q_Bank</span><span class="p">)</span><span class="si">}</span><span class="s2"> points."</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -181,13 +184,14 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dynamic code is code that has inputs and outputs that can change?
-Your answer  doesn't equal the correct answer/s which is ['true']
+Your answer true is the correct correct
 What is the keyword for defining a function in Python?
-Your answer  doesn't equal the correct answer/s which is ['def()']
+Your answer def is the correct correct
 In Jupyter Notebooks the Input is in line with the Output
-Your answer  doesn't equal the correct answer/s which is ['false']
+Your answer false is the correct correct
 What is grouping often used commands called?
-Your answer  doesn't equal the correct answer/s which is ['procedural abstraction']
+Your answer grouping doesn't equal the correct answer/s which is procedural abstraction
+Your score is 3 out of 4 points.
 </pre>
 </div>
 </div>
