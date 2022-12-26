@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      40 min read
+      41 min read
     
 </span></p>
 
@@ -155,6 +155,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Else-Conditionals">Else Conditionals </a></li>
 <li class="toc-entry toc-h2"><a href="#Else-Conditionals-Code-Example">Else Conditionals Code Example </a></li>
 <li class="toc-entry toc-h2"><a href="#Nested-Selection-Statement">Nested Selection Statement </a></li>
+<li class="toc-entry toc-h2"><a href="#Nested-Selection-Statement-Code-Example">Nested Selection Statement Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Python-For">Python For </a></li>
 </ul>
 </li>
 </ul><!--
@@ -2087,7 +2089,9 @@ Your guess abstraction was the correct length
 <li>Category: Conditional Statements</li>
 <li>Definition: Nested selection statements are used to allow for more complicated logic in programs so to create a condition if another condition is also true. </li>
 </ul>
-
+<h2 id="Nested-Selection-Statement-Code-Example">
+<a class="anchor" href="#Nested-Selection-Statement-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Nested Selection Statement Code Example<a class="anchor-link" href="#Nested-Selection-Statement-Code-Example"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2153,6 +2157,67 @@ Your guess abstraction was the correct length
 <pre>Your first number -1 was less than your second number 1
 Your second number was also positive
 Your first number was also negative
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Python-For">
+<a class="anchor" href="#Python-For" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python For<a class="anchor-link" href="#Python-For"> </a>
+</h2>
+<ul>
+<li>Category: Iteration</li>
+<li>Definition: The For loop is a loop that is used to repeat a block of code a certain number of times. For instance you could write a program that would iterate through a list of numbers and print out each number in the list.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wonders</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">"Great Pyramid of Giza"</span><span class="p">,</span> <span class="mf">29.9792</span><span class="p">,</span> <span class="mf">31.1342</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Hanging Gardens of Babylon"</span><span class="p">,</span> <span class="mf">32.5350</span><span class="p">,</span> <span class="mf">44.4270</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Temple of Artemis at Ephesus"</span><span class="p">,</span> <span class="mf">37.9279</span><span class="p">,</span> <span class="mf">27.3506</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Statue of Zeus at Olympia"</span><span class="p">,</span> <span class="mf">37.6275</span><span class="p">,</span> <span class="mf">21.6405</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Mausoleum of Halicarnassus"</span><span class="p">,</span> <span class="mf">37.0353</span><span class="p">,</span> <span class="mf">27.4162</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Colossus of Rhodes"</span><span class="p">,</span> <span class="mf">36.4450</span><span class="p">,</span> <span class="mf">28.2269</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Lighthouse of Alexandria"</span><span class="p">,</span> <span class="mf">31.2156</span><span class="p">,</span> <span class="mf">29.9456</span><span class="p">)]</span>
+
+<span class="k">def</span> <span class="nf">wonder_Location</span><span class="p">(</span><span class="n">wonders</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">wonder</span> <span class="ow">in</span> <span class="n">wonders</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">wonder</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> is located at </span><span class="si">{</span><span class="n">wonder</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">wonder</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">wonder_Location</span><span class="p">(</span><span class="n">wonders</span><span class="p">)</span>
+
+<span class="c1"># Through the use of a for loop the program is able to iterate through</span>
+<span class="c1"># the iterables in the list which are tuples and be able to print the</span>
+<span class="c1"># name of the wonder along with the latitude and longitude of the wonder. </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Great Pyramid of Giza is located at 29.9792, 31.1342
+Hanging Gardens of Babylon is located at 32.535, 44.427
+Temple of Artemis at Ephesus is located at 37.9279, 27.3506
+Statue of Zeus at Olympia is located at 37.6275, 21.6405
+Mausoleum of Halicarnassus is located at 37.0353, 27.4162
+Colossus of Rhodes is located at 36.445, 28.2269
+Lighthouse of Alexandria is located at 31.2156, 29.9456
 </pre>
 </div>
 </div>
