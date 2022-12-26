@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      30 min read
+      31 min read
     
 </span></p>
 
@@ -1325,7 +1325,7 @@ On round 2 Player 1 won with a score of 6 compared to Player 2 with a score of 4
 </h2>
 <ul>
 <li>Category: Logical Operations &amp; Decision Making</li>
-<li>Definition:</li>
+<li>Definition: Boolean Expressions are used to evaluate expressions are either True or False and can be used with selection statments such as if, and elif to make exucute certain blocks of code.</li>
 </ul>
 <h2 id="Boolean-Expressions-&amp;-Selection-Code-Example">
 <a class="anchor" href="#Boolean-Expressions-&amp;-Selection-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Boolean Expressions &amp; Selection Code Example<a class="anchor-link" href="#Boolean-Expressions-&amp;-Selection-Code-Example"> </a>
@@ -1333,6 +1333,53 @@ On round 2 Player 1 won with a score of 6 compared to Player 2 with a score of 4
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">Citzenship_Checker</span><span class="p">():</span>
+    <span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What is your age?"</span><span class="p">))</span>
+    <span class="n">citzenship</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What country are you a citzen of?"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="ow">and</span> <span class="n">citzenship</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"New Zealand"</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You are </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> so you are able to vote in New Zealand"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">18</span> <span class="ow">and</span> <span class="n">citzenship</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"New Zealand"</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You are </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> so you are a minor but a citizen of New Zealand"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You are not a citizen of New Zealand but </span><span class="si">{</span><span class="n">citzenship</span><span class="si">}</span><span class="s2"> and are </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old. Check the voting rules in </span><span class="si">{</span><span class="n">citzenship</span><span class="si">}</span><span class="s2"> to know if you can vote."</span><span class="p">)</span>
+
+<span class="n">Citzenship_Checker</span><span class="p">()</span>
+
+<span class="c1"># Through the use of Boolean statements the program is able to determine if</span>
+<span class="c1"># the users age is greater than or equal to 18 is True </span>
+<span class="c1"># and if they are a citizen of New Zealand is also true </span>
+<span class="c1"># They are able to vote and otherwise informs of them of their</span>
+<span class="c1"># respective reason why the cannot vote in New Zealand.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You are not a citizen of New Zealand but Mexico and are 2 years old. Check the voting rules in Mexico to know if you can vote.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
