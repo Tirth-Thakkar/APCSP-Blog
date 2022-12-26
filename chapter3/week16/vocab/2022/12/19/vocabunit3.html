@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      32 min read
+      34 min read
     
 </span></p>
 
@@ -141,6 +141,9 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Length">Length </a></li>
 <li class="toc-entry toc-h2"><a href="#Length-Code-Example">Length Code Example </a></li>
 <li class="toc-entry toc-h2"><a href="#Concatenation">Concatenation </a></li>
+<li class="toc-entry toc-h2"><a href="#Upper">Upper </a></li>
+<li class="toc-entry toc-h2"><a href="#Lower">Lower </a></li>
+<li class="toc-entry toc-h2"><a href="#Traversing-Strings">Traversing Strings </a></li>
 </ul>
 </li>
 </ul><!--
@@ -1685,6 +1688,173 @@ jujube has 6 letters
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The words concatenated together are: butter is butter I refuse to believe otherwise
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Upper">
+<a class="anchor" href="#Upper" aria-hidden="true"><span class="octicon octicon-link"></span></a>Upper<a class="anchor-link" href="#Upper"> </a>
+</h2>
+<ul>
+<li>Category: Strings &amp; String Operations</li>
+<li>Definition: Upper is a function that can be used to make all the letters in a string uppercase. In python this is represented by the upper() function.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">Yeller</span><span class="p">():</span>
+    <span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What do you want to Yell?"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your orginal string was: </span><span class="si">{</span><span class="n">word</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your yelling string is: </span><span class="si">{</span><span class="n">word</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2">!!!"</span><span class="p">)</span>
+
+<span class="n">Yeller</span><span class="p">()</span>
+<span class="c1"># The use of the upper function to make the </span>
+<span class="c1"># Input string all uppercase and then print</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Your orginal string was: sh this is library
+Your yelling string is: SH THIS IS LIBRARY!!!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Lower">
+<a class="anchor" href="#Lower" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lower<a class="anchor-link" href="#Lower"> </a>
+</h2>
+<ul>
+<li>Category: Strings &amp; String Operations</li>
+<li>Definition: Lower is a function that can be used to make all the letters in a string lowercase. In python this is represented by the lower() function.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">Library</span><span class="p">():</span>
+    <span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What are you yelling about?"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your orginal string was: </span><span class="si">{</span><span class="n">word</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your library friendly string is: </span><span class="si">{</span><span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">Library</span><span class="p">()</span>
+<span class="c1"># The use of the lower function to make the </span>
+<span class="c1"># Input string all lowercase and then print</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Your orginal string was: THERE ARE TOO MANY CHEESES IN THE CHEESE ISLE AT WALMART
+Your library friendly string is: there are too many cheeses in the cheese isle at walmart
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Traversing-Strings">
+<a class="anchor" href="#Traversing-Strings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Traversing Strings<a class="anchor-link" href="#Traversing-Strings"> </a>
+</h2>
+<ul>
+<li>Category: Strings &amp; String Operations</li>
+<li>Definition: Traversing a string is the ability to access each individual charector in a string. As each charector is an iterable object in python you can use a for loop to access each individual charector in a string.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">seperator</span><span class="p">():</span>
+    <span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your word?"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your orginal string was: </span><span class="si">{</span><span class="n">word</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Your seperated string is: "</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">charector</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">charector</span><span class="p">)</span>
+<span class="n">seperator</span><span class="p">()</span>
+<span class="c1"># Through using a for loop the program is able</span>
+<span class="c1"># to iterate through the string and print each</span>
+<span class="c1"># charector on a new line.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Your orginal string was: butter
+Your seperated string is: 
+b
+u
+t
+t
+e
+r
 </pre>
 </div>
 </div>
