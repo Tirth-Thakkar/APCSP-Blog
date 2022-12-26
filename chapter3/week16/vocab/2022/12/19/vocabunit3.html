@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      34 min read
+      38 min read
     
 </span></p>
 
@@ -148,6 +148,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Lower-Code-Example">Lower Code Example </a></li>
 <li class="toc-entry toc-h2"><a href="#Traversing-Strings">Traversing Strings </a></li>
 <li class="toc-entry toc-h2"><a href="#Traversing-Strings-Code-Example">Traversing Strings Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Python-If">Python If </a></li>
+<li class="toc-entry toc-h2"><a href="#Python-If-Code-Example">Python If Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Elif">Elif </a></li>
+<li class="toc-entry toc-h2"><a href="#Elif-Code-Example">Elif Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Else-Conditionals">Else Conditionals </a></li>
 </ul>
 </li>
 </ul><!--
@@ -1867,6 +1872,197 @@ t
 t
 e
 r
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Python-If">
+<a class="anchor" href="#Python-If" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python If<a class="anchor-link" href="#Python-If"> </a>
+</h2>
+<ul>
+<li>Category: Conditional Statements</li>
+<li>Definition: The If statment is a conditional statement that is used to create condition if met will execute a block of code. For instance if you were to make a program that would prompt the user for a certain word if it was of a certain length it would print out a message saying that the word was of the correct length. </li>
+</ul>
+<h2 id="Python-If-Code-Example">
+<a class="anchor" href="#Python-If-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python If Code Example<a class="anchor-link" href="#Python-If-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">word_guesser</span><span class="p">(</span><span class="n">word_bank</span><span class="p">,</span> <span class="n">word</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">word_bank</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your word </span><span class="si">{</span><span class="n">word</span><span class="si">}</span><span class="s2"> was in the word bank"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your word </span><span class="si">{</span><span class="n">word</span><span class="si">}</span><span class="s2"> was not in the word bank"</span><span class="p">)</span>
+
+<span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"abstraction"</span><span class="p">,</span> <span class="s2">"access"</span><span class="p">,</span> <span class="s2">"adapter"</span><span class="p">,</span> <span class="s2">"algorithm"</span><span class="p">,</span> <span class="s2">"analyst"</span><span class="p">,</span> <span class="s2">"anomaly"</span><span class="p">,</span> <span class="s2">"architecture"</span><span class="p">,</span> <span class="s2">"array"</span><span class="p">,</span> <span class="s2">"artificial"</span><span class="p">,</span> <span class="s2">"attribute"</span><span class="p">,</span> <span class="s2">"backend"</span><span class="p">,</span> <span class="s2">"bandwidth"</span><span class="p">,</span> <span class="s2">"benchmark"</span><span class="p">,</span> <span class="s2">"binary"</span><span class="p">,</span> <span class="s2">"blockchain"</span><span class="p">,</span> <span class="s2">"boolean"</span><span class="p">,</span> <span class="s2">"breadth"</span><span class="p">,</span> <span class="s2">"bug"</span><span class="p">,</span> <span class="s2">"byte"</span><span class="p">,</span> <span class="s2">"cache"</span><span class="p">,</span> <span class="s2">"calculator"</span><span class="p">,</span> <span class="s2">"capacity"</span><span class="p">,</span> <span class="s2">"cartesian"</span><span class="p">,</span> <span class="s2">"category"</span><span class="p">,</span> <span class="s2">"cipher"</span><span class="p">,</span> <span class="s2">"classification"</span><span class="p">,</span> <span class="s2">"client"</span><span class="p">,</span> <span class="s2">"client-server"</span><span class="p">,</span> <span class="s2">"closure"</span><span class="p">,</span> <span class="s2">"cluster"</span><span class="p">,</span> <span class="s2">"code"</span><span class="p">,</span> <span class="s2">"cognitive"</span><span class="p">,</span> <span class="s2">"cohesion"</span><span class="p">,</span> <span class="s2">"command"</span><span class="p">,</span> <span class="s2">"comment"</span><span class="p">,</span> <span class="s2">"communication"</span><span class="p">,</span> <span class="s2">"compiler"</span><span class="p">,</span> <span class="s2">"complexity"</span><span class="p">,</span> <span class="s2">"component"</span><span class="p">,</span> <span class="s2">"computation"</span><span class="p">,</span> <span class="s2">"concurrency"</span><span class="p">,</span> <span class="s2">"configuration"</span><span class="p">,</span> <span class="s2">"connectivity"</span><span class="p">,</span> <span class="s2">"consistency"</span><span class="p">,</span> <span class="s2">"constraint"</span><span class="p">,</span> <span class="s2">"container"</span><span class="p">,</span> <span class="s2">"context"</span><span class="p">,</span> <span class="s2">"contingency"</span><span class="p">,</span> <span class="s2">"continuous"</span><span class="p">,</span> <span class="s2">"control"</span><span class="p">,</span> <span class="s2">"converter"</span><span class="p">,</span> <span class="s2">"coordination"</span><span class="p">,</span> <span class="s2">"core"</span><span class="p">,</span> <span class="s2">"correlation"</span><span class="p">,</span> <span class="s2">"cursor"</span><span class="p">,</span> <span class="s2">"data"</span><span class="p">,</span> <span class="s2">"database"</span><span class="p">,</span> <span class="s2">"debugging"</span><span class="p">,</span> <span class="s2">"declaration"</span><span class="p">,</span> <span class="s2">"decrement"</span><span class="p">,</span> <span class="s2">"definition"</span><span class="p">,</span> <span class="s2">"degradation"</span><span class="p">,</span> <span class="s2">"delegation"</span><span class="p">,</span> <span class="s2">"delimiter"</span><span class="p">,</span> <span class="s2">"density"</span><span class="p">,</span> <span class="s2">"derivation"</span><span class="p">,</span> <span class="s2">"descendant"</span><span class="p">,</span> <span class="s2">"design"</span><span class="p">,</span> <span class="s2">"detection"</span><span class="p">,</span> <span class="s2">"dictionary"</span><span class="p">,</span> <span class="s2">"dimension"</span><span class="p">,</span> <span class="s2">"directive"</span><span class="p">,</span> <span class="s2">"discrete"</span><span class="p">,</span> <span class="s2">"dispatch"</span><span class="p">,</span> <span class="s2">"distributed"</span><span class="p">,</span> <span class="s2">"divergence"</span><span class="p">,</span> <span class="s2">"dynamic"</span><span class="p">,</span> <span class="s2">"echo"</span><span class="p">,</span> <span class="s2">"encoding"</span><span class="p">,</span> <span class="s2">"encryption"</span><span class="p">,</span> <span class="s2">"endpoint"</span><span class="p">,</span> <span class="s2">"enumeration"</span><span class="p">,</span> <span class="s2">"environment"</span><span class="p">,</span> <span class="s2">"equation"</span><span class="p">,</span> <span class="s2">"error"</span><span class="p">,</span> <span class="s2">"event"</span><span class="p">,</span> <span class="s2">"exception"</span><span class="p">,</span> <span class="s2">"execution"</span><span class="p">,</span> <span class="s2">"expression"</span><span class="p">,</span> <span class="s2">"extraction"</span><span class="p">,</span> <span class="s2">"failure"</span><span class="p">,</span> <span class="s2">"fault"</span><span class="p">,</span> <span class="s2">"fetch"</span><span class="p">,</span> <span class="s2">"flow"</span><span class="p">,</span> <span class="s2">"fragment"</span><span class="p">,</span> <span class="s2">"function"</span><span class="p">,</span> <span class="s2">"gateway"</span><span class="p">,</span> <span class="s2">"generic"</span><span class="p">,</span> <span class="s2">"granularity"</span><span class="p">,</span> <span class="s2">"graph"</span><span class="p">,</span> <span class="s2">"hashing"</span><span class="p">,</span> <span class="s2">"heap"</span><span class="p">,</span> <span class="s2">"heuristic"</span><span class="p">,</span> <span class="s2">"hierarchy"</span><span class="p">,</span> <span class="s2">"hyperlink"</span><span class="p">,</span> <span class="s2">"identity"</span><span class="p">,</span> <span class="s2">"implementation"</span><span class="p">,</span> <span class="s2">"inclusion"</span><span class="p">,</span> <span class="s2">"increment"</span><span class="p">,</span> <span class="s2">"index"</span><span class="p">,</span> <span class="s2">"inference"</span><span class="p">,</span> <span class="s2">"inheritance"</span><span class="p">,</span> <span class="s2">"initialization"</span><span class="p">,</span> <span class="s2">"input"</span><span class="p">,</span> <span class="s2">"instance"</span><span class="p">,</span> <span class="s2">"instruction"</span><span class="p">,</span> <span class="s2">"interface"</span><span class="p">,</span> <span class="s2">"interoperability"</span><span class="p">,</span> <span class="s2">"iteration"</span><span class="p">,</span> <span class="s2">"key"</span><span class="p">,</span> <span class="s2">"keyword"</span><span class="p">,</span> <span class="s2">"label"</span><span class="p">,</span> <span class="s2">"latency"</span><span class="p">,</span> <span class="s2">"library"</span><span class="p">,</span> <span class="s2">"lifecycle"</span><span class="p">,</span> <span class="s2">"link"</span><span class="p">,</span> <span class="s2">"load"</span><span class="p">,</span> <span class="s2">"localization"</span><span class="p">,</span> <span class="s2">"logic"</span><span class="p">,</span> <span class="s2">"loop"</span><span class="p">,</span> <span class="s2">"machine"</span><span class="p">,</span> <span class="s2">"management"</span><span class="p">,</span> <span class="s2">"manipulation"</span><span class="p">,</span> <span class="s2">"mapping"</span><span class="p">,</span> <span class="s2">"matrix"</span><span class="p">,</span> <span class="s2">"measurement"</span><span class="p">,</span> <span class="s2">"method"</span><span class="p">,</span> <span class="s2">"middleware"</span><span class="p">,</span> <span class="s2">"migration"</span><span class="p">,</span> <span class="s2">"model"</span><span class="p">,</span> <span class="s2">"modification"</span><span class="p">,</span> <span class="s2">"module"</span><span class="p">,</span> <span class="s2">"monitoring"</span><span class="p">]</span>
+<span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What word do you want to check?"</span><span class="p">)</span>
+<span class="n">word_guesser</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">word</span><span class="p">)</span>
+
+<span class="c1"># Through the use of the if statement the program is able to execute</span>
+<span class="c1"># a block of code informing the user that thier word is in their</span>
+<span class="c1"># word is in the word bank or not if the condition that the word is </span>
+<span class="c1"># in the word bank is met. If it is not met the else statemtent </span>
+<span class="c1"># executes and informs the user that the word is not in the word bank.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Your word blockchain was in the word bank
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Elif">
+<a class="anchor" href="#Elif" aria-hidden="true"><span class="octicon octicon-link"></span></a>Elif<a class="anchor-link" href="#Elif"> </a>
+</h2>
+<ul>
+<li>Category: Conditional Statements</li>
+<li>Defintion: Elif or Else If is a conditional statement that is used to create a condition if met will execute a block of code. However it is used after an if statement and can be used to create multiple conditions. An example could be if there was a correct word and you had a game where the user had to guess a word of the same length if their word was too long or too short it would print out a message saying that the word was too long or too short.</li>
+</ul>
+<h2 id="Elif-Code-Example">
+<a class="anchor" href="#Elif-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Elif Code Example<a class="anchor-link" href="#Elif-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">word_guesser</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">guess</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What word do you want to check?"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your guess </span><span class="si">{</span><span class="n">guess</span><span class="si">}</span><span class="s2"> was the correct length"</span><span class="p">)</span>
+            <span class="k">break</span>
+        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your guess </span><span class="si">{</span><span class="n">guess</span><span class="si">}</span><span class="s2"> was too long"</span><span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your guess </span><span class="si">{</span><span class="n">guess</span><span class="si">}</span><span class="s2"> was too short"</span><span class="p">)</span>
+
+<span class="n">word</span> <span class="o">=</span> <span class="s2">"abstraction"</span>
+<span class="n">word_guesser</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+
+<span class="c1"># Through the use of elif statment the porgram is able to </span>
+<span class="c1"># Excute a different block of code depending on if a </span>
+<span class="c1"># another condition is true other than just having an</span>
+<span class="c1"># else statment in this case it woud alows the program</span>
+<span class="c1"># to check if the guess is too long or too short not just</span>
+<span class="c1"># if it is the wrong length.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Your guess truffles was too short
+Your guess butter was too short
+Your guess gamer was too short
+Your guess butterscotch was too long
+Your guess abstraction was the correct length
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Else-Conditionals">
+<a class="anchor" href="#Else-Conditionals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Else Conditionals<a class="anchor-link" href="#Else-Conditionals"> </a>
+</h2>
+<ul>
+<li>Category: Conditional Statements</li>
+<li>Definiton: Else is a conditional statement that will execute if the other condtion is not met so if the condition of an if statement is not met it will execute the other block of code.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">addition_game</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What is your first number?"</span><span class="p">))</span>
+    <span class="n">num2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What is your second number?"</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your answer </span><span class="si">{</span><span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span><span class="si">}</span><span class="s2"> was in the list of numbers"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your answer </span><span class="si">{</span><span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span><span class="si">}</span><span class="s2"> was not in the list of numbers"</span><span class="p">)</span>
+
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<span class="n">addition_game</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+
+<span class="c1"># Through the use of the else statment the program is able to able </span>
+<span class="c1"># print that the sum of the users two numbers is not in the list of</span>
+<span class="c1"># numbers as the if condition that the sum of the two numbers is in</span>
+<span class="c1"># the list of numbers is not met.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Your answer 53 was not in the list of numbers
 </pre>
 </div>
 </div>
