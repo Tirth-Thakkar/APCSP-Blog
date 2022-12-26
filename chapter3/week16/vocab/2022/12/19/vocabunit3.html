@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      23 min read
+      30 min read
     
 </span></p>
 
@@ -123,6 +123,21 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Selection">Selection </a></li>
 <li class="toc-entry toc-h2"><a href="#Selection-Code-Example">Selection Code Example </a></li>
 <li class="toc-entry toc-h2"><a href="#Iteration">Iteration </a></li>
+<li class="toc-entry toc-h2"><a href="#Iteration-Code-Example">Iteration Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Expresions">Expresions </a></li>
+<li class="toc-entry toc-h2"><a href="#Expresions-Code-Example">Expresions Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Comparsion-Operators">Comparsion Operators </a></li>
+<li class="toc-entry toc-h2"><a href="#Comparsion-Operators-Code-Example">Comparsion Operators Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Boolean-Expressions-&-Selection">Boolean Expressions &amp; Selection </a></li>
+<li class="toc-entry toc-h2"><a href="#Boolean-Expressions-&-Selection-Code-Example">Boolean Expressions &amp; Selection Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Booleans-Expressions-and-Iteration">Booleans Expressions and Iteration </a></li>
+<li class="toc-entry toc-h2"><a href="#Booleans-Expressions-and-Iteration-Code-Example">Booleans Expressions and Iteration Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Truth-Tables">Truth Tables </a></li>
+<li class="toc-entry toc-h2"><a href="#Truth-Tables-Code-Example">Truth Tables Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Charectors">Charectors </a></li>
+<li class="toc-entry toc-h2"><a href="#Charectors-Code-Example">Charectors Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Strings">Strings </a></li>
+<li class="toc-entry toc-h2"><a href="#Strings-Code-Example">Strings Code Example </a></li>
 </ul>
 </li>
 </ul><!--
@@ -905,7 +920,7 @@ Your total cost is $131.65
 <a class="anchor" href="#Selection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selection<a class="anchor-link" href="#Selection"> </a>
 </h2>
 <ul>
-<li>Category: Making Decisions</li>
+<li>Category: Managing Complexity with Variables</li>
 <li>Definition: Selection is the ability to run certain blocks of code only after certain conditions are met this can be done through the use of conditional statements such as else, if, and elif in python or else if in other languges. Selection can be used to make decisions in a program. For instance if you were to make a program that would ask the user for their age and then print out a message based on their age. You could use selection to make it so that if the user is under 18 it would print out a message saying that they are not old enough to vote, if they are 18 or older it would print out a message saying that they are old enough to vote, and if they are 21 or older it would print out a message saying that they are old enough to drink. This can be used to make a program more interactive and allow it to be more dynamic.</li>
 </ul>
 <h2 id="Selection-Code-Example">
@@ -922,32 +937,29 @@ Your total cost is $131.65
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">LAN</span><span class="p">():</span>
-    <span class="n">party_goers</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">gamer_test</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How many gamers are at your LAN party? Enter none if none are present"</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">gamer_test</span> <span class="o">==</span> <span class="s2">"none"</span><span class="p">:</span>
-        <span class="n">gamers</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">gamers</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">gamer_test</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">guests</span><span class="p">(</span><span class="n">Type</span><span class="p">):</span>
+        <span class="n">amount</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"How many </span><span class="si">{</span><span class="n">Type</span><span class="si">}</span><span class="s2">s are at your LAN party?"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">amount</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"none"</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
     
-    <span class="n">non_gamers_test</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How many non gamers are at your LAN party?"</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">non_gamers_test</span> <span class="o">==</span> <span class="s2">"none"</span><span class="p">:</span>
-        <span class="n">non_gamers</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">non_gamers</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">non_gamers_test</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">names</span><span class="p">(</span><span class="n">Type</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">amount</span><span class="p">):</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"What are the names of your </span><span class="si">{</span><span class="n">Type</span><span class="si">}</span><span class="s2">s friends?"</span><span class="p">)</span>
+            <span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">names</span>
     
-    <span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">gamers</span><span class="p">):</span>
-        <span class="n">gamer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What are the names of your gamer friends?"</span><span class="p">)</span>
-        <span class="n">party_goers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">gamer</span><span class="p">)</span>
+    <span class="n">gamers</span> <span class="o">=</span> <span class="n">guests</span><span class="p">(</span><span class="s2">"gamer"</span><span class="p">)</span>
+    <span class="n">non_gamers</span> <span class="o">=</span> <span class="n">guests</span><span class="p">(</span><span class="s2">"non gamer"</span><span class="p">)</span>
+    <span class="n">party_goers</span> <span class="o">=</span> <span class="n">names</span><span class="p">(</span><span class="s2">"gamer"</span><span class="p">,</span> <span class="n">gamers</span><span class="p">)</span> <span class="o">+</span> <span class="n">names</span><span class="p">(</span><span class="s2">"non gamer"</span><span class="p">,</span> <span class="n">non_gamers</span><span class="p">)</span>
     
-    <span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">non_gamers</span><span class="p">):</span>
-        <span class="n">non_gamer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What are the names of your non gamer friends?"</span><span class="p">)</span>
-        <span class="n">party_goers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">non_gamer</span><span class="p">)</span>
-
     <span class="n">mountain_dew</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">gamers</span>
     <span class="n">chips</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">gamers</span> <span class="o">+</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">non_gamers</span>
     <span class="n">GT730</span> <span class="o">=</span> <span class="n">non_gamers</span>
-
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You will need </span><span class="si">{</span><span class="n">mountain_dew</span><span class="si">}</span><span class="s2"> liters of Mountain Dew and </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">chips</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s2"> kg of chips for your party along with </span><span class="si">{</span><span class="n">GT730</span><span class="si">}</span><span class="s2"> GT730 Gaming PCs"</span><span class="p">)</span>
+    
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Your party goers are:"</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">party_goers</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">", "</span><span class="p">)</span>
 
@@ -987,36 +999,33 @@ Your party goers are: Jhonno, Steve, Barry, Nansi Pelosi, Gary, Steve
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">LAN</span><span class="p">():</span>
-    <span class="n">party_goers</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">gamer_test</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How many gamers are at your LAN party? Enter none if none are present"</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">gamer_test</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"none"</span><span class="p">:</span>
-        <span class="n">gamers</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">gamers</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">gamer_test</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">guests</span><span class="p">(</span><span class="n">Type</span><span class="p">):</span>
+        <span class="n">amount</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"How many </span><span class="si">{</span><span class="n">Type</span><span class="si">}</span><span class="s2">s are at your LAN party?"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">amount</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"none"</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
     
-    <span class="n">non_gamers_test</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How many non gamers are at your LAN party? Enter none if none are present"</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">non_gamers_test</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"none"</span><span class="p">:</span>
-        <span class="n">non_gamers</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">non_gamers</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">non_gamers_test</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">names</span><span class="p">(</span><span class="n">Type</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">amount</span><span class="p">):</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"What are the names of your </span><span class="si">{</span><span class="n">Type</span><span class="si">}</span><span class="s2">s friends?"</span><span class="p">)</span>
+            <span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">names</span>
     
-    <span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">gamers</span><span class="p">):</span>
-        <span class="n">gamer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What are the names of your gamer friends?"</span><span class="p">)</span>
-        <span class="n">party_goers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">gamer</span><span class="p">)</span>
+    <span class="n">gamers</span> <span class="o">=</span> <span class="n">guests</span><span class="p">(</span><span class="s2">"gamer"</span><span class="p">)</span>
+    <span class="n">non_gamers</span> <span class="o">=</span> <span class="n">guests</span><span class="p">(</span><span class="s2">"non gamer"</span><span class="p">)</span>
+    <span class="n">party_goers</span> <span class="o">=</span> <span class="n">names</span><span class="p">(</span><span class="s2">"gamer"</span><span class="p">,</span> <span class="n">gamers</span><span class="p">)</span> <span class="o">+</span> <span class="n">names</span><span class="p">(</span><span class="s2">"non gamer"</span><span class="p">,</span> <span class="n">non_gamers</span><span class="p">)</span>
     
-    <span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">non_gamers</span><span class="p">):</span>
-        <span class="n">non_gamer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What are the names of your non gamer friends?"</span><span class="p">)</span>
-        <span class="n">party_goers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">non_gamer</span><span class="p">)</span>
-
     <span class="n">mountain_dew</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">gamers</span>
     <span class="n">chips</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">gamers</span> <span class="o">+</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">non_gamers</span>
     <span class="n">GT730</span> <span class="o">=</span> <span class="n">non_gamers</span>
-
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You will need </span><span class="si">{</span><span class="n">mountain_dew</span><span class="si">}</span><span class="s2"> liters of Mountain Dew and </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">chips</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s2"> kg of chips for your party along with </span><span class="si">{</span><span class="n">GT730</span><span class="si">}</span><span class="s2"> GT730 Gaming PCs"</span><span class="p">)</span>
+    
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Your party goers are:"</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">party_goers</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">", "</span><span class="p">)</span>
 
-<span class="n">LAN</span><span class="p">()</span>   
+<span class="n">LAN</span><span class="p">()</span>
 
 <span class="c1"># If there are no gamer friends at the LAN party</span>
 </pre></div>
@@ -1043,6 +1052,68 @@ Your party goers are: berry, jerry
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">LAN</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">guests</span><span class="p">(</span><span class="n">Type</span><span class="p">):</span>
+        <span class="n">amount</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"How many </span><span class="si">{</span><span class="n">Type</span><span class="si">}</span><span class="s2">s are at your LAN party?"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">amount</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"none"</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">names</span><span class="p">(</span><span class="n">Type</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">amount</span><span class="p">):</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"What are the names of your </span><span class="si">{</span><span class="n">Type</span><span class="si">}</span><span class="s2">s friends?"</span><span class="p">)</span>
+            <span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">names</span>
+    
+    <span class="n">gamers</span> <span class="o">=</span> <span class="n">guests</span><span class="p">(</span><span class="s2">"gamer"</span><span class="p">)</span>
+    <span class="n">non_gamers</span> <span class="o">=</span> <span class="n">guests</span><span class="p">(</span><span class="s2">"non gamer"</span><span class="p">)</span>
+    <span class="n">party_goers</span> <span class="o">=</span> <span class="n">names</span><span class="p">(</span><span class="s2">"gamer"</span><span class="p">,</span> <span class="n">gamers</span><span class="p">)</span> <span class="o">+</span> <span class="n">names</span><span class="p">(</span><span class="s2">"non gamer"</span><span class="p">,</span> <span class="n">non_gamers</span><span class="p">)</span>
+    
+    <span class="n">mountain_dew</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">gamers</span>
+    <span class="n">chips</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">gamers</span> <span class="o">+</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">non_gamers</span>
+    <span class="n">GT730</span> <span class="o">=</span> <span class="n">non_gamers</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You will need </span><span class="si">{</span><span class="n">mountain_dew</span><span class="si">}</span><span class="s2"> liters of Mountain Dew and </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">chips</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s2"> kg of chips for your party along with </span><span class="si">{</span><span class="n">GT730</span><span class="si">}</span><span class="s2"> GT730 Gaming PCs"</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Your party goers are:"</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">party_goers</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">", "</span><span class="p">)</span>
+
+<span class="n">LAN</span><span class="p">()</span>   
+
+<span class="c1"># Through the use of selction through the use of if and else statments the porgram is able to determine not prompt the user for their non-gamer/gamer</span>
+<span class="c1"># friends are present then display the amount of refreshments and special punishments (GT730s) need to be arranged for the party.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You will need 3.0 liters of Mountain Dew and 6.75 kg of chips for your party along with 3 GT730 Gaming PCs
+Your party goers are: jerry, mary, gary, lary, lary
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1050,10 +1121,12 @@ Your party goers are: berry, jerry
 <a class="anchor" href="#Iteration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Iteration<a class="anchor-link" href="#Iteration"> </a>
 </h2>
 <ul>
-<li>Category: Making Decisions</li>
+<li>Category: Managing Complexity with Variables</li>
 <li>Definition: Iteration is the ability to run a block of code multiple times. This can be done through the use of loops. Loops are used to repeat a block of code. For instance if you were to make a program that would print out the numbers 1-10 you could use a loop to make it so that it would print out the numbers 1-10 without having to write out the print statement 10 times. This can be used to make a program more interactive and allow it to be more dynamic. </li>
 </ul>
-
+<h2 id="Iteration-Code-Example">
+<a class="anchor" href="#Iteration-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Iteration Code Example<a class="anchor-link" href="#Iteration-Code-Example"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1110,6 +1183,319 @@ Take one down, pass it around, 0 cheeses on the wall
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Expresions">
+<a class="anchor" href="#Expresions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Expresions<a class="anchor-link" href="#Expresions"> </a>
+</h2>
+<ul>
+<li>Category: Logical Operations &amp; Decision Making</li>
+<li>Definition: An expression is a combination of values, variables, operators with can be evaluated to have different outcome occur. For instance if a certain number is greater than another number in a game the person that rolled the larger number would get a message saying that they won through the use of an expression.</li>
+</ul>
+<h2 id="Expresions-Code-Example">
+<a class="anchor" href="#Expresions-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Expresions Code Example<a class="anchor-link" href="#Expresions-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="k">def</span> <span class="nf">game</span><span class="p">():</span>
+    <span class="n">num_rounds</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Rounds: "</span><span class="p">))</span>    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_rounds</span><span class="p">):</span>
+        
+        <span class="n">player1_numbers</span> <span class="o">=</span> <span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+        <span class="n">player2_numbers</span> <span class="o">=</span> <span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+        
+        <span class="k">if</span> <span class="nb">max</span><span class="p">(</span><span class="n">player1_numbers</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">max</span><span class="p">(</span><span class="n">player2_numbers</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"On round "</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span><span class="s2">" Player 1 won with a score of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">player1_numbers</span><span class="p">))</span> <span class="o">+</span> <span class="s2">" compared to Player 2 with a score of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">player2_numbers</span><span class="p">)))</span>
+        <span class="k">elif</span> <span class="nb">max</span><span class="p">(</span><span class="n">player1_numbers</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">max</span><span class="p">(</span><span class="n">player2_numbers</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"On round "</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span><span class="s2">" Player 2 won with a score of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">player2_numbers</span><span class="p">))</span> <span class="o">+</span> <span class="s2">" compared to Player 1 with a score of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">player1_numbers</span><span class="p">)))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Both players tied with a score of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">player1_numbers</span><span class="p">))</span> <span class="o">+</span> <span class="s2">" on round "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span> 
+<span class="n">game</span><span class="p">()</span>
+
+<span class="c1"># Through the use of expressions the program is abel to evaluate whether the </span>
+<span class="c1"># maximum value that the player rolled was larger or less thant the other </span>
+<span class="c1"># player then through that be able to print which player won the game </span>
+<span class="c1"># this would otherwise be impossible without the use of expressions.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>On round 1 Player 1 won with a score of 4 compared to Player 2 with a score of 3
+On round 2 Player 1 won with a score of 6 compared to Player 2 with a score of 4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Comparsion-Operators">
+<a class="anchor" href="#Comparsion-Operators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comparsion Operators<a class="anchor-link" href="#Comparsion-Operators"> </a>
+</h2>
+<ul>
+<li>Category: Logical Operations &amp; Decision Making</li>
+<li>Definiton: Comparsion Operators are used to compare two or more values. Some of these operators in python include ==. !=, &gt;, &lt;, &gt;=, and &lt;=. Which are equal to, not equal to, greater than, less than, greater than or equal to, and less than or equal to respectively.</li>
+</ul>
+<h2 id="Comparsion-Operators-Code-Example">
+<a class="anchor" href="#Comparsion-Operators-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comparsion Operators Code Example<a class="anchor-link" href="#Comparsion-Operators-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"abstraction"</span><span class="p">,</span> <span class="s2">"access"</span><span class="p">,</span> <span class="s2">"adapter"</span><span class="p">,</span> <span class="s2">"algorithm"</span><span class="p">,</span> <span class="s2">"analyst"</span><span class="p">,</span> <span class="s2">"anomaly"</span><span class="p">,</span> <span class="s2">"architecture"</span><span class="p">,</span> <span class="s2">"array"</span><span class="p">,</span> <span class="s2">"artificial"</span><span class="p">,</span> <span class="s2">"attribute"</span><span class="p">,</span> <span class="s2">"backend"</span><span class="p">,</span> <span class="s2">"bandwidth"</span><span class="p">,</span> <span class="s2">"benchmark"</span><span class="p">,</span> <span class="s2">"binary"</span><span class="p">,</span> <span class="s2">"blockchain"</span><span class="p">,</span> <span class="s2">"boolean"</span><span class="p">,</span> <span class="s2">"breadth"</span><span class="p">,</span> <span class="s2">"bug"</span><span class="p">,</span> <span class="s2">"byte"</span><span class="p">,</span> <span class="s2">"cache"</span><span class="p">,</span> <span class="s2">"calculator"</span><span class="p">,</span> <span class="s2">"capacity"</span><span class="p">,</span> <span class="s2">"cartesian"</span><span class="p">,</span> <span class="s2">"category"</span><span class="p">,</span> <span class="s2">"cipher"</span><span class="p">,</span> <span class="s2">"classification"</span><span class="p">,</span> <span class="s2">"client"</span><span class="p">,</span> <span class="s2">"client-server"</span><span class="p">,</span> <span class="s2">"closure"</span><span class="p">,</span> <span class="s2">"cluster"</span><span class="p">,</span> <span class="s2">"code"</span><span class="p">,</span> <span class="s2">"cognitive"</span><span class="p">,</span> <span class="s2">"cohesion"</span><span class="p">,</span> <span class="s2">"command"</span><span class="p">,</span> <span class="s2">"comment"</span><span class="p">,</span> <span class="s2">"communication"</span><span class="p">,</span> <span class="s2">"compiler"</span><span class="p">,</span> <span class="s2">"complexity"</span><span class="p">,</span> <span class="s2">"component"</span><span class="p">,</span> <span class="s2">"computation"</span><span class="p">,</span> <span class="s2">"concurrency"</span><span class="p">,</span> <span class="s2">"configuration"</span><span class="p">,</span> <span class="s2">"connectivity"</span><span class="p">,</span> <span class="s2">"consistency"</span><span class="p">,</span> <span class="s2">"constraint"</span><span class="p">,</span> <span class="s2">"container"</span><span class="p">,</span> <span class="s2">"context"</span><span class="p">,</span> <span class="s2">"contingency"</span><span class="p">,</span> <span class="s2">"continuous"</span><span class="p">,</span> <span class="s2">"control"</span><span class="p">,</span> <span class="s2">"converter"</span><span class="p">,</span> <span class="s2">"coordination"</span><span class="p">,</span> <span class="s2">"core"</span><span class="p">,</span> <span class="s2">"correlation"</span><span class="p">,</span> <span class="s2">"cursor"</span><span class="p">,</span> <span class="s2">"data"</span><span class="p">,</span> <span class="s2">"database"</span><span class="p">,</span> <span class="s2">"debugging"</span><span class="p">,</span> <span class="s2">"declaration"</span><span class="p">,</span> <span class="s2">"decrement"</span><span class="p">,</span> <span class="s2">"definition"</span><span class="p">,</span> <span class="s2">"degradation"</span><span class="p">,</span> <span class="s2">"delegation"</span><span class="p">,</span> <span class="s2">"delimiter"</span><span class="p">,</span> <span class="s2">"density"</span><span class="p">,</span> <span class="s2">"derivation"</span><span class="p">,</span> <span class="s2">"descendant"</span><span class="p">,</span> <span class="s2">"design"</span><span class="p">,</span> <span class="s2">"detection"</span><span class="p">,</span> <span class="s2">"dictionary"</span><span class="p">,</span> <span class="s2">"dimension"</span><span class="p">,</span> <span class="s2">"directive"</span><span class="p">,</span> <span class="s2">"discrete"</span><span class="p">,</span> <span class="s2">"dispatch"</span><span class="p">,</span> <span class="s2">"distributed"</span><span class="p">,</span> <span class="s2">"divergence"</span><span class="p">,</span> <span class="s2">"dynamic"</span><span class="p">,</span> <span class="s2">"echo"</span><span class="p">,</span> <span class="s2">"encoding"</span><span class="p">,</span> <span class="s2">"encryption"</span><span class="p">,</span> <span class="s2">"endpoint"</span><span class="p">,</span> <span class="s2">"enumeration"</span><span class="p">,</span> <span class="s2">"environment"</span><span class="p">,</span> <span class="s2">"equation"</span><span class="p">,</span> <span class="s2">"error"</span><span class="p">,</span> <span class="s2">"event"</span><span class="p">,</span> <span class="s2">"exception"</span><span class="p">,</span> <span class="s2">"execution"</span><span class="p">,</span> <span class="s2">"expression"</span><span class="p">,</span> <span class="s2">"extraction"</span><span class="p">,</span> <span class="s2">"failure"</span><span class="p">,</span> <span class="s2">"fault"</span><span class="p">,</span> <span class="s2">"fetch"</span><span class="p">,</span> <span class="s2">"flow"</span><span class="p">,</span> <span class="s2">"fragment"</span><span class="p">,</span> <span class="s2">"function"</span><span class="p">,</span> <span class="s2">"gateway"</span><span class="p">,</span> <span class="s2">"generic"</span><span class="p">,</span> <span class="s2">"granularity"</span><span class="p">,</span> <span class="s2">"graph"</span><span class="p">,</span> <span class="s2">"hashing"</span><span class="p">,</span> <span class="s2">"heap"</span><span class="p">,</span> <span class="s2">"heuristic"</span><span class="p">,</span> <span class="s2">"hierarchy"</span><span class="p">,</span> <span class="s2">"hyperlink"</span><span class="p">,</span> <span class="s2">"identity"</span><span class="p">,</span> <span class="s2">"implementation"</span><span class="p">,</span> <span class="s2">"inclusion"</span><span class="p">,</span> <span class="s2">"increment"</span><span class="p">,</span> <span class="s2">"index"</span><span class="p">,</span> <span class="s2">"inference"</span><span class="p">,</span> <span class="s2">"inheritance"</span><span class="p">,</span> <span class="s2">"initialization"</span><span class="p">,</span> <span class="s2">"input"</span><span class="p">,</span> <span class="s2">"instance"</span><span class="p">,</span> <span class="s2">"instruction"</span><span class="p">,</span> <span class="s2">"interface"</span><span class="p">,</span> <span class="s2">"interoperability"</span><span class="p">,</span> <span class="s2">"iteration"</span><span class="p">,</span> <span class="s2">"key"</span><span class="p">,</span> <span class="s2">"keyword"</span><span class="p">,</span> <span class="s2">"label"</span><span class="p">,</span> <span class="s2">"latency"</span><span class="p">,</span> <span class="s2">"library"</span><span class="p">,</span> <span class="s2">"lifecycle"</span><span class="p">,</span> <span class="s2">"link"</span><span class="p">,</span> <span class="s2">"load"</span><span class="p">,</span> <span class="s2">"localization"</span><span class="p">,</span> <span class="s2">"logic"</span><span class="p">,</span> <span class="s2">"loop"</span><span class="p">,</span> <span class="s2">"machine"</span><span class="p">,</span> <span class="s2">"management"</span><span class="p">,</span> <span class="s2">"manipulation"</span><span class="p">,</span> <span class="s2">"mapping"</span><span class="p">,</span> <span class="s2">"matrix"</span><span class="p">,</span> <span class="s2">"measurement"</span><span class="p">,</span> <span class="s2">"method"</span><span class="p">,</span> <span class="s2">"middleware"</span><span class="p">,</span> <span class="s2">"migration"</span><span class="p">,</span> <span class="s2">"model"</span><span class="p">,</span> <span class="s2">"modification"</span><span class="p">,</span> <span class="s2">"module"</span><span class="p">,</span> <span class="s2">"monitoring"</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">word_game</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
+    <span class="n">player1_word</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+    <span class="n">player2_word</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+    <span class="n">player1_score</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">player1_word</span><span class="p">)</span>
+    <span class="n">player2_score</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">player2_word</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">player1_score</span> <span class="o">&gt;</span> <span class="n">player2_score</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Player 1 wins as thier word </span><span class="si">{</span><span class="n">player1_word</span><span class="si">}</span><span class="s2"> is longer than Player 2's word </span><span class="si">{</span><span class="n">player2_word</span><span class="si">}</span><span class="s2"> by </span><span class="si">{</span><span class="n">player1_score</span> <span class="o">-</span> <span class="n">player2_score</span><span class="si">}</span><span class="s2"> letters"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">player2_score</span> <span class="o">&gt;</span> <span class="n">player1_score</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Player 2 wins as thier word </span><span class="si">{</span><span class="n">player2_word</span><span class="si">}</span><span class="s2"> is longer than Player 1's word </span><span class="si">{</span><span class="n">player1_word</span><span class="si">}</span><span class="s2"> by </span><span class="si">{</span><span class="n">player2_score</span> <span class="o">-</span> <span class="n">player1_score</span><span class="si">}</span><span class="s2"> letters"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Both players had words which were the same in length with a length of </span><span class="si">{</span><span class="n">player1_score</span><span class="si">}</span><span class="s2"> letters player 1's word was </span><span class="si">{</span><span class="n">player1_word</span><span class="si">}</span><span class="s2"> and player 2's word was </span><span class="si">{</span><span class="n">player2_word</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">word_game</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+
+<span class="c1"># Through the use of a comparsion operator the program is able to determine which player has the longest word and then print out </span>
+<span class="c1"># which player one and by how much longer their word was in comparsion so the other player. </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Player 1 wins as thier word compiler is longer than Player 2's word failure by 1 letters
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Boolean-Expressions-&amp;-Selection">
+<a class="anchor" href="#Boolean-Expressions-&amp;-Selection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Boolean Expressions &amp; Selection<a class="anchor-link" href="#Boolean-Expressions-&amp;-Selection"> </a>
+</h2>
+<ul>
+<li>Category: Logical Operations &amp; Decision Making</li>
+<li>Definition:</li>
+</ul>
+<h2 id="Boolean-Expressions-&amp;-Selection-Code-Example">
+<a class="anchor" href="#Boolean-Expressions-&amp;-Selection-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Boolean Expressions &amp; Selection Code Example<a class="anchor-link" href="#Boolean-Expressions-&amp;-Selection-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Booleans-Expressions-and-Iteration">
+<a class="anchor" href="#Booleans-Expressions-and-Iteration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Booleans Expressions and Iteration<a class="anchor-link" href="#Booleans-Expressions-and-Iteration"> </a>
+</h2>
+<ul>
+<li>Category: Logical Operations &amp; Decision Making</li>
+<li>Definition: </li>
+</ul>
+<h2 id="Booleans-Expressions-and-Iteration-Code-Example">
+<a class="anchor" href="#Booleans-Expressions-and-Iteration-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Booleans Expressions and Iteration Code Example<a class="anchor-link" href="#Booleans-Expressions-and-Iteration-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Truth-Tables">
+<a class="anchor" href="#Truth-Tables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Truth Tables<a class="anchor-link" href="#Truth-Tables"> </a>
+</h2>
+<ul>
+<li>Category: Logical Operations &amp; Decision Making</li>
+<li>Definition: Truth tables show the results of combining boolean values to show the whether or not a condition can be true or false. For instance if you were to make a truth table for the condition of a person being able to vote you could make it so that the first column would be the age of the person and the second column would be whether or not they are a citizen. Then you could make it so that if the person is 18 or older and a citizen they can vote, if they are 18 or older and not a citizen they can not vote, if they are under 18 and a citizen they can not vote, and if they are under 18 and not a citizen they can not vote. This is an illustration of how truth tables can be used to make decisions in a program. However they can also be used when expressing other operations besides <em>and</em> such as <em>or</em>, <em>not</em>, and <em>xor</em>.</li>
+</ul>
+<h2 id="Truth-Tables-Code-Example">
+<a class="anchor" href="#Truth-Tables-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Truth Tables Code Example<a class="anchor-link" href="#Truth-Tables-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">Truth_Table</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">Logic</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+        <span class="n">AND</span> <span class="o">=</span> <span class="n">A</span> <span class="ow">and</span> <span class="n">B</span>
+        <span class="n">OR</span> <span class="o">=</span> <span class="n">A</span> <span class="ow">or</span> <span class="n">B</span>
+        <span class="n">NOT</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">A</span>
+        <span class="n">XOR</span> <span class="o">=</span> <span class="n">A</span> <span class="o">^</span> <span class="n">B</span>
+        <span class="k">return</span> <span class="n">AND</span><span class="p">,</span> <span class="n">OR</span><span class="p">,</span> <span class="n">NOT</span><span class="p">,</span> <span class="n">XOR</span>
+    <span class="n">AND</span><span class="p">,</span> <span class="n">OR</span><span class="p">,</span> <span class="n">NOT</span><span class="p">,</span> <span class="n">XOR</span> <span class="o">=</span> <span class="n">Logic</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">A</span><span class="si">}</span><span class="se">\t</span><span class="si">{</span><span class="n">B</span><span class="si">}</span><span class="se">\t</span><span class="si">{</span><span class="n">AND</span><span class="si">}</span><span class="se">\t</span><span class="si">{</span><span class="n">OR</span><span class="si">}</span><span class="se">\t</span><span class="si">{</span><span class="n">NOT</span><span class="si">}</span><span class="se">\t</span><span class="si">{</span><span class="n">XOR</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"A</span><span class="se">\t</span><span class="s2">B</span><span class="se">\t</span><span class="s2">AND</span><span class="se">\t</span><span class="s2">OR</span><span class="se">\t</span><span class="s2">NOT</span><span class="se">\t</span><span class="s2">XOR"</span><span class="p">)</span>
+<span class="n">Truth_Table</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">Truth_Table</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">Truth_Table</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">Truth_Table</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Through a Truth Table the program is able to </span>
+<span class="c1"># display the result of the logic gates AND, OR, NOT,</span>
+<span class="c1"># and XOR. Illustrating how each gate functions. </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A	B	AND	OR	NOT	XOR
+True	False	False	True	False	True
+False	True	False	True	True	True
+False	False	False	False	True	False
+True	True	True	True	False	False
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Charectors">
+<a class="anchor" href="#Charectors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Charectors<a class="anchor-link" href="#Charectors"> </a>
+</h2>
+<ul>
+<li>Category: Strings &amp; String Operations</li>
+<li>Definition: A character is a symbol that represents a letter, number, or other character. They are used to represent all kinds of itmes including special charectors and spaces. Ex. !@#$%^&amp;*()_+{}|:"&lt;&gt;?`~[]\;',./ are all charectors. Charectors can be stored in strings in python.</li>
+</ul>
+<h2 id="Charectors-Code-Example">
+<a class="anchor" href="#Charectors-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Charectors Code Example<a class="anchor-link" href="#Charectors-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">charectors</span><span class="p">():</span>
+    <span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your word?"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Your word is </span><span class="si">{</span><span class="n">word</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">charector</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">charector</span><span class="si">}</span><span class="s2"> has the ASCII code </span><span class="si">{</span><span class="nb">ord</span><span class="p">(</span><span class="n">charector</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">charectors</span><span class="p">()</span>
+<span class="c1"># This program showcases charectors stored in a string which it </span>
+<span class="c1"># then iterates through printing the ASCII code that each </span>
+<span class="c1"># charector correlates to.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Your word is butter
+b has the ASCII code 98
+u has the ASCII code 117
+t has the ASCII code 116
+t has the ASCII code 116
+e has the ASCII code 101
+r has the ASCII code 114
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Strings">
+<a class="anchor" href="#Strings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Strings<a class="anchor-link" href="#Strings"> </a>
+</h2>
+<ul>
+<li>Category: Strings &amp; String Operations</li>
+<li>Definition: Strings are a datatype that is used to store textin a program. For instance if you were to make a program that would ask the user for their name and then print out a message saying hello to them you could use a string to store the users name. </li>
+</ul>
+<h2 id="Strings-Code-Example">
+<a class="anchor" href="#Strings-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Strings Code Example<a class="anchor-link" href="#Strings-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
 </div>
 
 
