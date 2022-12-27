@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      41 min read
+      44 min read
     
 </span></p>
 
@@ -157,6 +157,14 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Nested-Selection-Statement">Nested Selection Statement </a></li>
 <li class="toc-entry toc-h2"><a href="#Nested-Selection-Statement-Code-Example">Nested Selection Statement Code Example </a></li>
 <li class="toc-entry toc-h2"><a href="#Python-For">Python For </a></li>
+<li class="toc-entry toc-h2"><a href="#Python-For-Code-Example">Python For Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#While-Loops-With-Range">While Loops With Range </a></li>
+<li class="toc-entry toc-h2"><a href="#While-Loops-With-Range-Code-Example">While Loops With Range Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#List-Combining-Loops-With-Conditionals-To-Break">List Combining Loops With Conditionals To Break </a></li>
+<li class="toc-entry toc-h2"><a href="#List-Combining-Loops-With-Conditionals-To-Break-Code-Example">List Combining Loops With Conditionals To Break Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Continue">Continue </a></li>
+<li class="toc-entry toc-h2"><a href="#Continue-Code-Example">Continue Code Example </a></li>
+<li class="toc-entry toc-h2"><a href="#Procedural-Abstraction">Procedural Abstraction </a></li>
 </ul>
 </li>
 </ul><!--
@@ -2174,10 +2182,12 @@ Your first number was also negative
 <a class="anchor" href="#Python-For" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python For<a class="anchor-link" href="#Python-For"> </a>
 </h2>
 <ul>
-<li>Category: Iteration</li>
+<li>Category: Loops &amp; Iteration</li>
 <li>Definition: The For loop is a loop that is used to repeat a block of code a certain number of times. For instance you could write a program that would iterate through a list of numbers and print out each number in the list.</li>
 </ul>
-
+<h2 id="Python-For-Code-Example">
+<a class="anchor" href="#Python-For-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python For Code Example<a class="anchor-link" href="#Python-For-Code-Example"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2188,7 +2198,14 @@ Your first number was also negative
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wonders</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">"Great Pyramid of Giza"</span><span class="p">,</span> <span class="mf">29.9792</span><span class="p">,</span> <span class="mf">31.1342</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Hanging Gardens of Babylon"</span><span class="p">,</span> <span class="mf">32.5350</span><span class="p">,</span> <span class="mf">44.4270</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Temple of Artemis at Ephesus"</span><span class="p">,</span> <span class="mf">37.9279</span><span class="p">,</span> <span class="mf">27.3506</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Statue of Zeus at Olympia"</span><span class="p">,</span> <span class="mf">37.6275</span><span class="p">,</span> <span class="mf">21.6405</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Mausoleum of Halicarnassus"</span><span class="p">,</span> <span class="mf">37.0353</span><span class="p">,</span> <span class="mf">27.4162</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Colossus of Rhodes"</span><span class="p">,</span> <span class="mf">36.4450</span><span class="p">,</span> <span class="mf">28.2269</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Lighthouse of Alexandria"</span><span class="p">,</span> <span class="mf">31.2156</span><span class="p">,</span> <span class="mf">29.9456</span><span class="p">)]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wonders</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">"Great Pyramid of Giza"</span><span class="p">,</span> <span class="mf">29.9792</span><span class="p">,</span> <span class="mf">31.1342</span><span class="p">),</span> 
+    <span class="p">(</span><span class="s2">"Hanging Gardens of Babylon"</span><span class="p">,</span> <span class="mf">32.5350</span><span class="p">,</span> <span class="mf">44.4270</span><span class="p">),</span> 
+    <span class="p">(</span><span class="s2">"Temple of Artemis at Ephesus"</span><span class="p">,</span> <span class="mf">37.9279</span><span class="p">,</span> <span class="mf">27.3506</span><span class="p">),</span> 
+    <span class="p">(</span><span class="s2">"Statue of Zeus at Olympia"</span><span class="p">,</span> <span class="mf">37.6275</span><span class="p">,</span> <span class="mf">21.6405</span><span class="p">),</span> 
+    <span class="p">(</span><span class="s2">"Mausoleum of Halicarnassus"</span><span class="p">,</span> <span class="mf">37.0353</span><span class="p">,</span> <span class="mf">27.4162</span><span class="p">),</span> 
+    <span class="p">(</span><span class="s2">"Colossus of Rhodes"</span><span class="p">,</span> <span class="mf">36.4450</span><span class="p">,</span> <span class="mf">28.2269</span><span class="p">),</span> 
+    <span class="p">(</span><span class="s2">"Lighthouse of Alexandria"</span><span class="p">,</span> <span class="mf">31.2156</span><span class="p">,</span> <span class="mf">29.9456</span><span class="p">)]</span>
 
 <span class="k">def</span> <span class="nf">wonder_Location</span><span class="p">(</span><span class="n">wonders</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">wonder</span> <span class="ow">in</span> <span class="n">wonders</span><span class="p">:</span>
@@ -2218,6 +2235,307 @@ Statue of Zeus at Olympia is located at 37.6275, 21.6405
 Mausoleum of Halicarnassus is located at 37.0353, 27.4162
 Colossus of Rhodes is located at 36.445, 28.2269
 Lighthouse of Alexandria is located at 31.2156, 29.9456
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="While-Loops-With-Range">
+<a class="anchor" href="#While-Loops-With-Range" aria-hidden="true"><span class="octicon octicon-link"></span></a>While Loops With Range<a class="anchor-link" href="#While-Loops-With-Range"> </a>
+</h2>
+<ul>
+<li>Category: Loops &amp; Iteration</li>
+<li>Definition: A while loops is a kind of loop that iterates while a condition is true this could be used with range in a way so you can iterate a certain number of times. For instance using this kind of loop you would be able to iterate only 5 times to only execute a certain block of code that amount of times such as a print statement.</li>
+</ul>
+<h2 id="While-Loops-With-Range-Code-Example">
+<a class="anchor" href="#While-Loops-With-Range-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>While Loops With Range Code Example<a class="anchor-link" href="#While-Loops-With-Range-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">printer</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="n">printer</span><span class="p">(</span><span class="s2">"Hello World"</span><span class="p">)</span>
+<span class="c1"># Through the use of a while loop</span>
+<span class="c1"># with range you are able to </span>
+<span class="c1"># print the message only 5 times</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="List-Combining-Loops-With-Conditionals-To-Break">
+<a class="anchor" href="#List-Combining-Loops-With-Conditionals-To-Break" aria-hidden="true"><span class="octicon octicon-link"></span></a>List Combining Loops With Conditionals To Break<a class="anchor-link" href="#List-Combining-Loops-With-Conditionals-To-Break"> </a>
+</h2>
+<ul>
+<li>Category: Loops &amp; Iteration</li>
+<li>Definition: You can combine loops with conditionals that could prematurly terminate that loop if it were to be iterating through a list if a certain condition was met.</li>
+</ul>
+<h2 id="List-Combining-Loops-With-Conditionals-To-Break-Code-Example">
+<a class="anchor" href="#List-Combining-Loops-With-Conditionals-To-Break-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>List Combining Loops With Conditionals To Break Code Example<a class="anchor-link" href="#List-Combining-Loops-With-Conditionals-To-Break-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"hello"</span><span class="p">,</span> <span class="s2">"world"</span><span class="p">,</span> <span class="s2">"spam"</span><span class="p">,</span> <span class="s2">"eggs"</span><span class="p">]</span>
+<span class="k">def</span> <span class="nf">word_search</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
+    <span class="n">loops</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="n">rsp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What word do you want to check?"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">rsp</span><span class="si">}</span><span class="s2"> was found after </span><span class="si">{</span><span class="n">loops</span><span class="si">}</span><span class="s2"> loops"</span><span class="p">)</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">rsp</span><span class="si">}</span><span class="s2"> was not found after </span><span class="si">{</span><span class="n">loops</span><span class="si">}</span><span class="s2"> loops"</span><span class="p">)</span>
+        <span class="n">loops</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="n">word_search</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+
+<span class="c1"># Through the use of a for loop which iterates </span>
+<span class="c1"># through the list of words and conditionals </span>
+<span class="c1"># within the program is able end the loop</span>
+<span class="c1"># once the word is found before the loop is done</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>gamer was not found after 0 loops
+butter was not found after 1 loops
+world was found after 2 loops
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Continue">
+<a class="anchor" href="#Continue" aria-hidden="true"><span class="octicon octicon-link"></span></a>Continue<a class="anchor-link" href="#Continue"> </a>
+</h2>
+<ul>
+<li>Category: Loops &amp; Iteration</li>
+<li>Definition: Continue is a keyword which is used to skip the current iteration and move on to the next one. For instance if you were to make a program that would iterate through a list of numbers and print out all the even numbers you could use continue to skip the odd numbers.</li>
+</ul>
+<h2 id="Continue-Code-Example">
+<a class="anchor" href="#Continue-Code-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Continue Code Example<a class="anchor-link" href="#Continue-Code-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="c1"># Through the use of the continue statement</span>
+<span class="c1"># the program is able to skip the even numbers</span>
+<span class="c1"># and only print the odd numbers</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+3
+5
+7
+9
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="c1"># Without the use of the continue statement</span>
+<span class="c1"># The program only printed the even numbers</span>
+<span class="c1"># as without continue they were not skipped</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+2
+4
+6
+8
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Procedural-Abstraction">
+<a class="anchor" href="#Procedural-Abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Procedural Abstraction<a class="anchor-link" href="#Procedural-Abstraction"> </a>
+</h2>
+<ul>
+<li>Category: Functions</li>
+<li>Definition: Procedural Abstraction is about creating a simplifed interface for a more complex operation. Which is done by breaking things up into smaller componenents and steps to be able to deal with complex problems more easily and also being able to resure code through spliting it up into smaller more managable functions. </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">numbers</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">number_adder</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
+
+    <span class="k">def</span> <span class="nf">number_subtractor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">num1</span> <span class="o">-</span> <span class="n">num2</span>
+
+    <span class="k">def</span> <span class="nf">number_multiplier</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">num1</span> <span class="o">*</span> <span class="n">num2</span>
+
+    <span class="k">def</span> <span class="nf">number_divider</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">round</span><span class="p">(</span><span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">number_exponent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">num1</span> <span class="o">**</span> <span class="n">num2</span>
+
+<span class="n">nums</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The numbers added together is: </span><span class="si">{</span><span class="n">nums</span><span class="o">.</span><span class="n">number_adder</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The numbers subtracted together is: </span><span class="si">{</span><span class="n">nums</span><span class="o">.</span><span class="n">number_subtractor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The numbers multiplied together is: </span><span class="si">{</span><span class="n">nums</span><span class="o">.</span><span class="n">number_multiplier</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The numbers is: </span><span class="si">{</span><span class="n">nums</span><span class="o">.</span><span class="n">number_divider</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The num1 to the power of num2 is: </span><span class="si">{</span><span class="n">nums</span><span class="o">.</span><span class="n">number_exponent</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Through the use of procedural abstaction the more complex</span>
+<span class="c1"># functions are abstracted into smaller functions which are</span>
+<span class="c1"># easier to understand and read as well as being able to be</span>
+<span class="c1"># used by the user of the program.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The numbers added together is: 3
+The numbers subtracted together is: -1
+The numbers multiplied together is: 2
+The numbers is: 0.5
+The num1 to the power of num2 is: 1
 </pre>
 </div>
 </div>
