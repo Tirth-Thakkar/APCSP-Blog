@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -435,6 +435,8 @@ Test 4, make a dictionary
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
 <span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">dob</span><span class="p">,</span> <span class="n">classOf</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
@@ -465,20 +467,47 @@ Test 4, make a dictionary
     <span class="k">def</span> <span class="nf">change_classOf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">new_classOf</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">classOf</span> <span class="o">=</span> <span class="n">new_classOf</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"Class Of changed to </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">classOf</span><span class="si">}</span><span class="s2">"</span>
+    
+    <span class="k">def</span> <span class="nf">student_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># need to change date to string to send json Data</span>
+        <span class="n">send_dob</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dob</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"%m/</span><span class="si">%d</span><span class="s2">/%Y"</span><span class="p">)</span>
+        <span class="n">student_information</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">"name"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="s2">"dob"</span><span class="p">:</span> <span class="n">send_dob</span><span class="p">,</span>
+            <span class="s2">"age"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">,</span>
+            <span class="s2">"classOf"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">classOf</span>
+        <span class="p">}</span>
+        
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">student_information</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"Name: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">, Age: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="si">}</span><span class="s2">, DOB: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">dob</span><span class="si">}</span><span class="s2">, Class Of: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">classOf</span><span class="si">}</span><span class="s2">"</span>
 
-<span class="n">Jermey</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s2">"Jermey"</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="mi">2002</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">14</span><span class="p">),</span> <span class="mi">2021</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">Jermey</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Jeremey is going to graduate in </span><span class="si">{</span><span class="n">Jermey</span><span class="o">.</span><span class="n">get_classOf</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">Jermey</span><span class="o">.</span><span class="n">change_classOf</span><span class="p">(</span><span class="mi">2069</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Jeremey is now going to graduate in </span><span class="si">{</span><span class="n">Jermey</span><span class="o">.</span><span class="n">get_classOf</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="c1"># Defining Student</span>
+<span class="n">Jermey</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s2">"Jermey"</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="mi">2002</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">14</span><span class="p">),</span> <span class="mi">2023</span><span class="p">)</span>
+
+<span class="c1"># Printing Json Data and Student Information</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Jermey</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Jermey</span><span class="o">.</span><span class="n">student_data</span><span class="p">())</span>
+
+<span class="c1"># Getting Class Of </span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Jeremey is going to graduate in </span><span class="si">{</span><span class="n">Jermey</span><span class="o">.</span><span class="n">get_classOf</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Setting Class Of</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">Jermey</span><span class="o">.</span><span class="n">change_classOf</span><span class="p">(</span><span class="mi">2069</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Jeremey is now going to graduate in </span><span class="si">{</span><span class="n">Jermey</span><span class="o">.</span><span class="n">get_classOf</span><span class="p">()</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Getting Dob</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Jeremy was born on </span><span class="si">{</span><span class="n">Jermey</span><span class="o">.</span><span class="n">get_dob</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Jeremy is </span><span class="si">{</span><span class="n">Jermey</span><span class="o">.</span><span class="n">get_age</span><span class="p">()</span><span class="si">}</span><span class="s2"> years old as of </span><span class="si">{</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Jeremy is </span><span class="si">{</span><span class="n">Jermey</span><span class="o">.</span><span class="n">get_age</span><span class="p">()</span><span class="si">}</span><span class="s2"> years old as of </span><span class="si">{</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Setting Dob</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">Jermey</span><span class="o">.</span><span class="n">change_dob</span><span class="p">(</span><span class="n">date</span><span class="p">(</span><span class="mi">1941</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">30</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Jeremy is </span><span class="si">{</span><span class="n">Jermey</span><span class="o">.</span><span class="n">get_age</span><span class="p">()</span><span class="si">}</span><span class="s2"> years old as of </span><span class="si">{</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Jeremy is </span><span class="si">{</span><span class="n">Jermey</span><span class="o">.</span><span class="n">get_age</span><span class="p">()</span><span class="si">}</span><span class="s2"> years old as of </span><span class="si">{</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Printing Json Data and Student Information after updates</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"New Jermey is </span><span class="si">{</span><span class="n">Jermey</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Jermey</span><span class="o">.</span><span class="n">student_data</span><span class="p">())</span>
 </pre></div>
 
     </div>
@@ -491,15 +520,21 @@ Test 4, make a dictionary
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Name: Jermey, Age: 20, DOB: 2002-05-14, Class Of: 2021
-Jeremey is going to graduate in 2021
+<pre>Name: Jermey, Age: 20, DOB: 2002-05-14, Class Of: 2023
+{"name": "Jermey", "dob": "05/14/2002", "age": 20, "classOf": 2023}
+
+Jeremey is going to graduate in 2023
 Class Of changed to 2069
 Jeremey is now going to graduate in 2069
+
 Jeremy was born on 2002-05-14
-Jeremy is 20 years old as of 2023-01-12
+Jeremy is 20 years old as of 2023-01-15
+
 Date of Birth changed to 1941-12-30
-Jeremy is 81 years old as of 2023-01-12
+Jeremy is 81 years old as of 2023-01-15
+
 New Jermey is Name: Jermey, Age: 81, DOB: 1941-12-30, Class Of: 2069
+{"name": "Jermey", "dob": "12/30/1941", "age": 81, "classOf": 2069}
 </pre>
 </div>
 </div>
@@ -517,11 +552,15 @@ New Jermey is Name: Jermey, Age: 81, DOB: 1941-12-30, Class Of: 2069
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Rectangle</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="k">class</span> <span class="nc">Rectangle</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">=</span> <span class="n">length</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">height</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sa</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">surface_area</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vol</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">volume</span><span class="p">()</span>
     
     <span class="k">def</span> <span class="nf">volume</span> <span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">volume</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span>
@@ -531,11 +570,21 @@ New Jermey is Name: Jermey, Age: 81, DOB: 1941-12-30, Class Of: 2069
         <span class="n">surface_area</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">surface_area</span>
     
+    <span class="k">def</span> <span class="nf">information</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'length'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">length</span><span class="p">,</span> <span class="s1">'width'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="s1">'height'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="p">,</span> <span class="s1">'volume'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">vol</span><span class="p">,</span> <span class="s1">'surface_area'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">sa</span><span class="p">}</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"Rectanglular Prism: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">length</span><span class="si">}</span><span class="s2"> ft x </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">width</span><span class="si">}</span><span class="s2"> ft x </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="si">}</span><span class="s2"> ft"</span>
 
+<span class="c1"># Creating an instance of Recatangle</span>
 <span class="n">rect</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># Properties of the instance of Rectangle</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">rect</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rect</span><span class="o">.</span><span class="n">information</span><span class="p">())</span>
+
+<span class="c1"># Calculating Volume and Surface Area</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Volume: </span><span class="si">{</span><span class="n">rect</span><span class="o">.</span><span class="n">volume</span><span class="p">()</span><span class="si">}</span><span class="s2"> ft^3"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Surface Area: </span><span class="si">{</span><span class="n">rect</span><span class="o">.</span><span class="n">surface_area</span><span class="p">()</span><span class="si">}</span><span class="s2"> ft^2"</span><span class="p">)</span>
 </pre></div>
@@ -551,6 +600,7 @@ New Jermey is Name: Jermey, Age: 81, DOB: 1941-12-30, Class Of: 2069
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Rectanglular Prism: 2 ft x 3 ft x 4 ft
+{"length": 2, "width": 3, "height": 4}
 Volume: 24 ft^3
 Surface Area: 52 ft^2
 </pre>
