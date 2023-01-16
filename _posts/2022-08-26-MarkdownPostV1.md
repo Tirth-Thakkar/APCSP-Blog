@@ -4,7 +4,7 @@ toc: true
 branch: master
 layout: post
 decription: Markdown Demo - Tirth Thakkar
-categories: [markdown]
+categories: [week0]
 tags: [week0]
 author: Tirth Thakkar
 show_tags: true
