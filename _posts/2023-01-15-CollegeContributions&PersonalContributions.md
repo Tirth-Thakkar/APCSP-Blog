@@ -1,4 +1,3 @@
-
 ---
 title: College Board CPT Project & Personal Contributions
 toc: true
