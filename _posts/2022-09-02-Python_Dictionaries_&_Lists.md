@@ -6,8 +6,8 @@ toc: true
 branch: master
 comments: true
 image: /images/Information.jpg
-tags: [week2]
-categories: [week2]
+tags: [week02]
+categories: [week02]
 nb_path: _notebooks/2022-09-02-Python_Dictionaries_&_Lists.ipynb
 layout: notebook
 ---

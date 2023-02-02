@@ -5,8 +5,8 @@ title: Tool Check
 toc: true
 comments: true
 image: images/Tools.jpg
-tags: [week1]
-categories: [week1]
+tags: [week01]
+categories: [week01]
 nb_path: _notebooks/2022-08-28-Bash_Check.ipynb
 layout: notebook
 ---

@@ -5,8 +5,8 @@ title: Python Quiz With Dictionary
 toc: true
 comments: true
 image: images/Snek2.png
-tags: [week2]
-categories: [week2]
+tags: [week02]
+categories: [week02]
 nb_path: _notebooks/2022-09-02-Dictionary_Quiz.ipynb
 layout: notebook
 ---
@@ -35,19 +35,22 @@ layout: notebook
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Q_Bank</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;Dynamic code is code that has inputs and outputs that can change?&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;true&quot;</span><span class="p">],</span>
-    <span class="s2">&quot;What is the keyword for defining a function in Python?&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;def()&quot;</span><span class="p">],</span>
-    <span class="s2">&quot;In Jupyter Notebooks the Input is in line with the Output&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;false&quot;</span><span class="p">],</span>
-    <span class="s2">&quot;What is grouping often used commands called?&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;procedural abstraction&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;Dynamic code is code that has inputs and outputs that can change?&quot;</span><span class="p">:</span><span class="s2">&quot;true&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;What is the keyword for defining a function in Python?&quot;</span><span class="p">:</span> <span class="s2">&quot;def&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;In Jupyter Notebooks the Input is in line with the Output&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;What is grouping often used commands called?&quot;</span><span class="p">:</span> <span class="s2">&quot;procedural abstraction&quot;</span><span class="p">,</span>
 <span class="p">}</span>
 
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">Q</span><span class="p">,</span> <span class="n">ans</span> <span class="ow">in</span> <span class="n">Q_Bank</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
     <span class="n">rsp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">ans</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your answer &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; is the correct correct&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="n">ans</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Your answer </span><span class="si">{</span><span class="n">rsp</span><span class="si">}</span><span class="s2"> is the correct correct&quot;</span><span class="p">)</span>
+        <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your answer &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rsp</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; doesn&#39;t equal the correct answer/s which is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ans</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Your answer </span><span class="si">{</span><span class="n">rsp</span><span class="si">}</span><span class="s2"> doesn&#39;t equal the correct answer/s which is </span><span class="si">{</span><span class="n">ans</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Your score is </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2"> out of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">Q_Bank</span><span class="p">)</span><span class="si">}</span><span class="s2"> points.&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -61,13 +64,14 @@ layout: notebook
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dynamic code is code that has inputs and outputs that can change?
-Your answer  doesn&#39;t equal the correct answer/s which is [&#39;true&#39;]
+Your answer true is the correct correct
 What is the keyword for defining a function in Python?
-Your answer  doesn&#39;t equal the correct answer/s which is [&#39;def()&#39;]
+Your answer def is the correct correct
 In Jupyter Notebooks the Input is in line with the Output
-Your answer  doesn&#39;t equal the correct answer/s which is [&#39;false&#39;]
+Your answer false is the correct correct
 What is grouping often used commands called?
-Your answer  doesn&#39;t equal the correct answer/s which is [&#39;procedural abstraction&#39;]
+Your answer grouping doesn&#39;t equal the correct answer/s which is procedural abstraction
+Your score is 3 out of 4 points.
 </pre>
 </div>
 </div>

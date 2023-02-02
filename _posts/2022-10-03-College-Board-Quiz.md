@@ -5,8 +5,8 @@ title: College Board Quizzes
 toc: true
 comments: true
 image: images/Scammer.png
-tags: [week6]
-categories: [week6]
+tags: [week06]
+categories: [week06]
 nb_path: _notebooks/2022-10-03-College-Board-Quiz.ipynb
 layout: notebook
 ---
