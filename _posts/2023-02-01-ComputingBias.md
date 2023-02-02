@@ -26,7 +26,8 @@ comments: true
         - 30-39 21.7%
         - 40-49 20.5%
         - 50+ 11%
-    Reflection: the states that mostly younger audiences are on TikTok with older audiences on Facebook. There is no purposeful exclusion but comes from the nature of the app but their content creates a divide that makes it so that certain audiences may begin to prefer slower paced vs faster paced content.
+- ### Reflection: 
+    The information illustrates that mostly younger audiences are on TikTok with older audiences on Facebook. There is no purposeful exclusion but comes from the nature of the app but their content creates a divide that makes it so that certain audiences may begin to prefer slower paced vs faster paced content.
 ## Virtual Assistants
 - ### Female Voices? 
     - Virtual Assistants occupy roles that traditionally fill the roles of what is regarded as female jobs. Along with more data being present regarding women and the fact that female voices are easier to hear and are easier to annunciate. 
