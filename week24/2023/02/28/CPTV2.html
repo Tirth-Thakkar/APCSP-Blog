@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      4 min read
     
 </span></p>
 
@@ -141,6 +141,15 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#3bv">3bv </a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#3c">3c </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#3ci">3ci </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#3cii">3cii </a></li>
+<li class="toc-entry toc-h2"><a href="#3ciii">3ciii </a></li>
+<li class="toc-entry toc-h2"><a href="#3civ">3civ </a></li>
+<li class="toc-entry toc-h2"><a href="#3d">3d </a></li>
 </ul>
 </li>
 </ul><!--
@@ -260,15 +269,8 @@ window.onload = wrap_img;
 <a class="anchor" href="#3biii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3biii<a class="anchor-link" href="#3biii"> </a>
 </h2>
 <ul>
-<li>The name of the list is called leaders which stores 5 Leader objects. The code snippet above shows the use of a for loop to iterate through the list and follow through the create method in the Leader class which adds the Leader to the Leaderboard SQL table. Which contributes the greater functionality of the program this allows for the creation of a database with data which is then used later in the program through the use of SQL alchemy functions to be able to sort the data in the database and thus generate the filtered leaderboard and be accessed via a get request. Along with the user of other functions such as endpoints to be able to access all the scores of a selected Leader via post request specifying the desired Leader. </li>
+<li>The name of the list is called leaders which stores 5 Leader objects. The code snippet above shows the use of a for loop to iterate through the list and follow through the create method in the Leader class which adds the Leader to the Leaderboard SQL table. Which contributes the greater functionality of the program this allows for the creation of a database with data which is then used later in the program through the use of SQL alchemy functions to be able to sort the data in the database and thus generate the filtered leaderboard and be accessed via a get request. Along with the user of other functions such as endpoints to be able to access all the scores of a selected Leader via post request specifying the desired Leader.</li>
 </ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="3biv">
 <a class="anchor" href="#3biv" aria-hidden="true"><span class="octicon octicon-link"></span></a>3biv<a class="anchor-link" href="#3biv"> </a>
 </h3>
@@ -282,6 +284,151 @@ window.onload = wrap_img;
 <li>If the list was not used it would make it so that there would for one not be data to sort and search for user scores as there would be no content in the database thus making it so that the inherent functionality of the program would not be able to be used. Along with the fact that if the list was not used the creation of Leader entries. </li>
 </ul>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3c">
+<a class="anchor" href="#3c" aria-hidden="true"><span class="octicon octicon-link"></span></a>3c<a class="anchor-link" href="#3c"> </a>
+</h2>
+<h3 id="3ci">
+<a class="anchor" href="#3ci" aria-hidden="true"><span class="octicon octicon-link"></span></a>3ci<a class="anchor-link" href="#3ci"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="k">class</span> <span class="nc">_Score</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">post</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="sd">''' Read data for json body '''</span>
+            <span class="n">body</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">()</span>
+            <span class="n">username</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'username'</span><span class="p">)</span>
+            <span class="n">score</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'score'</span><span class="p">)</span>
+            <span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">filter</span><span class="p">((</span><span class="n">User</span><span class="o">.</span><span class="n">_username</span> <span class="o">==</span> <span class="n">username</span><span class="p">))</span><span class="o">.</span><span class="n">first</span>
+            <span class="c1"># this is checking for garbage data and stopping it </span>
+            <span class="k">if</span> <span class="n">username</span> <span class="o">==</span> <span class="s1">'null'</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'error no login'</span><span class="p">},</span> <span class="mi">210</span>
+            <span class="k">if</span> <span class="n">user</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'error no user'</span><span class="p">},</span> <span class="mi">210</span>
+            <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">score</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">False</span> <span class="ow">or</span> <span class="nb">int</span><span class="p">(</span><span class="n">score</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'error no score'</span><span class="p">},</span> <span class="mi">210</span>
+        
+            <span class="sd">''' #1: Key code block, setup USER OBJECT '''</span>
+            <span class="n">leader</span> <span class="o">=</span> <span class="n">Leader</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="n">score</span><span class="p">)</span>
+            <span class="c1"># create user in database</span>
+            <span class="n">user</span> <span class="o">=</span> <span class="n">leader</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+            <span class="c1"># success returns json of user</span>
+            <span class="k">if</span> <span class="n">user</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+            <span class="c1"># failure returns error</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Processed </span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s1">, either a format error or score </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s1"> is negative or zero'</span><span class="p">},</span> <span class="mi">210</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3cii">
+<a class="anchor" href="#3cii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3cii<a class="anchor-link" href="#3cii"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">Get</span> <span class="n">user</span> <span class="n">ID</span> <span class="kn">from</span> <span class="nn">local</span> <span class="n">storage</span>
+    <span class="n">const</span> <span class="n">userId</span> <span class="o">=</span> <span class="n">localStorage</span><span class="o">.</span><span class="n">getItem</span><span class="p">(</span><span class="s2">"userid"</span><span class="p">);</span>
+
+    <span class="o">//</span> <span class="n">Define</span> <span class="n">the</span> <span class="n">endpoint</span> <span class="n">URL</span>
+    <span class="n">const</span> <span class="n">url</span> <span class="o">=</span> <span class="s2">"http://localhost:8086/api/leadersfiltered/score"</span><span class="p">;</span>
+
+    <span class="o">//</span> <span class="n">Define</span> <span class="n">the</span> <span class="n">request</span> <span class="n">parameters</span> <span class="k">as</span> <span class="n">an</span> <span class="nb">object</span>
+    <span class="n">const</span> <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="n">username</span><span class="p">:</span> <span class="n">userId</span><span class="p">,</span>
+      <span class="n">score</span><span class="p">:</span> <span class="n">matchCounter</span>
+    <span class="p">};</span>
+
+    <span class="o">//</span> <span class="n">Define</span> <span class="n">the</span> <span class="n">request</span> <span class="n">options</span>
+    <span class="n">const</span> <span class="n">options</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="n">method</span><span class="p">:</span> <span class="s2">"POST"</span><span class="p">,</span>
+      <span class="n">headers</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"Content-Type"</span><span class="p">:</span> <span class="s2">"application/json"</span>
+      <span class="p">},</span>
+      <span class="n">body</span><span class="p">:</span> <span class="n">JSON</span><span class="o">.</span><span class="n">stringify</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="p">};</span>
+
+    <span class="o">//</span> <span class="n">Send</span> <span class="n">the</span> <span class="n">request</span> <span class="k">with</span> <span class="n">fetch</span><span class="p">()</span>
+    <span class="n">fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">options</span><span class="p">)</span>
+      <span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">response</span><span class="o">.</span><span class="n">ok</span><span class="p">)</span> <span class="p">{</span>
+          <span class="n">throw</span> <span class="n">new</span> <span class="n">Error</span><span class="p">(</span><span class="s2">"Network response was not ok"</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">();</span>
+      <span class="p">})</span>
+      <span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
+      <span class="p">})</span>
+      <span class="o">.</span><span class="n">catch</span><span class="p">(</span><span class="n">error</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">"There was a problem with the fetch operation:"</span><span class="p">,</span> <span class="n">error</span><span class="p">);</span>
+      <span class="p">});</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3ciii">
+<a class="anchor" href="#3ciii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3ciii<a class="anchor-link" href="#3ciii"> </a>
+</h2>
+<ul>
+<li>The procedure is for creating the Leader object through a post request in which the data that is received is the value from the post request that is for the username and score values. Where goes through selection statements that validate is teh user is a valid user and that if the users score is greater than 0. After which it creates a Leader object and then runs the create method which adds the Leader to the Leaderboard SQL table. Here the values are for the values of UserId and that of the matchCounter representing the user's score these are then used in the call of the function via its api endpoint.  </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3civ">
+<a class="anchor" href="#3civ" aria-hidden="true"><span class="octicon octicon-link"></span></a>3civ<a class="anchor-link" href="#3civ"> </a>
+</h2>
+<p>The procedure begins by taking the values from the body of the post request such as the username and score that is sent then the function checks if the user is a valid user and if the score meets the minimum threshold via the selection statements. After which the function creates a Leader object and then runs the create method which adds the Leader to the Leaderboard SQL table.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3d">
+<a class="anchor" href="#3d" aria-hidden="true"><span class="octicon octicon-link"></span></a>3d<a class="anchor-link" href="#3d"> </a>
+</h2>
 </div>
 </div>
 </div>
