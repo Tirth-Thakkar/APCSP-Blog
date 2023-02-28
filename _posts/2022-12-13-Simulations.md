@@ -2,7 +2,7 @@
 keywords: fastai
 description: Lesson about simulations and what they're used for 
 title: Section 16 Chapter 3
-layout: default
+layout: base
 toc: true
 badges: false
 comments: true
