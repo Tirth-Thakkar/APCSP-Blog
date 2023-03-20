@@ -518,7 +518,10 @@ window.onload = wrap_img;
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
+<li>Why does the menu repeat?<ul>
+<li>The menu repeats as it uses recursion to call itself. So that once the function has finished executing it will call itself again.  </li>
+</ul>
+</li>
 <li>Could you refactor this menu?  Make it work with a List?</li>
 </ul>
 </blockquote>
@@ -567,7 +570,14 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>A new user record Duumple has been created
+<pre>(1, 'Thomas Edison', 'toby', 'sha256$oaO7LlrKnCQ4oYQS$8e5cda4490dfc9b8bc0d5444c219e3a0e2b6da2a2f603d40872090f73b709687', '1847-02-11')
+(2, 'Nikola Tesla', 'niko', 'sha256$sLpv3nJlSCHNgXAt$c771c34e2ccde377c49f78a4979fd5cef4fcfc0002aed013debf4e3a6b308dbf', '2023-03-15')
+(3, 'Alexander Graham Bell', 'lex', 'sha256$ZIvTO96vIwLgxPCA$71928b9d17d43d1e94541581f0586590b29ea09e68326e990e3ba4c434a28e82', '2023-03-15')
+(4, 'Eli Whitney', 'whit', 'sha256$Jpr2YeMTQiiSLqQZ$795ef584b38771ad4d5e60bb1a4d774774c2572c29f10a74ef12f0ca4c4fde80', '2023-03-15')
+(5, 'Indiana Jones', 'indi', 'sha256$Oa8VvLeSss17Um0k$d6c373c4ae390ced4d742fba0d105cbde90be4acd1a1ed2352479d31d6f251fa', '1920-10-21')
+(6, 'Marion Ravenwood', 'raven', 'sha256$pPCmYxzfpVzGYBw7$edbf4e97434f7fffa20655b0563224c7261b6a56ca9883192bda1553b28904f8', '1921-10-21')
+(7, '69', 'gamer', 'sha256$2OpadBnF8RJJpiMe$698fd3b7f8efb64c885ae5c0d0cfdebc8f707e911e256019418caa16a1eaa2e7', '2023-03-15')
+(8, 'Berry', 'Duumple', 'Truffles', '20017-07-06')
 </pre>
 </div>
 </div>
@@ -625,14 +635,18 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li>What is a connection object?<ul>
-<li>A connection object is an object that is used to connect to a database. It is used to create a cursor object that is used to execute SQL statements.</li>
+<li>A connection object is an object that is used to create a unique session that connects to a database. Which contains all the methods needed to alter, view, and change the data within the database and it is used to create a cursor object that is used to execute SQL statements. </li>
 </ul>
 </li>
 <li>What is a database schema? <ul>
 <li>A database schema is a blueprint or a plan for the database. It defines how the data is organized and how the relations among them are associated. It also defines the constraints on the data, the functions and operations that can be applied to the data. </li>
 </ul>
 </li>
-<li>The most commonly used query in SQL is called select, they will look similar but the command in the middle will be different.   </li>
+<li>The most commonly used query in SQL is called select, they will look similar but the command in the middle will be different.</li>
+<li>Is results an object? <ul>
+<li>Yes, results is an object. It contains data and functions that is related to the object. </li>
+</ul>
+</li>
 </ul>
 
 </div>
