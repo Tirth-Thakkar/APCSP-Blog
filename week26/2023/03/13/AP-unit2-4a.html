@@ -127,6 +127,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#Database-and-SQLAlchemy">Database and SQLAlchemy </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Imports-and-Flask-Objects">Imports and Flask Objects </a></li>
+<li class="toc-entry toc-h2"><a href="#Debugging-Flask-Object">Debugging Flask Object </a></li>
 <li class="toc-entry toc-h2"><a href="#Model-Definition">Model Definition </a></li>
 <li class="toc-entry toc-h2"><a href="#Initial-Data">Initial Data </a></li>
 <li class="toc-entry toc-h2"><a href="#Check-for-given-Credentials-in-users-table-in-sqlite.db">Check for given Credentials in users table in sqlite.db </a></li>
@@ -193,6 +194,10 @@ window.onload = wrap_img;
 </ol>
 </li>
 </ul>
+<h2 id="Debugging-Flask-Object">
+<a class="anchor" href="#Debugging-Flask-Object" aria-hidden="true"><span class="octicon octicon-link"></span></a>Debugging Flask Object<a class="anchor-link" href="#Debugging-Flask-Object"> </a>
+</h2>
+<p><img src="https://github.com/Tirth-Thakkar/APCSP-Blog/blob/master/images/Debugging.png?raw=true" alt="Flask Object"></p>
 
 </div>
 </div>
@@ -1157,7 +1162,7 @@ Created new record Acer Nitro 5
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Created
- {'id': 8, 'name': 'PowerBook', 'graphics': 'PowerPc', 'CPU': 'IBM Power', 'price': 1234, 'RAM': 1234, 'storage': 1234, 'OS': 'Mac OS', 'brand': 'Apple', 'year': 2001}
+ {'id': 11, 'name': 'apple 2e', 'graphics': 'apple special', 'CPU': 'old', 'price': 1231342341, 'RAM': 12, 'storage': 12, 'OS': 'MacOs', 'brand': 'Apple', 'year': 1000}
 </pre>
 </div>
 </div>
@@ -1196,17 +1201,7 @@ Created new record Acer Nitro 5
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[{'id': 1,
-  'name': 'MacBook Pro',
-  'graphics': 'Intel Iris Plus Graphics 645',
-  'CPU': '2.3GHz 8-core 9th-generation Intel Core i9 processor, Turbo Boost up to 4.8GHz',
-  'price': 2799,
-  'RAM': 32,
-  'storage': 1024,
-  'OS': 'macOS Catalina',
-  'brand': 'Apple',
-  'year': 2019},
- {'id': 2,
+<pre>[{'id': 2,
   'name': 'Dell XPS 13',
   'graphics': 'Intel UHD Graphics 620',
   'CPU': '2.8GHz 8th Generation Intel Core i7-8565U Processor',
@@ -1266,16 +1261,36 @@ Created new record Acer Nitro 5
   'OS': 'Windows 11 Home',
   'brand': 'Acer',
   'year': 2022},
- {'id': 8,
-  'name': 'PowerBook',
-  'graphics': 'PowerPc',
-  'CPU': 'IBM Power',
-  'price': 1234,
-  'RAM': 1234,
-  'storage': 1234,
-  'OS': 'Mac OS',
+ {'id': 9,
+  'name': 'Acer Chromebook 516 GE',
+  'graphics': 'potato',
+  'CPU': 'potato',
+  'price': 1,
+  'RAM': 1,
+  'storage': 1,
+  'OS': 'worse',
+  'brand': 'asdf',
+  'year': 120},
+ {'id': 10,
+  'name': 'MacBook Pro',
+  'graphics': 'Intel Iris Plus Graphics 645',
+  'CPU': '2.3GHz 8-core 9th-generation Intel Core i9 processor, Turbo Boost up to 4.8GHz',
+  'price': 2799,
+  'RAM': 32,
+  'storage': 1024,
+  'OS': 'macOS Catalina',
   'brand': 'Apple',
-  'year': 2001}]</pre>
+  'year': 2019},
+ {'id': 11,
+  'name': 'apple 2e',
+  'graphics': 'asdf',
+  'CPU': 'asdf',
+  'price': 14134,
+  'RAM': 3423,
+  'storage': 11234,
+  'OS': 'sdfads',
+  'brand': 'asdf',
+  'year': 124}]</pre>
 </div>
 
 </div>
@@ -1320,7 +1335,7 @@ Created new record Acer Nitro 5
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Computer with id 1 deleted
+<pre>Computer with id 2 deleted
 </pre>
 </div>
 </div>
@@ -1328,7 +1343,7 @@ Created new record Acer Nitro 5
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/tmp/ipykernel_519/934772255.py:6: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+<pre>/tmp/ipykernel_2076/934772255.py:6: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
   ComputerDelete = Computers.query.get(DComp)
 </pre>
 </div>
@@ -1401,7 +1416,7 @@ Created new record Acer Nitro 5
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Computer with id PowerBook updated
+<pre>Computer with id apple 2e updated
 </pre>
 </div>
 </div>
@@ -1451,26 +1466,7 @@ Created new record Acer Nitro 5
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Created
- {'id': 9, 'name': 'Acer Chromebook 516 GE', 'graphics': 'Intel UHD', 'CPU': 'Intel Core i5', 'price': 650, 'RAM': 8, 'storage': 256, 'OS': 'Chrome OS', 'brand': 'Acer', 'year': 2023}
-Computer with id Acer Chromebook 516 GE updated
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/tmp/ipykernel_519/934772255.py:6: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
-  ComputerDelete = Computers.query.get(DComp)
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Computer with id 8 deleted
+<pre>Computer with id apple 2e updated
 </pre>
 </div>
 </div>
