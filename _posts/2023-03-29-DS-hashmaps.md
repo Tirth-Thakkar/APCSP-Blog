@@ -253,7 +253,7 @@ The Man
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;title&#39;: &#39;Lover&#39;, &#39;artist&#39;: &#39;Taylor Swift&#39;, &#39;year&#39;: 2019, &#39;genre&#39;: [&#39;Pop&#39;, &#39;Synth-pop&#39;], &#39;tracks&#39;: {1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;}, &#39;producer&#39;: {&#39;Louis Bell&#39;, &#39;Frank Dukes&#39;, &#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Joel Little&#39;}}
+<pre>{&#39;title&#39;: &#39;Lover&#39;, &#39;artist&#39;: &#39;Taylor Swift&#39;, &#39;year&#39;: 2019, &#39;genre&#39;: [&#39;Pop&#39;, &#39;Synth-pop&#39;], &#39;tracks&#39;: {1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;}, &#39;producer&#39;: {&#39;Joel Little&#39;, &#39;Frank Dukes&#39;, &#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Louis Bell&#39;}}
 </pre>
 </div>
 </div>
@@ -355,6 +355,7 @@ genre: [&#39;Pop&#39;, &#39;Synth-pop&#39;, &#39;electropop&#39;]
 17: It&#39;s Nice To Have A Friend
 18: Daylight
 19: All Of The Girls You Loved Before
+producer: {&#39;Joel Little&#39;, &#39;Frank Dukes&#39;, &#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Louis Bell&#39;}
 </pre>
 </div>
 </div>
@@ -382,11 +383,26 @@ genre: [&#39;Pop&#39;, &#39;Synth-pop&#39;, &#39;electropop&#39;]
 <span class="n">search</span><span class="p">()</span>
 
 <span class="c1"># This is a very basic code segment, how can you improve upon this code?</span>
-<span class="c1"># </span>
-<span class="c1">#</span>
+<span class="c1"># We can improve upon this code by adding a while loop to allow the user to search for multiple things. Say for instance we could make </span>
+<span class="c1"># it so the user could search for a song and then search for another song. We could also add error handling to make sure that the user  </span>
+<span class="c1"># is inputting the correct data type so no errors occur. These are just a few ways we can improve upon this code. </span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;Pop&#39;, &#39;Synth-pop&#39;, &#39;electropop&#39;]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -412,6 +428,88 @@ genre: [&#39;Pop&#39;, &#39;Synth-pop&#39;, &#39;electropop&#39;]
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">album</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Fake Artist&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;album_title&quot;</span><span class="p">:</span> <span class="s2">&quot;Album Title&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;release_year&quot;</span><span class="p">:</span> <span class="mi">2022</span><span class="p">,</span>
+    <span class="s2">&quot;genre&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Pop&quot;</span><span class="p">,</span> <span class="s2">&quot;Rock&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;track_list&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;track_number&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Song 1&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="s2">&quot;3:30&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;track_number&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Song 2&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="s2">&quot;4:15&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;track_number&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Song 3&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="s2">&quot;3:50&quot;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">search_and_modify_database</span><span class="p">(</span><span class="n">attribute</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">attribute</span> <span class="o">==</span> <span class="s2">&quot;song&quot;</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">track</span> <span class="ow">in</span> <span class="n">album</span><span class="p">[</span><span class="s2">&quot;track_list&quot;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">track</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">value</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">track</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Song not found in the album!&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+    <span class="k">elif</span> <span class="n">attribute</span> <span class="ow">in</span> <span class="n">album</span><span class="p">:</span>
+        <span class="n">album</span><span class="p">[</span><span class="n">attribute</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Database updated successfully!&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">album</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Attribute not found in the database!&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+    
+<span class="k">def</span> <span class="nf">search_song</span><span class="p">(</span><span class="n">song_title</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">track</span> <span class="ow">in</span> <span class="n">album</span><span class="p">[</span><span class="s2">&quot;track_list&quot;</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">track</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">song_title</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">track</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Song not found in the album!&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kc">None</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">search_song</span><span class="p">(</span><span class="s2">&quot;Song 2&quot;</span><span class="p">))</span>
+
+<span class="n">search_and_modify_database</span><span class="p">(</span><span class="s2">&quot;song&quot;</span><span class="p">,</span> <span class="s2">&quot;Song 2&quot;</span><span class="p">)[</span><span class="s2">&quot;duration&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;3:45&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">search_song</span><span class="p">(</span><span class="s2">&quot;Song 2&quot;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;track_number&#39;: 2, &#39;title&#39;: &#39;Song 2&#39;, &#39;duration&#39;: &#39;4:15&#39;}
+{&#39;track_number&#39;: 2, &#39;title&#39;: &#39;Song 2&#39;, &#39;duration&#39;: &#39;3:45&#39;}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
