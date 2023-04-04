@@ -424,7 +424,7 @@ producer: {&#39;Joel Little&#39;, &#39;Frank Dukes&#39;, &#39;Taylor Swift&#39;,
 <li><p>For Mr. Yeung's class: Justify your favorite Taylor Swift song, answer may effect seed</p>
 </li>
 </ul>
-
+<h2 id="Personal-Album">Personal Album<a class="anchor-link" href="#Personal-Album"> </a></h2>
 </div>
 </div>
 </div>
@@ -510,6 +510,16 @@ producer: {&#39;Joel Little&#39;, &#39;Frank Dukes&#39;, &#39;Taylor Swift&#39;,
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hashmap-Infographic">Hashmap Infographic<a class="anchor-link" href="#Hashmap-Infographic"> </a></h2><ul>
+<li>Done as a group with Allen, Jishnu, and Tirth
+<img src="https://github.com/Tirth-Thakkar/APCSP-Blog/blob/master/images/DictionariesVsLists.png?raw=true" alt="HashmapsVsLists"></li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
  
 
