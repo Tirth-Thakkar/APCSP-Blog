@@ -18,10 +18,26 @@ week: 29
 > As we have learned, a computer needs aa program to do something smart.  The sequence of a program initiates a series of actions with the computers Central Processing Unit (CPU). This component is essentially a binary machine focussing on program instructions provided. The CPU retrieves and stores the data it acts upon in Random Access Memory (RAM). Between the CPU, RAM, and Storage Devices a computer can work with many programs and large amounts of data.
 
 List specification of your Computer, or Computers if working as Pair/Trio
-- Processor GHz:
+- Processor GHz: 
+    - Tirth - i7-12700H, 2.30 Ghz Base, 4.7 Boost 
+    - Yuri - Ryzen 5900 3.7 Ghz Base, 4.8 Boost 
+    - Alan - i7-1065G7, 1.3 Ghz Base, 3.9 Boost  
+    - Jishnu - i5-11320H, 2.5 GHz Base, 3.2 Boost
 - Memory in GB:
+    - Tirth - 16 GB 
+    - Yuri - 64 GB
+    - Alan - 16 GB
+    - Jishnu - 16 Gb
 - Storage in GB:
+    - Tirth - 1024 TB SSD
+    - Yuri - 2048 TB SSD, 128 Gb SSD
+    - Alan - 512 GB SSD
+    - Jishnu - 512 GB SSD
 - OS:
+    - Tirth - Windows 11
+    - Yuri - Windows 10
+    - Alan - Windows 10
+    - Jishnu - Windows 11
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
 - Input devices
@@ -122,7 +138,15 @@ The "network" layer is responsible for ***routing data packets between networks*
 - What is naturally Distributed in Frontend/Backend architecture?  
 
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
+    - ```The GUNICORN_CMD_ARGS environment variable is used to set command-line arguments for the Gunicorn web server when it starts up. In the provided command, --workers=1 and --bind=0.0.0.0:8086 are specified as arguments.
 
+To run the Gunicorn server in parallel, you can increase the number of worker processes to handle multiple requests simultaneously. To do this, simply set the --workers argument to a higher number. For example, if you want to run four worker processes, you can set the argument to --workers=4.
+
+It's important to note that the number of workers you can run at once will depend on the resources available on your system and the workload your application is handling. Be careful not to increase the number of workers beyond what your system can handle, as this can cause performance issues or even crashes.
+
+To make sure everything is running smoothly, it's a good idea to monitor the resource usage of the worker processes while the server is running with multiple workers. You can use tools like htop, top, or systemd to keep an eye on things.
+
+In summary, to run the Gunicorn server in parallel, set the --workers argument to a number that your system can handle, and keep an eye on the resource usage of the worker processes to ensure everything stays stable.``` 
 
 > Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.
 - Review this [article](https://www.anyscale.com/blog/writing-your-first-distributed-python-application-with-ray)...  Can you get parallel code on images to work more effectively?  I have not tried Ray.
