@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      9 min read
     
 </span></p>
 
@@ -274,24 +274,17 @@ window.onload = wrap_img;
 </blockquote>
 
 <ul>
-  <li>
-    <p>What is naturally Distributed in Frontend/Backend architecture?</p>
-  </li>
-  <li>
-    <p>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a></p>
+  <li>What is naturally Distributed in Frontend/Backend architecture?
     <ul>
-      <li>```The GUNICORN_CMD_ARGS environment variable is used to set command-line arguments for the Gunicorn web server when it starts up. In the provided command, –workers=1 and –bind=0.0.0.0:8086 are specified as arguments.</li>
+      <li>In a frontend/backend architecture, the frontend and backend are naturally distributed components. The frontend typically consists of the user interface and presentation layer, while the backend contains the business logic and data storage. The frontend is distributed across multiple devices or clients, such as web browsers, mobile devices, or desktop applications. Each client has its own instance of the frontend code, which communicates with the backend over a network connection. The backend is typically deployed on one or more servers or cloud platforms. The servers may be physically distributed across multiple locations, and the backend may be composed of multiple services or microservices that work together to provide the required functionality. The distributed nature of the frontend/backend architecture allows for scalability, fault tolerance, and performance optimization. The frontend can be scaled by adding more clients or instances, while the backend can be scaled by adding more servers or services. Fault tolerance can be achieved by replicating the backend across multiple servers or locations, and load balancing can be used to optimize performance by distributing the load across multiple servers. Overall, the frontend/backend architecture is a popular and effective way of building modern web applications that can handle large volumes of users and data.</li>
+    </ul>
+  </li>
+  <li>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">The GUNICORN_CMD_ARGS environment variable is used to set command-line arguments for the Gunicorn web server when it starts up. In the provided command, --workers=1 and --bind=0.0.0.0:8086 are specified as arguments. To run the Gunicorn server in parallel, you can increase the number of worker processes to handle multiple requests simultaneously. To do this, simply set the --workers argument to a higher number. For example, if you want to run four worker processes, you can set the argument to --workers=4. It's important to note that the number of workers you can run at once will depend on the resources available on your system and the workload your application is handling. Be careful not to increase the number of workers beyond what your system can handle, as this can cause performance issues or even crashes. To make sure everything is running smoothly, it's a good idea to monitor the resource usage of the worker processes while the server is running with multiple workers. You can use tools like htop, top, or systemd to keep an eye on things. In summary, to run the Gunicorn server in parallel, set the --workers argument to a number that your system can handle, and keep an eye on the resource usage of the worker processes to ensure everything stays stable.</code></li>
     </ul>
   </li>
 </ul>
-
-<p>To run the Gunicorn server in parallel, you can increase the number of worker processes to handle multiple requests simultaneously. To do this, simply set the –workers argument to a higher number. For example, if you want to run four worker processes, you can set the argument to –workers=4.</p>
-
-<p>It’s important to note that the number of workers you can run at once will depend on the resources available on your system and the workload your application is handling. Be careful not to increase the number of workers beyond what your system can handle, as this can cause performance issues or even crashes.</p>
-
-<p>To make sure everything is running smoothly, it’s a good idea to monitor the resource usage of the worker processes while the server is running with multiple workers. You can use tools like htop, top, or systemd to keep an eye on things.</p>
-
-<p>In summary, to run the Gunicorn server in parallel, set the –workers argument to a number that your system can handle, and keep an eye on the resource usage of the worker processes to ensure everything stays stable.```</p>
 
 <blockquote>
   <p>Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.</p>
