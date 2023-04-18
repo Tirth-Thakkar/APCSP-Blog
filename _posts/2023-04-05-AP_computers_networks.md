@@ -21,18 +21,21 @@ List specification of your Computer, or Computers if working as Pair/Trio
 - Processor GHz: 
     - Tirth - i7-12700H, 2.30 Ghz Base, 4.7 Boost 
     - Yuri - Ryzen 5900 3.7 Ghz Base, 4.8 Boost 
-    - Alan - i7-1065G7, 1.3 Ghz Base, 3.9 Boost  
+    - Alan - i7-1065G7, 1.3 Ghz Base, 1.5 Boost  
     - Jishnu - i5-11320H, 2.5 GHz Base, 3.2 Boost
+    - Haoxion - i5-8365U, 1.6 GHz Base, 1.90 Boost
 - Memory in GB:
     - Tirth - 16 GB 
     - Yuri - 64 GB
     - Alan - 16 GB
     - Jishnu - 16 Gb
+    - Haoxion - 16 GB
 - Storage in GB:
     - Tirth - 1024 TB SSD
     - Yuri - 2048 TB SSD, 128 Gb SSD
     - Alan - 512 GB SSD
     - Jishnu - 512 GB SSD
+    - Haoxion - 475 GB SSD
 - OS:
     - Tirth - Windows 11
     - Yuri - Windows 10
