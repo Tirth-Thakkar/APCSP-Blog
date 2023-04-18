@@ -51,8 +51,9 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Inspect Variables
 
 
-![Computer Hardware](https://github.com/nighthawkcoders/APCSP/blob/master/images/cpu.jpeg?raw=true.)
-
+![Computer Hardware](https://github.com/Tirth-Thakkar/APCSP-Blog/blob/master/images/Computing1.png?raw=true)
+![Computer Hardware](https://github.com/Tirth-Thakkar/APCSP-Blog/blob/master/images/Computing2.png?raw=true)
+![Computer Hardware](https://github.com/Tirth-Thakkar/APCSP-Blog/blob/master/images/Computing3.png?raw=true)
 
 ### The Internet
 > Watch/review College Board Daily Video for 4.1.1
@@ -68,16 +69,25 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - Path 
-    - Route
-    - Computer System
-    - Computer Device
-    - Bandwidth
-    - Computer Network
+    - Path - a
+    - Route - e
+    - Computer System - b
+    - Computer Device - c
+    - Bandwidth - d
+    - Computer Network - f
 
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
+    1. True, open protocols allow for more unrestricted sharing to the rest of the internet.
+    2. False, IETF sets up the rules of the internet but does not keep manufacturers out from the internet. The internet is a thing where all people can access it.
+    3. False, different routes can be undertaken depending on if a MAC is available for transfer or not. While the file is being transferred it determines which MACs are available or not.
+    4. True, things like Internet Protocol and other protocols are agreed upon rules that set up specific behaviors in the system.
+    5. False, UDP guarantees faster transfers but does not guarantee consistent transfer success.
+    6. False, the World Wide Web is not the internet. WWW links pages instead.
+    7. True, HTTP is used by World Wide Web to display website pages.
+
+
 
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprietary) communication protocols.
@@ -98,7 +108,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highlight vocabulary by illustration. The below illustration have some ideas
 
 
-![Full Stack](https://github.com/nighthawkcoders/APCSP/blob/master/images/fullstack.png?raw=true.)
+![Full Stack](https://github.com/Tirth-Thakkar/APCSP-Blog/blob/master/images/FullStack.png?raw=true)
 
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is transported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
@@ -131,7 +141,12 @@ The "network" layer is responsible for ***routing data packets between networks*
 > Watch both Daily videos for 4.2
 
 - Complete the network activity, summarize your understanding of fault tolerance.
-
+    - i. Yes the network is fault tolerant, as if any link or any points is broken the information can still be distributed to other points in the system.
+    - ii. No the network is not fault tolerant, as if node C goes down, then information can’t be sent to F and thus it is not fault tolerant.
+    - iii. No the network is not fault tolerant, as if node G comes down, then information can’t be sent to A and thus the system cannot be described as fault tolerant.
+    1. Option C
+    2. Option A  
+    3. The importance of fault tolerance is that there is redundancy in your system and one faulty link doesn't compromise the entire system and information can still be transmitted throughout the entire system. The internet is an example of such a system as if one link is broken, the information can still be sent through other links while the broken link is being repaired. Thus it is vital to create fault tolerant systems with at least one backup link or node per connection in case of a failure.   
 
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily video 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
