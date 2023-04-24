@@ -28,21 +28,21 @@ layout: notebook
 </ul>
 </li>
 <li>Sequences of bits are used to represent different things.<ul>
-<li>Representing data with sequences of bits is called binary sequence.</li>
+<li>Representing data with sequences of bits is called <code>binary sequence</code>.</li>
 </ul>
 </li>
 </ul>
 <h4 id="Practice-Questions:">Practice Questions:<a class="anchor-link" href="#Practice-Questions:"> </a></h4><ol>
 <li>How many bits are in 3 bytes?<ul>
-<li>8*3 = 24 bits  </li>
+<li><code>8*3 = 24 bits</code>  </li>
 </ul>
 </li>
 <li>What digital information can be represented by bits? <ul>
-<li>All digital information can be represented by bits </li>
+<li><code>All digital information can be represented by bits</code> </li>
 </ul>
 </li>
 <li>Are bits an analog or digital form of storing data? What is the difference between the two?<ul>
-<li>Bits are a digital form of storing data the difference between the two is that digital is represented in bits as a 1 or 0 however with analog data it has the possibility of having other values. 
+<li><code>Bits are a digital form of storing data the difference between the two is that digital is represented in bits as a 1 or 0 however with analog data it has the possibility of having other values.</code> 
 #### Examples</li>
 </ul>
 </li>
@@ -120,26 +120,26 @@ binary is awesome
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="DAT-1.B:-The-Consequences-of-Using-Bits-to-Represent-Data">DAT-1.B: The Consequences of Using Bits to Represent Data<a class="anchor-link" href="#DAT-1.B:-The-Consequences-of-Using-Bits-to-Represent-Data"> </a></h3><h4 id="Basic-Information">Basic Information<a class="anchor-link" href="#Basic-Information"> </a></h4><ul>
-<li>Integers are represented by a fixed number of bits, this limits the range of integer values. This limitation can result in <strong><em>__</em></strong> or other errors.</li>
+<li>Integers are represented by a fixed number of bits, this limits the range of integer values. This limitation can result in <code>overflow</code> or other errors.</li>
 <li>Other programming languages allow for abstraction only limited by the computers memory.</li>
 <li>Fixed number of bits are used to represent real numbers/limits</li>
 </ul>
 <h4 id="Practice-Questions:">Practice Questions:<a class="anchor-link" href="#Practice-Questions:"> </a></h4><ol>
 <li>What is the largest number can be represented by 5 bits?<ul>
-<li>31 is the largest number that can be represented by 5 bits. </li>
+<li><code>31 is the largest number that can be represented by 5 bits.</code> </li>
 </ul>
 </li>
-<li><p>One programing language can only use 16 bits to represent non-negative numbers, while a second language uses 56 bits to represent numbers. How many times as many unique numbers can be represented by the second language?</p>
+<li><p>One programming language can only use 16 bits to represent non-negative numbers, while a second language uses 56 bits to represent numbers. How many times as many unique numbers can be represented by the second language?</p>
 <ul>
-<li>2^16 - 1 = 65,535</li>
-<li>2^56 -1 = 72,057,594,037,927,935</li>
-<li>The second language can store about 1,099,528,405,248 times more numbers than the first language.</li>
+<li><code>2^16 - 1 = 65,535</code></li>
+<li><code>2^56 -1 = 72,057,594,037,927,935</code></li>
+<li><code>The second language can store about 1,099,528,405,248 times more numbers than the first language.</code></li>
 </ul>
 </li>
 <li><p>5 bits are used to represent both positive and negative numbers, what is the largest number that can be represented by these bits? (<em>hint: different than question 1</em>)</p>
 <ul>
-<li>Signed 5 Bit integer: 31  </li>
-<li>Unsigned 5 bit integer: 15 </li>
+<li><code>Signed 5 Bit integer: 31</code>  </li>
+<li><code>Unsigned 5 bit integer: 15</code> </li>
 </ul>
 </li>
 </ol>
@@ -195,17 +195,20 @@ binary is awesome
 <h4 id="Practice-Questions:">Practice Questions:<a class="anchor-link" href="#Practice-Questions:"> </a></h4><ol>
 <li><p>What values can each digit of a Base 5 system represent?</p>
 <ul>
-<li>The value a 5 digit based system can represent is 5^n depending on where it correlates to then the prior values can be added to each other to be able to get the total value of the number as for instance 001001 can be represent as (0 x 2^6) + (0 x 2^6) + (1 x 2^5) ... and how a similar concept can be used in a base 10 system we could do the exact same thing with a base 5 system. </li>
+<li><code>The value a 5 digit based system can represent is 5^n depending on where it correlates to then the prior values can be added to each other to be able to get the total value of the number as for instance 001001 can be represent as (0 x 2^6) + (0 x 2^6) + (1 x 2^5) ... and how a similar concept can be used in a base 10 system we could do the exact same thing with a base 5 system.</code> </li>
 </ul>
 </li>
 <li><p>What base is Hexadecimal? What range of values can each digit of Hexadecimal represent?</p>
 <ul>
-<li>Hexadecimal is base 16 and can represent 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F </li>
+<li><code>Hexadecimal is base 16 and can represent 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F</code> </li>
 </ul>
 </li>
 <li><p>When using a base above 10, letters can be used to represent numbers past 9. These letters start from A and continue onwards. For example, the decimal number 10 is represented by the letter A in Hexadecimal. What letter would be used to represent the Base 10 number 23 in a Base 30 system? What about in a Base 50 system?</p>
 </li>
 </ol>
+<ul>
+<li><code>In a base system above 10, letters are used to represent numbers past 9. To find the letter that represents a particular number in a given base system, we perform integer division and modulus operations. For example, to represent the number 23 in a base 30 system, we divide 23 by 30 and take the remainder, which is 23. The corresponding letter for the number 23 in base 30 is H, so 23 in base 30 is represented as the single digit H. Similarly, to represent the number 23 in a base 50 system, we divide 23 by 50 and take the remainder, which is 23. The corresponding letter for the number 23 in base 50 is X, so 23 in base 50 is represented as the single digit X.</code></li>
+</ul>
 <h4 id="Examples">Examples<a class="anchor-link" href="#Examples"> </a></h4><ul>
 <li>Using 6 bits, we can represent 64 numbers, from 0 to 63, as 2^6 = 64.</li>
 <li>The numbers in a sequence of binary go from right to left, increasing by powers of two from 0 to the total amount of bits. The whole number represented is the sum of these bits. For example:<ol>
