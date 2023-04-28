@@ -24,7 +24,7 @@ layout: notebook
 <h2 id="Learning-Objectives">Learning Objectives<a class="anchor-link" href="#Learning-Objectives"> </a></h2><p><img src="https://user-images.githubusercontent.com/111464932/229885445-65ef56d2-f3d4-43da-aa62-8683e8c0a08b.png" alt="CollegeBoard Requirements for Binary"></p>
 <h3 id="DAT-1.A:-Representing-Data-with-Bits">DAT-1.A: Representing Data with Bits<a class="anchor-link" href="#DAT-1.A:-Representing-Data-with-Bits"> </a></h3><h4 id="Basic-Information">Basic Information<a class="anchor-link" href="#Basic-Information"> </a></h4><ul>
 <li>Bit is short for <code>binary</code> digit, and represents a value of either 0 or 1.<ul>
-<li>A byte is 8 bits.</li>
+<li>A byte is 8 bits. </li>
 </ul>
 </li>
 <li>Sequences of bits are used to represent different things.<ul>
